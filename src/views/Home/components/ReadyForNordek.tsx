@@ -183,14 +183,23 @@ const ReadyForNordek = () => {
           {/* <ColoredWordLastHeading color="#ffffff" text={t("NORDEK?")} /> */}
         </Flex>
 
-        <Text fontSize={["16px", "18px", "26px", ""]} mt="15px" textAlign="center" color="#ffffff">
+        <Text
+          fontSize={["16px", "18px", "26px", ""]}
+          mt="15px"
+          textAlign="center"
+          color="#ffffff"
+        >
           {t("Connect your crypto wallet to start using the app in seconds.")}
         </Text>
-        <Text fontSize={["16px", "18px", "26px", ""]} textAlign="center" color="#ffffff">
+        <Text
+          fontSize={["16px", "18px", "26px", ""]}
+          textAlign="center"
+          color="#ffffff"
+        >
           {t("No registration needed.")}
         </Text>
 
-        {!account && <ConnectWalletButton   mt="24px" />}
+        {!account && <ConnectWalletButton mt="24px" />}
       </WrapperLarge>
     </>
   );
