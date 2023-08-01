@@ -2,7 +2,7 @@ import { Flex, Text, Heading, Link, Button } from "@nswap/uikit";
 import { useWeb3React } from "@web3-react/core";
 import { useTranslation } from "contexts/Localization";
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SliderData = [
   {
@@ -14,10 +14,11 @@ const SliderData = [
     buttonLink: "/swap",
   },
   {
-    imgSrc: "/images/home/invest_in_norswap.png",
-    heading: "SLIDE 2 HEADING",
-    description: "Description of Slide 2",
-    buttonText: "Button Text 2",
+    imgSrc: "/images/home/passive_income.png",
+    heading: "HIGH PASSIVE INCOME",
+    description:
+      "Unlock attractive benefits with NORDEK Swap, right at your fingerprints",
+    buttonText: "Join us Now",
     buttonLink: "/link-2",
   },
   // Add more slides as needed
@@ -32,21 +33,40 @@ const Home5 = () => {
     text: "Join us Now",
     external: false,
   };
+  const [isAutoSliding, setIsAutoSliding] = useState(true);
+  const autoSlideIntervalRef = useRef(null);
+
   const handlePrevSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === 0 ? SliderData.length - 1 : prevSlide - 1
     );
+    setIsAutoSliding(false);
   };
 
   const handleNextSlide = () => {
     setCurrentSlide((prevSlide) =>
       prevSlide === SliderData.length - 1 ? 0 : prevSlide + 1
     );
+    setIsAutoSliding(false);
   };
 
   const handleBarClick = (index) => {
     setCurrentSlide(index);
+    setIsAutoSliding(false);
   };
+  const autoNextSlide = () => {
+    if (isAutoSliding) {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === SliderData.length - 1 ? 0 : prevSlide + 1
+      );
+    }
+  };
+
+  useEffect(() => {
+    autoSlideIntervalRef.current = setInterval(autoNextSlide, 3000);
+    return () => clearInterval(autoSlideIntervalRef.current);
+  }, [isAutoSliding]);
+
   const buttonStyle = {
     margin: "10px",
     background: "none",
@@ -65,11 +85,12 @@ const Home5 = () => {
     <>
       <Flex
         position="relative"
-        flexDirection={["column-reverse", null, null, "row"]}
-        alignItems={["flex-end", null, null, "center"]}
+        flexDirection={["column", null, null, null]}
+        alignItems={[null, null, null, "center"]}
         justifyContent="center"
         mt={[account ? "280px" : "50px", null, 0]}
         mb="50px"
+        className=""
         id="homepage-home5"
       >
         {SliderData.map((slide, index) => (
@@ -77,10 +98,16 @@ const Home5 = () => {
             key={index}
             width="100%"
             flex="1"
-            flexDirection="row"
+            flexDirection={["column", null, null, "row"]}
+            alignItems={["center", null]}
             style={{ display: index === currentSlide ? "flex" : "none" }}
           >
-            <Flex width="34%">
+            <Flex
+              mb={["20px", null, null, null]}
+              mx={["auto", null, null, "0"]}
+              // width={["80%", null, null, "34%"]}
+              alignItems={["center", null, null, "flex-start"]}
+            >
               <Image
                 src={slide.imgSrc}
                 width="369"
@@ -89,7 +116,12 @@ const Home5 = () => {
                 alt={t("Invest In Norswap")}
               />
             </Flex>
-            <Flex width="66%" paddingLeft={["25px"]} flexDirection="column">
+            <Flex
+              width={["90%", null, null, "66%"]}
+              paddingLeft={[null, null, null, "24px"]}
+              flexDirection="column"
+              alignItems={[null, "center", null, "flex-start"]}
+            >
               <Heading color="#FFFFFF" scale="xxl">
                 {t(slide.heading)}
               </Heading>
@@ -111,11 +143,17 @@ const Home5 = () => {
       </Flex>
       <Flex alignItems={[null, null, null, "center"]} justifyContent="center">
         <Button
-          onClick={handlePrevSlide}
+          onClick={() => {
+            handlePrevSlide();
+            setIsAutoSliding(true); // Resume auto-sliding after user clicks prev button
+          }}
           style={currentSlide === 0 ? activeButtonStyle : buttonStyle}
         ></Button>
         <Button
-          onClick={handleNextSlide}
+          onClick={() => {
+            handleNextSlide();
+            setIsAutoSliding(true); // Resume auto-sliding after user clicks next button
+          }}
           style={
             currentSlide === SliderData.length - 1
               ? activeButtonStyle

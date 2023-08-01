@@ -2804,7 +2804,7 @@
     node-gyp "^7.1.0"
     read-package-json-fast "^2.0.1"
 
-"@nswap/uikit@file:D:\\Companey\\Norswap-Next-Skype\\packages\\uikit":
+"@nswap/uikit@file:D:\\Companey\\norswap-latets\\norswap-ts\\packages\\uikit":
   version "0.63.1"
   resolved "file:packages/uikit"
   dependencies:
@@ -2923,7 +2923,7 @@
   dependencies:
     "@octokit/openapi-types" "^11.2.0"
 
-"@pancakeswap/eslint-config-pancake@file:D:\\Companey\\Norswap-Next-Skype\\packages\\eslint-config":
+"@pancakeswap/eslint-config-pancake@file:D:\\Companey\\norswap-latets\\norswap-ts\\packages\\eslint-config":
   version "1.2.0"
   resolved "file:packages/eslint-config"
   dependencies:

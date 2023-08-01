@@ -25,7 +25,7 @@ import { LogoWithTextIcon, ArrowForwardIcon } from "../Svg";
 import { Button } from "../Button";
 import { Colors } from "../..";
 
-const MenuItem: React.FC<FooterProps> = ({
+const FooterMenu: React.FC<FooterProps> = ({
   items,
   isDark,
   toggleTheme,
@@ -38,86 +38,38 @@ const MenuItem: React.FC<FooterProps> = ({
   ...props
 }) => {
   return (
-    <StyledFooter p={["40px 16px", null, "56px 40px 32px 40px"]} {...props} justifyContent="center">
+    <StyledFooter p={["40px 16px", null, "65px 40px 100px 40px"]} {...props} justifyContent="center">
       <Flex flexDirection="column" width={["100%", null, "1200px;"]}>
         <StyledIconMobileContainer display={["block", null, "none"]}>
           <LogoWithTextIcon isDark width="130px" />
         </StyledIconMobileContainer>
-        <Flex
-          flexDirection="column"
-          justifyContent="space-between"
-          alignItems="flex-start"
-          mb={["42px", null, "36px"]}
-        >
-          {/* {items?.map((item) => (
-            <StyledList key={item.label}>
-              <StyledListItem>{item.label}</StyledListItem>
-              {item.items?.map(({ label, href, isHighlighted = false }) => (
-                <StyledListItem key={label}>
-                  {href ? (
-                    <Link
-                      href={href}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      color={isHighlighted ? baseColors.warning : darkColors.text}
-                      bold={false}
-                    >
-                      {label}
-                    </Link>
-                  ) : (
-                    <StyledText>{label}</StyledText>
-                  )}
-                </StyledListItem>
-              ))}
-            </StyledList>
-          ))} */}
+        <Flex flexDirection="column" justifyContent="space-between" alignItems="flex-start" mb={["42px", null, "36px"]}>
           <Box display={["none", null, "block"]}>
             <LogoWithTextIcon isDark width="160px" />
           </Box>
-          <Box display={["none", null, "block"]} mt={["42px", null, "36px"]} mb={["8px"]}>
+          <Box display={["", null, "block"]} mt={["42px", null, "36px"]} mb={["8px"]}>
             <StyledTextDisclaimer>Disclaimer:</StyledTextDisclaimer>
           </Box>
-          <Box display={["none", null, "block"]}>
+          <Box display={["", null, "block"]}>
             <StyledTextDisclaimerContent>
-              Trading crypto assets has high opportunities and risks. Make sure you use good judgment in
-              making buying and selling decisions on your assets. NORDEK Swap does not force users to make buying and
-              selling transactions and all buying and selling decisions of your digital money assets are your own
-              decisions and are not influenced by any party.
+              Trading crypto assets has high opportunities and risks. Make sure you use good judgment in making buying
+              and selling decisions on your assets. NORDEK Swap does not force users to make buying and selling
+              transactions and all buying and selling decisions of your digital money assets are your own decisions and
+              are not influenced by any party.
             </StyledTextDisclaimerContent>
           </Box>
         </Flex>
-        <Flex justifyContent="space-between">
-
-          <StyledToolsContainer >
-            {/* <Flex order={[1, null, 1]} alignItems="center">
-            <ThemeSwitcher isDark={isDark} toggleTheme={toggleTheme} />
-            {/* <LangSelector
-              currentLang={currentLang}
-              langs={langs}
-              setLang={setLang}
-              color={darkColors.textSubtle as keyof Colors}
-              dropdownPosition="top-right"
-            />
-          </Flex> */}
-            {/* {buyBNBComponent} */}
-            <Flex alignItems="center">
-
-              <Button
-                as="a"
-                href="/swap"
-                target="_blank"
-                scale="sm"
-                mr="20px"
-                // endIcon={<ArrowForwardIcon color={lightColors.backgroundAlt} />}
-                style={{ color: "#FFFFFF" }}
-              >
+        <Flex flexDirection={["column", null, null, "row"]} justifyContent="space-between">
+          {/* <StyledToolsContainer> */}
+            <Flex alignItems="center" mb={["25px" , null,null,"0"]}>
+              <Button as="a" href="/swap" target="_blank" scale="md" mr="20px" style={{ color: "#FFFFFF" }}>
                 {buyCakeLabel}
               </Button>
-              <Box >
+              <Box>
                 <CakePrice cakePriceUsd={cakePriceUsd} color="contrast" />
               </Box>
             </Flex>
-          </StyledToolsContainer>
+          {/* </StyledToolsContainer> */}
           <StyledSocialLinks />
         </Flex>
       </Flex>
@@ -125,4 +77,4 @@ const MenuItem: React.FC<FooterProps> = ({
   );
 };
 
-export default MenuItem;
+export default FooterMenu;

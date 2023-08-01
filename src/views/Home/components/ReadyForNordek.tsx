@@ -7,6 +7,9 @@ import { useWeb3React } from '@web3-react/core'
 import SunburstSvg from './SunburstSvg'
 import CompositeImage from './CompositeImage'
 import ColoredWordLastHeading from './ColoredWordLastHeading'
+import Image from "next/image";
+// import ReadyForNordek from "/images/home/invest_in_norswap.png";
+
 
 const BgWrapper = styled.div`
   overflow: hidden;
@@ -34,9 +37,13 @@ const Wrapper = styled(Flex)`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-top: -35%;
-  margin-bottom:18%;
-  padding:0px !important;
+  /* margin-top: -35%; */
+  /* margin-bottom:18%; */
+  /* padding:0px !important; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) !important;
 `
 
 const FloatingPancakesWrapper = styled(Container)`
@@ -84,7 +91,7 @@ const bottomRightImage = {
   ],
 }
 
-const Footer = () => {
+const ReadyForNordek = () => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
   const { isTablet, isDesktop } = useMatchBreakpointsContext()
@@ -92,21 +99,6 @@ const Footer = () => {
   return (
     <>
 
-      {/* <BgWrapper>
-        <Flex alignItems="center" justifyContent="center" width="100%" height="100%">
-          <StyledSunburst />
-        </Flex>
-      </BgWrapper> */}
-      {/* {(isTablet || isDesktop) && (
-        <FloatingPancakesWrapper>
-          <TopLeftImgWrapper>
-            <CompositeImage {...topLeftImage} maxHeight="256px" />
-          </TopLeftImgWrapper>
-          <BottomRightImgWrapper>
-            <CompositeImage {...bottomRightImage} maxHeight="256px" />
-          </BottomRightImgWrapper>
-        </FloatingPancakesWrapper>
-      )} */}
       <Wrapper>
         <Flex>
           <svg width="434" height="70" viewBox="0 0 434 70" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -115,6 +107,13 @@ const Footer = () => {
               fill="#00EF6E"
             ></path>
           </svg>
+           {/* <Image
+                src={slide.imgSrc}
+                width="434"
+                height="70"
+                priority
+                alt={t("Invest In Norswap")}
+              /> */}
           &nbsp; &nbsp; &nbsp; &nbsp; <ColoredWordLastHeading color="#ffffff" text={t('NORDEK?')} />
         </Flex>
 
@@ -125,13 +124,11 @@ const Footer = () => {
           {t('No registration needed.')}
         </Text>
 
-        {/* <Link external href="https://docs.nordekscan.com/">
-          {t('Connect Wallet')}
-        </Link> */}
+
         {!account && <ConnectWalletButton mt="24px" />}
       </Wrapper>
     </>
   )
 }
 
-export default Footer
+export default ReadyForNordek
