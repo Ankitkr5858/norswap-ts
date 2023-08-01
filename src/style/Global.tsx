@@ -47,7 +47,7 @@ color: #fff;
 padding: 4px 24px;
 
  }
- .inputFieldWrapper .input , .inputFieldWrapper .kmCEZs{
+ .inputFieldWrapper * * input{
    color: #fff !important;
  }
  

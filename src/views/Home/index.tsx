@@ -1,36 +1,46 @@
-import styled from 'styled-components'
-import PageSection from 'components/PageSection'
-import { useWeb3React } from '@web3-react/core'
-import useTheme from 'hooks/useTheme'
-import Container from 'components/Layout/Container'
-import { PageMeta } from 'components/Layout/Page'
-import { useTranslation } from 'contexts/Localization'
-import Home1 from './components/Home1'
-import Home2 from './components/Home2'
-import Home3 from './components/Home3'
-import Home4 from './components/Home4'
-import { swapSectionData, earnSectionData, cakeSectionData } from './components/SalesSection/data'
-import MetricsSection from './components/MetricsSection'
-import SalesSection from './components/SalesSection'
-import WinSection from './components/WinSection'
-import FarmsPoolsRow from './components/FarmsPoolsRow'
-import Footer from './components/Footer'
-import CakeDataRow from './components/CakeDataRow'
-import { WedgeTopLeft, InnerWedgeWrapper, OuterWedgeWrapper, WedgeTopRight } from './components/WedgeSvgs'
-import UserBanner from './components/UserBanner'
-import MultipleBanner from './components/Banners/MultipleBanner'
-import Home5 from './components/Home5'
-
+import styled from "styled-components";
+import PageSection from "components/PageSection";
+import { useWeb3React } from "@web3-react/core";
+import useTheme from "hooks/useTheme";
+import Container from "components/Layout/Container";
+import { PageMeta } from "components/Layout/Page";
+import { useTranslation } from "contexts/Localization";
+import Home1 from "./components/Home1";
+import Home2 from "./components/Home2";
+import Home3 from "./components/Home3";
+import Home4 from "./components/Home4";
+import {
+  swapSectionData,
+  earnSectionData,
+  cakeSectionData,
+} from "./components/SalesSection/data";
+import MetricsSection from "./components/MetricsSection";
+import SalesSection from "./components/SalesSection";
+import WinSection from "./components/WinSection";
+import FarmsPoolsRow from "./components/FarmsPoolsRow";
+// import Footer from "./components/ReadyForNordek";
+import CakeDataRow from "./components/CakeDataRow";
+import {
+  WedgeTopLeft,
+  InnerWedgeWrapper,
+  OuterWedgeWrapper,
+  WedgeTopRight,
+} from "./components/WedgeSvgs";
+import UserBanner from "./components/UserBanner";
+import MultipleBanner from "./components/Banners/MultipleBanner";
+import Home5 from "./components/Home5";
+import ReadyForNordek from "./components/ReadyForNordek";
+import FooterMenu from "@nswap/uikit/src/components/Footer/Footer";
+import { Box } from "@nswap/uikit";
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
 
   ${({ theme }) => theme.mediaQueries.md} {
     padding-top: 48px;
-    padding-bottom: 0px
+    padding-bottom: 0px;
   }
-`
-
+`;
 
 const UserBannerWrapper = styled(Container)`
   z-index: 1;
@@ -46,30 +56,39 @@ const UserBannerWrapper = styled(Container)`
     padding-left: 24px;
     padding-right: 24px;
   }
-`
+`;
 
 const CoVote = styled(Container)`
-    
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 5rem 0;
-`
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+`;
 
 const Home: React.FC = () => {
-  const { theme } = useTheme()
-  const { account } = useWeb3React()
+  const { theme } = useTheme();
+  const { account } = useWeb3React();
 
-  const HomeSectionContainerStyles = { margin: '0', width: '100%', maxWidth: '1200px' }
+  const HomeSectionContainerStyles = {
+    margin: "0",
+    width: "100%",
+    maxWidth: "1200px",
+  };
 
-  const { t } = useTranslation()
+  const { t } = useTranslation();
 
   return (
     <>
       <PageMeta />
 
-      <video src="https://dotted-ranger-363617.web.app/videos/slider_for_nordek.mp4" width="100%" height="auto"
-        autoPlay={true} loop={true} style={{ position: "absolute" }}></video>
+      <video
+        src="https://dotted-ranger-363617.web.app/videos/slider_for_nordek.mp4"
+        width="100%"
+        height="auto"
+        autoPlay={true}
+        loop={true}
+        style={{ position: "absolute" }}
+      ></video>
       {/* {account && (
           <UserBannerWrapper>
             <UserBanner />
@@ -108,7 +127,7 @@ const Home: React.FC = () => {
       >
         <WinSection />
       </PageSection> */}
-       <PageSection
+      <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         backgroundColor="#000 !important"
         padding="5rem 0"
@@ -116,9 +135,8 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <Home5 />
-      
       </PageSection>
-     
+
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="url(https://dotted-ranger-363617.web.app/assets/bg-img-2242f147.png);"
@@ -134,21 +152,25 @@ const Home: React.FC = () => {
         <CakeDataRow />
       </PageSection>
 
-      <div
-      >
-        <video src="https://dotted-ranger-363617.web.app/videos/ready_for_nordek.mp4" width="100%" height="auto"
-          autoPlay={true} loop={true} ></video>
-        <Footer
-        />
-      </div>
+      <Box background={["black"]} position={["relative"]} overflow={["hidden"]}>
+        <video
+          src="https://dotted-ranger-363617.web.app/videos/ready_for_nordek.mp4"
+          width="100%"
+          height="auto"
+          autoPlay={true}
+          loop={true}
+        ></video>
+        <ReadyForNordek/>
+      </Box>
+      {/* <FooterMenu/> */}
+       
     </>
-  )
-}
-export default Home
+  );
+};
+export default Home;
 
-
-
-{/*<Flex
+{
+  /*<Flex
     position="relative"
     flexDirection="column"
     alignItems="center"
@@ -174,10 +196,5 @@ export default Home
     >
 
     </Flex>
-</Flex>*/}
-
-
-
-
-
-
+</Flex>*/
+}
