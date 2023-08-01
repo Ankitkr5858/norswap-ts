@@ -6,6 +6,7 @@ import Image from 'next/image'
 import bunnyImage from '../../../../public/images/home/home-1.png'
 import CryptoConvertor from './CryptoConvertor'
 
+
 const Home1 = () => {
   const { t } = useTranslation()
   const { account } = useWeb3React()
@@ -27,7 +28,7 @@ const Home1 = () => {
           <Heading scale="xl" color="#ffffff" mb="40px">
             {t('NORDEK Swap synergizes with MSMEs')}
           </Heading>
-          <CryptoConvertor/>
+          <CryptoConvertor />
           <Text color="#ffffff" fontSize="18px" mb="24px">
             {t('The first Equity Crowdfunding platform built using NORDEK chain technology')}
           </Text>

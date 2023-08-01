@@ -3,7 +3,7 @@ import { PancakeTheme } from "@nswap/uikit";
 
 declare module "styled-components" {
   /* eslint-disable @typescript-eslint/no-empty-interface */
-  export interface DefaultTheme extends PancakeTheme {}
+  export interface DefaultTheme extends PancakeTheme { }
 }
 
 const GlobalStyle = createGlobalStyle`
@@ -51,7 +51,37 @@ padding: 4px 24px;
    color: #fff !important;
  }
  
- 
+
+ @media screen and (max-width: 425px){
+  .hZBHoY {
+      margin-top: 0px !important;
+  }
+  .ctDzMu{
+    font-size:20px;
+  }
+  .hXnmMB{
+    display: block;
+  }
+  .inputFieldWrapper #swap-currency-input, .inputFieldWrapper #swap-currency-output{
+    
+    width: 100%;
+    border-radius: 60px;
+  }  
+  .fgsQwt{
+    left:40%;
+  }
+
+  video.video-tag {
+    width: 100vw;
+    height: 120vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+ } 
 `;
 
 export default GlobalStyle;

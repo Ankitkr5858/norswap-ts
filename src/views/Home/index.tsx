@@ -45,7 +45,7 @@ const UserBannerWrapper = styled(Container)`
   ${({ theme }) => theme.mediaQueries.lg} {
     padding-left: 24px;
     padding-right: 24px;
-  }
+  }  
 `
 
 const CoVote = styled(Container)`
@@ -59,16 +59,14 @@ const CoVote = styled(Container)`
 const Home: React.FC = () => {
   const { theme } = useTheme()
   const { account } = useWeb3React()
-
   const HomeSectionContainerStyles = { margin: '0', width: '100%', maxWidth: '1200px' }
-
   const { t } = useTranslation()
 
   return (
     <>
       <PageMeta />
 
-      <video src="https://dotted-ranger-363617.web.app/videos/slider_for_nordek.mp4" width="100%" height="auto"
+      <video src="https://dotted-ranger-363617.web.app/videos/slider_for_nordek.mp4" className='video-tag' width="100%" height="auto"
         autoPlay={true} loop={true} style={{ position: "absolute" }}></video>
       {/* {account && (
           <UserBannerWrapper>
@@ -108,7 +106,7 @@ const Home: React.FC = () => {
       >
         <WinSection />
       </PageSection> */}
-       <PageSection
+      <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         backgroundColor="#000 !important"
         padding="5rem 0"
@@ -116,9 +114,9 @@ const Home: React.FC = () => {
         hasCurvedDivider={false}
       >
         <Home5 />
-      
+
       </PageSection>
-     
+
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background="url(https://dotted-ranger-363617.web.app/assets/bg-img-2242f147.png);"
