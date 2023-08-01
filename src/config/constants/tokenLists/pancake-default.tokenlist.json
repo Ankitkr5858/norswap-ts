@@ -1,0 +1,54 @@
+{
+  "name": "NSWAP Default List",
+  "timestamp": "2022-01-26T11:45:09Z",
+  "version": {
+    "major": 4,
+    "minor": 0,
+    "patch": 0
+  },
+  "tags": {},
+  "logoURI": "http://norswap.io/logo.png",
+  "keywords": ["nswap", "default"],
+  "tokens": [
+    {
+      "name": "Wrap NRK",
+      "symbol": "WNRK",
+      "address": "0x9c294d255fBBf8E7bBb510D7E29e99c22D5962a8",
+      "chainId": 81041,
+      "decimals": 18,
+      "logoURI": "http://norswap.io/images/tokens/0x9c294d255fBBf8E7bBb510D7E29e99c22D5962a8.png"
+    },
+    {
+      "name": "NUSD Token",
+      "symbol": "NUSD",
+      "address": "0xE6CC1ede4E42b5d7b49B403D9056C9D444848836",
+      "chainId": 81041,
+      "decimals": 18,
+      "logoURI": "http://norswap.io/images/tokens/0xE6CC1ede4E42b5d7b49B403D9056C9D444848836.png"
+    },
+    {
+      "name": "Tether USD",
+      "symbol": "NUSDT",
+      "address": "0x588119D82871d7EC88C1070A2c066A2be2dF36e1",
+      "chainId": 81041,
+      "decimals": 18,
+      "logoURI": "http://norswap.io/images/tokens/0x588119D82871d7EC88C1070A2c066A2be2dF36e1.png"
+    },
+    {
+      "name": "NSWAP",
+      "symbol": "NSWAP",
+      "address": "0xb2056F916E2485bE08e25246974a1c88d8F57F9E",
+      "chainId": 81041,
+      "decimals": 18,
+      "logoURI": "http://norswap.io/images/tokens/0xb2056F916E2485bE08e25246974a1c88d8F57F9E.png"
+    },
+    {
+      "name": "DICEX",
+      "symbol": "DICEX",
+      "address": "0x5e3FAbb10368997D1e26883FaF9aFC1687d7Ea7A",
+      "chainId": 81041,
+      "decimals": 18,
+      "logoURI": "http://norswap.io/images/tokens/0x5e3FAbb10368997D1e26883FaF9aFC1687d7Ea7A.png"
+    }
+  ]
+}
