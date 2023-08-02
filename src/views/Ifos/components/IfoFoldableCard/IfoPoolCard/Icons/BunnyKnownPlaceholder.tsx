@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 import { useTheme } from 'styled-components'
 

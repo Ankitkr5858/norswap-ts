@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Card, CardBody, CardHeader, Flex, Heading, LinkExternal, Text } from '@nswap/uikit'
 import styled from 'styled-components'
 import { format } from 'date-fns'

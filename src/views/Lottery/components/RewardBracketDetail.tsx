@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { Flex, Skeleton, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

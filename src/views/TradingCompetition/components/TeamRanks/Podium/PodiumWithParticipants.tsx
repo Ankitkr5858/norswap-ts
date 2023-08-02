@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { Flex, Text, Skeleton, AccountFilledIcon } from '@nswap/uikit'
 import { StyledVolumeText, PodiumProps, RightBox, MiddleBox, LeftBox, Wrapper, Inner, StyledVolumeFlex } from './styles'

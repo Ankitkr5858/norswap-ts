@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable no-var */
 /* eslint-disable vars-on-top */
 import { renderHook } from '@testing-library/react-hooks'

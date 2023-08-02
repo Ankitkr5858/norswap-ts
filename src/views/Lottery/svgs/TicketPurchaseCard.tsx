@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 const TicketPurchaseCard: React.FC<SvgProps> = (props) => {

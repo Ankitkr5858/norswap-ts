@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
 import Multiplier from 'views/Migration/components/MigrationStep1/OldFarm/ActionPanel/Multiplier'

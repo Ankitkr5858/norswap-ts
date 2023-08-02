@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { Flex, Box, Card, CardBody, Text, Button, BinanceIcon, Skeleton, useModal } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

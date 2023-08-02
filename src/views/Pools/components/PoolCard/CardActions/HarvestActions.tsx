@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, Button, Heading, useModal, Skeleton } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import { Token } from '@danielvindax/norswap-sdk'

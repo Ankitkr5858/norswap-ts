@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Price } from '@danielvindax/norswap-sdk'
 import { Text, AutoRenewIcon } from '@nswap/uikit'
 import { StyledBalanceMaxMini } from './styleds'

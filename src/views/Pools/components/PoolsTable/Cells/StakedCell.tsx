@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Flex, Skeleton, Text, useMatchBreakpointsContext } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import Balance from 'components/Balance'

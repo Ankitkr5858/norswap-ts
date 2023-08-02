@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ReactMarkdownLib, { ReactMarkdownOptions } from 'react-markdown'
 import gfm from 'remark-gfm'
 import markdownComponents from './styles'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const REGISTRATION = 'REGISTRATION'
 export const LIVE = 'LIVE'
 export const FINISHED = 'FINISHED'

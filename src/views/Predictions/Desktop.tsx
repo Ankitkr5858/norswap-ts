@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo, useEffect, useRef } from 'react'
 import styled from 'styled-components'
 import Split, { SplitInstance } from 'split-grid'

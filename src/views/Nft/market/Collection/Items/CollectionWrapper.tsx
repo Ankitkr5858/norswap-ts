@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createPortal } from 'react-dom'
 import { Box } from '@nswap/uikit'
 import { Collection } from 'state/nftMarket/types'

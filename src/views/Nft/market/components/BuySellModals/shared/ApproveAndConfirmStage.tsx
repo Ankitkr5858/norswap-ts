@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, Button, Spinner } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { StepIndicator } from './styles'

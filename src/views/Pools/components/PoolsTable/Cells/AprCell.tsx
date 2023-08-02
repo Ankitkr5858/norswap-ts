@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BIG_ZERO } from 'utils/bigNumber'
 import { Text, useMatchBreakpointsContext } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'

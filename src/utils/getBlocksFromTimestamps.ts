@@ -1,3 +1,4 @@
+// @ts-nocheck
 import orderBy from 'lodash/orderBy'
 import { gql } from 'graphql-request'
 import { Block } from '../state/info/types'

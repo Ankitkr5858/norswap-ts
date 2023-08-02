@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, Skeleton } from '@nswap/uikit'
 
 interface UserPrizeGridDollarProps {

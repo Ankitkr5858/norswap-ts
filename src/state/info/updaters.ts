@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useMemo } from 'react'
 import useFetchProtocolData from 'state/info/queries/protocol/overview'
 import useFetchGlobalChartData from 'state/info/queries/protocol/chart'

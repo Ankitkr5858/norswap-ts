@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CardHeader, Flex, Heading, Text } from '@nswap/uikit'
 import { ReactNode } from 'react'
 import styled from 'styled-components'

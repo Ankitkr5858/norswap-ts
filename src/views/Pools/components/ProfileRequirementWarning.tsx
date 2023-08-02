@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Message, MessageText } from '@nswap/uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { useTranslation } from 'contexts/Localization'

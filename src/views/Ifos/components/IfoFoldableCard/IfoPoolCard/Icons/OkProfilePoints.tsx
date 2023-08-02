@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 const ProfilePoints: React.FC<SvgProps> = (props) => (

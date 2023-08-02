@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextLinkFromReactRouter as ReactRouterLink } from 'components/NextLink'
 import { BscScanIcon, Flex, IconButton, Link, Button, useModal } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

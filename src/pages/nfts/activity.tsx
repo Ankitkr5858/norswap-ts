@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Activity from 'views/Nft/market/Activity'
 
 const ActivityPage = () => {

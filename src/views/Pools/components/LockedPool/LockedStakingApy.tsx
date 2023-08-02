@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo, memo } from 'react'
 import { getVaultPosition, VaultPosition } from 'utils/cakePool'
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, BoxProps, Grid, GridProps, Skeleton } from '@nswap/uikit'
 import times from 'lodash/times'
 

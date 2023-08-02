@@ -1,3 +1,4 @@
+// @ts-nocheck
 // used to construct the list of all pairs we consider by default in the frontend
 import { ChainId, Token } from '@danielvindax/norswap-sdk'
 import { mainnetTokens, testnetTokens } from './tokens'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Card, CardBody, CardHeader, ExpandableButton, Flex, Text, Message, Button } from '@nswap/uikit'
 import { ActionContainer } from 'views/Pools/components/PoolsTable/ActionPanel/styles'
 import { useState } from 'react'

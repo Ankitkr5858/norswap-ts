@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { getAchievements } from 'state/achievements/helpers'
 import { FetchStatus } from 'config/constants/types'

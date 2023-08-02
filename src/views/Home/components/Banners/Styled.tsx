@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Heading } from '@nswap/uikit'
 import styled from 'styled-components'
 

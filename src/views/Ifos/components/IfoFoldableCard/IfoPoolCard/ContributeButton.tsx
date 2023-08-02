@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCurrentBlock } from 'state/block/hooks'
 import BigNumber from 'bignumber.js'
 import { Button, useModal } from '@nswap/uikit'

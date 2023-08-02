@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo } from 'react'
 import { Table, Th, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

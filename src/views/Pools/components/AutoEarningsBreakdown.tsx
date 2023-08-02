@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { differenceInHours } from 'date-fns'

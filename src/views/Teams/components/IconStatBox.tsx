@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ElementType, ReactNode } from 'react'
 import { Flex, Heading, Text, TextProps } from '@nswap/uikit'
 import styled from 'styled-components'

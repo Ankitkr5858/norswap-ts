@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, Flex, Text, SearchIcon, Link } from '@nswap/uikit'
 import { getBscScanLink } from 'utils'

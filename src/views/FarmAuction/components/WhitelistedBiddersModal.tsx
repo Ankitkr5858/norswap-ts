@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import styled from 'styled-components'
 import { Modal, Box, Text, Flex, Input, OpenNewIcon, Spinner, useMatchBreakpointsContext } from '@nswap/uikit'

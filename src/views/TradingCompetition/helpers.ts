@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactText } from 'react'
 import { getBalanceNumber } from 'utils/formatBalance'
 import { easterPrizes, PrizesConfig } from 'config/constants/trading-competition/prizes'

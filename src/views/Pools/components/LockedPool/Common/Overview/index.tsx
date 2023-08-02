@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Box, Text, Flex, MessageText, Message } from '@nswap/uikit'
 

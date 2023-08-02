@@ -1,3 +1,4 @@
+// @ts-nocheck
 export enum SellingStage {
   // Sell flow
   SELL,

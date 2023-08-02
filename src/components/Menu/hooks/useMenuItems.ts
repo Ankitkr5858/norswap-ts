@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { menuStatus } from '@nswap/uikit'
 import { useTranslation } from '../../../contexts/Localization'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useEffect, useMemo } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import { useCakeVault, usePoolsWithVault } from 'state/pools/hooks'

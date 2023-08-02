@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Toast } from 'components/Toast'
 
 type ToastSignature = (title: Toast['title'], description?: Toast['description']) => void

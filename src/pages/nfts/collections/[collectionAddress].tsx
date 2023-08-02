@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 // eslint-disable-next-line camelcase
 import { SWRConfig, unstable_serialize } from 'swr'

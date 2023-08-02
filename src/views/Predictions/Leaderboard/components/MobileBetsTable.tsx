@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import { Token } from '@danielvindax/norswap-sdk'
 import { Flex, Text, ChevronUpIcon, ChevronDownIcon } from '@nswap/uikit'

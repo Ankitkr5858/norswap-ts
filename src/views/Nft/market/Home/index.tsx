@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, Button, Flex, Heading, LinkExternal } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'

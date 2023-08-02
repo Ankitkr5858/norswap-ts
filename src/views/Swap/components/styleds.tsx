@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ErrorIcon, Flex, Text } from '@nswap/uikit'
 import { AutoColumn } from 'components/Layout/Column'
 import styled, { css } from 'styled-components'

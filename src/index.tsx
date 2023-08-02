@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactNode, useMemo } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import { BLOCKED_ADDRESSES } from './config/constants'

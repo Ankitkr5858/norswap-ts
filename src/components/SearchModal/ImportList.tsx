@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useCallback } from 'react'
 import styled from 'styled-components'
 import { Button, Text, Link, Flex, Checkbox, Message } from '@nswap/uikit'

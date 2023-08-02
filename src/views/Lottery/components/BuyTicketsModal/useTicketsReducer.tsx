@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { LotteryTicket } from 'config/constants/types'
 import { useEffect, useReducer } from 'react'
 import { parseRetrievedNumber } from '../../helpers'

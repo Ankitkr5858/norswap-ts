@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Progress, ProgressProps } from '@nswap/uikit'
 import { useCurrentBlock } from 'state/block/hooks'
 

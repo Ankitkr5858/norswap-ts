@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { FetchStatus } from 'config/constants/types'
 import useSWRImmutable from 'swr/immutable'

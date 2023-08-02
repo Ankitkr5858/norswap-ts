@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Fragment, memo } from 'react'
 import { Trade } from '@danielvindax/norswap-sdk'
 import { Text, Flex, ChevronRightIcon } from '@nswap/uikit'

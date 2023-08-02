@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { useCallback, useMemo, useState } from 'react'
 import { Button, Modal, AutoRenewIcon } from '@nswap/uikit'

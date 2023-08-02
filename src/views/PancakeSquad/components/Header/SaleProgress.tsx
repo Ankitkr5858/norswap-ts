@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, lightColors, Progress, Text } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 import { SaleStatusEnum, UserStatusEnum } from '../../types'

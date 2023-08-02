@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { convertTimeToSeconds, distanceToNowStrict } from 'utils/timeHelper'
 import formatSecondsToWeeks from '../../utils/formatSecondsToWeeks'

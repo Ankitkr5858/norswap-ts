@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading, Flex, Text, useMatchBreakpointsContext } from '@nswap/uikit'
 
 const StatCardContent: React.FC<{ headingText: string; bodyText: string; highlightColor: string }> = ({

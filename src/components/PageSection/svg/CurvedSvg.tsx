@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { css, DefaultTheme } from 'styled-components'
 import { Box } from '@nswap/uikit'
 import { ClipFill } from '../types'

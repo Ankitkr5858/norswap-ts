@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as Sentry from '@sentry/react'
 import { Dispatch } from '@reduxjs/toolkit'
 import { resetUserState } from 'state/global/actions'

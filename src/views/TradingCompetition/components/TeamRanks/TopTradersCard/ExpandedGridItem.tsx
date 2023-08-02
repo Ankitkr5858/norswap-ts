@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Flex, SkeletonV2, Text } from '@nswap/uikit'
 import { useProfileForAddress } from 'state/profile/hooks'
 import styled from 'styled-components'

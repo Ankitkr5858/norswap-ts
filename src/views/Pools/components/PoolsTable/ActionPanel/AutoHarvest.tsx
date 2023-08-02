@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, Flex, Skeleton, Heading, Box, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { getCakeVaultEarnings } from 'views/Pools/helpers'

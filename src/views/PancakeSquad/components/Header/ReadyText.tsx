@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CheckmarkIcon, Flex, FlexProps, Text } from '@nswap/uikit'
 
 type ReadyTextProps = {

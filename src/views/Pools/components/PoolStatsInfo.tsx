@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Flex, Link, LinkExternal, MetamaskIcon, Skeleton, Text, TimerIcon } from '@nswap/uikit'
 import Balance from 'components/Balance'
 import { BASE_BSC_SCAN_URL } from 'config'

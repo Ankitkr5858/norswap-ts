@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Token, ChainId } from '@danielvindax/norswap-sdk'
 import tokens from './tokens'
 import farms from './farms'

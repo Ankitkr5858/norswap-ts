@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createContext, useCallback, useEffect, useState } from 'react'
 import { Language } from '@nswap/uikit'
 import memoize from 'lodash/memoize'

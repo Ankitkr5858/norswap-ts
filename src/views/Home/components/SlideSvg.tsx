@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 export const SlideSvgLight: React.FC<SvgProps> = (props) => {

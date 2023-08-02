@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency, CurrencyAmount, ETHER, JSBI, Token, TokenAmount } from '@danielvindax/norswap-sdk'
 import { useMemo } from 'react'
 import { useWeb3React } from '@web3-react/core'

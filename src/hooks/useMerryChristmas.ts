@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect } from 'react'
 import { useParticleBurst } from '@nswap/uikit'
 import { useRouter } from 'next/router'

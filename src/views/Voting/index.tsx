@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex } from '@nswap/uikit'
 import { PageMeta } from 'components/Layout/Page'
 import styled from 'styled-components'

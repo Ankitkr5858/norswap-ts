@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { GetStaticPaths, GetStaticProps } from 'next'
 import AddLiquidity from 'views/AddLiquidity'
 

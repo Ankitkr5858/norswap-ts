@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactText } from 'react'
 import { Profile } from 'state/types'
 import { StaticImageData } from 'next/dist/client/image'

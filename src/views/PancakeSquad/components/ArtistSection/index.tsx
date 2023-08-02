@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Button, Flex, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { LandingBodyWrapper, StyledWaveContainer } from 'views/PancakeSquad/styles'

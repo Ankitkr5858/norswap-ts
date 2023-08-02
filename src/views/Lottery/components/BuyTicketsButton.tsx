@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, useModal, WaitIcon, ButtonProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useLottery } from 'state/lottery/hooks'

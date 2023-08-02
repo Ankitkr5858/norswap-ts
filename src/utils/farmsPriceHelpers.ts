@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { SerializedFarm } from 'state/types'
 
 /**

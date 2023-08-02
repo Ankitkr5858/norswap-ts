@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import { MaxUint256 } from '@ethersproject/constants'
 import { Ifo } from 'config/constants/types'

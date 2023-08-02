@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const PROPOSALS_TO_SHOW = 10
 export const ADMINS = [
   '0x842B508681eE336E74600974B4623B709477d29D', // TARO

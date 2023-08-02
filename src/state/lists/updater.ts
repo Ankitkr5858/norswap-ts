@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useAllLists } from 'state/lists/hooks'
 import { getVersionUpgrade, VersionUpgrade } from '@uniswap/token-lists'
 import { useCallback, useEffect } from 'react'

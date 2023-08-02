@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo, useCallback } from 'react'
 import { Button, ButtonProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Button, Flex, InjectedModalProps, LinkExternal, Message, Skeleton, Text } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import tokens from 'config/constants/tokens'

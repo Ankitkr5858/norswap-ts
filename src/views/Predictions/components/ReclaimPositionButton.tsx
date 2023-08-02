@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactNode } from 'react'
 import { AutoRenewIcon, Button, ButtonProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

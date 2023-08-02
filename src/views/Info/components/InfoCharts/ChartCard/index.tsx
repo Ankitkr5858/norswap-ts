@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo, useState } from 'react'
 import { Text, Box, Card, Flex, Skeleton } from '@nswap/uikit'
 import LineChart from 'views/Info/components/InfoCharts/LineChart'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { Card, CardBody, Flex, PlayCircleOutlineIcon, Text, useTooltip } from '@nswap/uikit'
 import { getNow } from 'utils/getNow'

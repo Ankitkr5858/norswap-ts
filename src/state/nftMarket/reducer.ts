@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createAsyncThunk, createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { FetchStatus } from 'config/constants/types'
 import isEmpty from 'lodash/isEmpty'

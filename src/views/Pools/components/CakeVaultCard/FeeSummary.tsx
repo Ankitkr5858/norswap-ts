@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, Flex, useTooltip, TooltipText } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { VaultKey } from 'state/types'

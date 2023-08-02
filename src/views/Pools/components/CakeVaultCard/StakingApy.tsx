@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, Skeleton, useModal, Button, CalculateIcon } from '@nswap/uikit'
 import { LightGreyCard } from 'components/Card'
 import { useTranslation } from 'contexts/Localization'

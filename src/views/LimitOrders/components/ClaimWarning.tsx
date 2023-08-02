@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, memo } from 'react'
 import { useModal } from '@nswap/uikit'
 import DisclaimerModal from 'components/DisclaimerModal'

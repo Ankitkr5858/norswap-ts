@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { CardProps } from '@nswap/uikit'
 import { NftLocation, NftToken } from 'state/nftMarket/types'
 

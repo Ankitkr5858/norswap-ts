@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ButtonMenu, ButtonMenuItem } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 

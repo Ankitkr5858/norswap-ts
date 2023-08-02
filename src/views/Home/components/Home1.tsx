@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Heading, Text } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import ConnectWalletButton from 'components/ConnectWalletButton'

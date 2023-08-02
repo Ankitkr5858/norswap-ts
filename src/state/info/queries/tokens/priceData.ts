@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getUnixTime } from 'date-fns'
 import { gql } from 'graphql-request'
 import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'

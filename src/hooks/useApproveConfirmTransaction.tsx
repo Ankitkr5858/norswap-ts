@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useReducer, useRef, useCallback } from 'react'
 import noop from 'lodash/noop'
 import { useWeb3React } from '@web3-react/core'

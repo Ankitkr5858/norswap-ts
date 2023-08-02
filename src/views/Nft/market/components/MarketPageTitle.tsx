@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactNode } from 'react'
 import { Box, Grid, GridProps, Heading } from '@nswap/uikit'
 

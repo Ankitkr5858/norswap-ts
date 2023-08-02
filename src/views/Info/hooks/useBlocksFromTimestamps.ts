@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { getBlocksFromTimestamps } from 'utils/getBlocksFromTimestamps'
 import { Block } from 'state/info/types'

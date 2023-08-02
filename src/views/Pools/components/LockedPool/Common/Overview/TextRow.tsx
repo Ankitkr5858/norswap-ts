@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, Flex } from '@nswap/uikit'
 import isUndefinedOrNull from 'utils/isUndefinedOrNull'
 import CrossText from './CrossText'

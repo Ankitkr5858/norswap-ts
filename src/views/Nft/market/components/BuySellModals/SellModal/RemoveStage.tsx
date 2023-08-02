@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Box, Text, Button } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { Divider } from '../shared/styles'

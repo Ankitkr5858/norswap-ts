@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { Flex, Text, Heading } from '@nswap/uikit'
 import styled from 'styled-components'

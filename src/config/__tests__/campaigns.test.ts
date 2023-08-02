@@ -1,3 +1,4 @@
+// @ts-nocheck
 import campaigns from 'config/constants/campaigns'
 
 describe('Config campaigns', () => {

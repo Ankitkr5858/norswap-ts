@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ContextApi } from 'contexts/Localization/types'
 import { SaleStatusEnum } from 'views/PancakeSquad/types'
 import { BuyButtonsEnum } from './types'

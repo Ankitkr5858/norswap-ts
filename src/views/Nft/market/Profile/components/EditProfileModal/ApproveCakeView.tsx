@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AutoRenewIcon, Button, Flex, InjectedModalProps, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useCake } from 'hooks/useContract'

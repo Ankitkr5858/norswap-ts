@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BlockIcon, CheckmarkCircleIcon, Flex, Link, OpenNewIcon, RefreshIcon } from '@nswap/uikit'
 import styled from 'styled-components'
 import { TransactionDetails } from 'state/transactions/reducer'

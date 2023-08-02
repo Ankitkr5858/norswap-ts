@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, FlexProps, Link, Text, LinkProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { useGetBetByEpoch, useGetCurrentEpoch } from 'state/predictions/hooks'
 import { BetPosition, NodeRound } from 'state/types'

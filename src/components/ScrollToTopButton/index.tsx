@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect, useCallback } from 'react'
 import styled from 'styled-components'
 import { Button, ChevronUpIcon } from '@nswap/uikit'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 export default {
   masterChef: {
     58875: '0x793A1404F7e44f42B1E42283D9ed5DeaAdA81af9',

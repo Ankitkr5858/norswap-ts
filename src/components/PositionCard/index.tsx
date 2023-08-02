@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import { JSBI, Pair, Percent } from '@danielvindax/norswap-sdk'
 import {

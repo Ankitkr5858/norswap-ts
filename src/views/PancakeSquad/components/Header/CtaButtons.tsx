@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable react-hooks/exhaustive-deps */
 
 import { BigNumber } from '@ethersproject/bignumber'

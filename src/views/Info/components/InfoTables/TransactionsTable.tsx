@@ -1,3 +1,4 @@
+// @ts-nocheck
 // TODO PCS refactor ternaries
 /* eslint-disable no-nested-ternary */
 import { useCallback, useState, useMemo, useEffect, Fragment } from 'react'

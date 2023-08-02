@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { AutoRenewIcon, HistoryIcon, IconButton } from '@nswap/uikit'
 import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'

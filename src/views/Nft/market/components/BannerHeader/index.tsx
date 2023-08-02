@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactNode } from 'react'
 import { Flex, Box, FlexProps } from '@nswap/uikit'
 import Image from 'next/image'

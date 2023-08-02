@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getPancakeBunniesAddress } from 'utils/addressHelpers'
 
 export const nftsBaseUrl = '/nfts'

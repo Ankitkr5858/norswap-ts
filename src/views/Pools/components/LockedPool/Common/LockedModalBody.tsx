@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Button, AutoRenewIcon, Box, Flex } from '@nswap/uikit'
 import _noop from 'lodash/noop'

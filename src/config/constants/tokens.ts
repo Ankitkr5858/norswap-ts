@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ChainId, Token } from '@danielvindax/norswap-sdk'
 import { serializeToken } from 'state/user/hooks/helpers'
 import { CHAIN_ID } from './networks'

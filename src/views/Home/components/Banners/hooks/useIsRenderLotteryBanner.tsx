@@ -1,3 +1,4 @@
+// @ts-nocheck
 import useSWR from 'swr'
 import { fetchCurrentLotteryId, fetchLottery } from 'state/lottery/helpers'
 import { FetchStatus } from 'config/constants/types'

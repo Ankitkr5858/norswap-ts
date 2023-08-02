@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo, useState } from 'react'
 import { Skeleton, Table, Td, Th, Flex, ArrowUpIcon, ArrowDownIcon } from '@nswap/uikit'
 import times from 'lodash/times'

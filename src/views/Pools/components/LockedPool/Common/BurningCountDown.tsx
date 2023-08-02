@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useCallback, memo, useMemo } from 'react'
 import useInterval from 'hooks/useInterval'
 

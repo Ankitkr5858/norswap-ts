@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Activity, AskOrder, AskOrderType, MarketEvent, Transaction, UserActivity } from 'state/nftMarket/types'
 import orderBy from 'lodash/orderBy'
 

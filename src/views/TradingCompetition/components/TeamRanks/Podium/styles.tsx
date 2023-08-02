@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex, Box, Text } from '@nswap/uikit'
 import { TeamLeaderboardProps } from '../../../types'

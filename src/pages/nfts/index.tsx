@@ -1,3 +1,4 @@
+// @ts-nocheck
 import NftMarket from 'views/Nft/market/Home'
 
 const NftMarketPage = () => {

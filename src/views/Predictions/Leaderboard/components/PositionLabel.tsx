@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { ArrowDownIcon, ArrowUpIcon } from '@nswap/uikit'
 import { BetPosition } from 'state/types'

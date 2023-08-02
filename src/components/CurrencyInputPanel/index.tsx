@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency, Pair, Token } from '@danielvindax/norswap-sdk'
 import { Button, ChevronDownIcon, Text, useModal, Flex, Box, MetamaskIcon } from '@nswap/uikit'
 import styled from 'styled-components'

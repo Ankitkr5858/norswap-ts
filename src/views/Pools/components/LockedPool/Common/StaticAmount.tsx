@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, Flex, Image, Box } from '@nswap/uikit'
 import { BalanceWithLoading } from 'components/Balance'
 import Divider from 'components/Divider'

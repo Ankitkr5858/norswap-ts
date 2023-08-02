@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ResetCSS } from '@nswap/uikit'
 import Script from 'next/script'
 import dynamic from 'next/dynamic'

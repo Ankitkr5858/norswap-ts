@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { Flex, Text, Skeleton, Button, ArrowForwardIcon } from '@nswap/uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'

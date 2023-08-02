@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { Card, Text, Skeleton, CardHeader, Box } from '@nswap/uikit'

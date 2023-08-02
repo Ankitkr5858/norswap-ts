@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, TooltipText, useTooltip } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'

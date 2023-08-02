@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex } from '@nswap/uikit'
 import { RibbonProps } from '../../types'

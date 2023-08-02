@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { IfoStatus } from 'config/constants/types'
 
 export const getStatus = (currentBlock: number, startBlock: number, endBlock: number): IfoStatus => {

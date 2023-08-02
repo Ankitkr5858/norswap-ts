@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex, Link, Skeleton, Text, TimerIcon } from '@nswap/uikit'
 import { getBscScanLink } from 'utils'

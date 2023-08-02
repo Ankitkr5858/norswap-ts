@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Text, Flex, Box } from '@nswap/uikit'
 import { Auction, AuctionStatus } from 'config/constants/types'

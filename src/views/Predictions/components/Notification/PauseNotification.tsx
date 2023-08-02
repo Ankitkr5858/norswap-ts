@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Button, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'

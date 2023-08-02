@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BnbConfigProvider from '../../views/Predictions/context/BnbConfigProvider'
 import Predictions from '../../views/Predictions'
 

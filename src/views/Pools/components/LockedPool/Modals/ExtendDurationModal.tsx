@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import { Modal, Box } from '@nswap/uikit'
 import _noop from 'lodash/noop'

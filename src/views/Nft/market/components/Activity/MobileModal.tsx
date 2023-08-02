@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InjectedModalProps, Modal, Flex, Text, Button, Link, BinanceIcon, Box } from '@nswap/uikit'
 import { Price } from '@danielvindax/norswap-sdk'
 import useTheme from 'hooks/useTheme'

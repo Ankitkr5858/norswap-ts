@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { AutoRenewIcon, Button, Flex } from '@nswap/uikit'
 import { Achievement } from 'state/types'

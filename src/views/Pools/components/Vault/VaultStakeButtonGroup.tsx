@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Button, TooltipText, useTooltip } from '@nswap/uikit'
 import { FlexGap } from 'components/Layout/Flex'
 import { useTranslation } from 'contexts/Localization'

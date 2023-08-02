@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Text } from '@nswap/uikit'
 import { PredictionUser } from 'state/types'
 import styled from 'styled-components'

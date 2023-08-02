@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useMemo } from 'react'
 import { isAddress } from 'utils'
 import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'

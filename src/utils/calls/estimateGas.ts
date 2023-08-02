@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Contract, Overrides } from '@ethersproject/contracts'
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'

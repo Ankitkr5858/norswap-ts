@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import PageHeader from 'components/PageHeader'

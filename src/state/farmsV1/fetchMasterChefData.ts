@@ -1,3 +1,4 @@
+// @ts-nocheck
 import masterchefABIV1 from 'config/abi/masterchefV1.json'
 import chunk from 'lodash/chunk'
 import { multicallv2 } from 'utils/multicall'

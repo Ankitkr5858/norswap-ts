@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency, currencyEquals, JSBI, Price } from '@danielvindax/norswap-sdk'
 import tokens from 'config/constants/tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'

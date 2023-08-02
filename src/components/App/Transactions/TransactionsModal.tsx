@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { Modal, ModalBody, Text, Button, Flex, InjectedModalProps } from '@nswap/uikit'

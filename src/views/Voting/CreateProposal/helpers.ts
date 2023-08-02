@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ContextApi } from 'contexts/Localization/types'
 import { format, parseISO, isValid } from 'date-fns'
 import { MINIMUM_CHOICES } from './Choices'

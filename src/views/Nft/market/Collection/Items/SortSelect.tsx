@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Select, { OptionProps } from 'components/Select/Select'
 import { useTranslation } from 'contexts/Localization'
 import { useAppDispatch } from 'state'

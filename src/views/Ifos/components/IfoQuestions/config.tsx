@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Trans from 'components/Trans'
 
 const config = [

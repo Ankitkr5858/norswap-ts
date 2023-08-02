@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Token } from '@danielvindax/norswap-sdk'
 import { Box, Card, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

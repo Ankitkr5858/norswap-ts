@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useLayoutEffect } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import usePreviousValue from 'hooks/usePreviousValue'

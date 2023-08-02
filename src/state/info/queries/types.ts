@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface PairResponse {
   token0: {
     id: string

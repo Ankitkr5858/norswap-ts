@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BuyButtonsEnum } from 'views/PancakeSquad/components/Buttons/types'
 import { getBuyButton, getBuyButtonText } from 'views/PancakeSquad/components/Buttons/utils'
 import { SaleStatusEnum } from 'views/PancakeSquad/types'

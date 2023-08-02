@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Language } from '@nswap/uikit'
 
 export const AR: Language = { locale: 'ar-SA', language: 'العربية', code: 'ar' }

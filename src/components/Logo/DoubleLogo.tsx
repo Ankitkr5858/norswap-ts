@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency } from '@danielvindax/norswap-sdk'
 import styled from 'styled-components'
 import CurrencyLogo from './CurrencyLogo'

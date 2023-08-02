@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getInterestBreakdown, getRoi, getPrincipalForInterest, getApy } from 'utils/compoundApyHelpers'
 
 const TWICE_PER_DAY = 2

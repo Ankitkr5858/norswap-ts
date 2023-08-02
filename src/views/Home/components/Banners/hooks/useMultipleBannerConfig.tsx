@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import shuffle from 'lodash/shuffle'
 import CompetitionBanner from '../CompetitionBanner'

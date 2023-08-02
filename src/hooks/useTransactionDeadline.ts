@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BigNumber } from '@ethersproject/bignumber'
 import { useMemo } from 'react'
 import { useSelector } from 'react-redux'

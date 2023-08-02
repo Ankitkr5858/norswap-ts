@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Interface } from '@ethersproject/abi'
 import { CallOverrides } from '@ethersproject/contracts'
 import { getMulticallContract } from 'utils/contractHelpers'

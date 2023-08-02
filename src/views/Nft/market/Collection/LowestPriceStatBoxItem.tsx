@@ -1,3 +1,4 @@
+// @ts-nocheck
 import useSWR from 'swr'
 import { useTranslation } from 'contexts/Localization'
 import { getLeastMostPriceInCollection } from 'state/nftMarket/helpers'

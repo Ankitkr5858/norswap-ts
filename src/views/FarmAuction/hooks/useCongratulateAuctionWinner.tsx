@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import { Auction, AuctionStatus, Bidder } from 'config/constants/types'

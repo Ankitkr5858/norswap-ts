@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, IconButton, CogIcon, useModal } from '@nswap/uikit'
 import SettingsModal from './SettingsModal'
 

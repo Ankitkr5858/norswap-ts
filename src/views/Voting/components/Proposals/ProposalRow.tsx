@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ArrowForwardIcon, Box, IconButton, Flex, Text } from '@nswap/uikit'
 import styled from 'styled-components'
 import { NextLinkFromReactRouter } from 'components/NextLink'

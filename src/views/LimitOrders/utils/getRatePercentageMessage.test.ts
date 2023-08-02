@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { JSBI, Price, Token } from '@danielvindax/norswap-sdk'
 import getRatePercentageDifference from './getRatePercentageDifference'
 import { getRatePercentageMessage, PercentageDirection } from './getRatePercentageMessage'

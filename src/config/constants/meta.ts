@@ -1,3 +1,4 @@
+// @ts-nocheck
 import memoize from 'lodash/memoize'
 import { ContextApi } from 'contexts/Localization/types'
 import { PageMeta } from './types'

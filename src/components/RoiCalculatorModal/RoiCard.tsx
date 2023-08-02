@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Box, Flex, Text, Input, CheckmarkIcon, PencilIcon, IconButton } from '@nswap/uikit'

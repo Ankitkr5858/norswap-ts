@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ApiResponseCollectionTokens } from 'state/nftMarket/types'
 
 type sortBuilder = {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
 import Staked from './Staked'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Skeleton, Text, Flex, Box, useModal, useMatchBreakpointsContext } from '@nswap/uikit'
 import { DeserializedPool } from 'state/types'

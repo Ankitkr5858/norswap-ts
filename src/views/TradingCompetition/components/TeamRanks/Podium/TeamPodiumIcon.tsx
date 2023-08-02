@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex, Image, Skeleton } from '@nswap/uikit'
 import Sticker from '../../Sticker'

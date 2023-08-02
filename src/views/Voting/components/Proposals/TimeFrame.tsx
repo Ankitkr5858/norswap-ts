@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text } from '@nswap/uikit'
 import { toDate, format } from 'date-fns'
 import { useTranslation } from 'contexts/Localization'

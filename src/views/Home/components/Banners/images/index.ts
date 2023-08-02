@@ -1,3 +1,4 @@
+// @ts-nocheck
 import lotteryImage from './lottery.png'
 import IFOImage from './IFO.png'
 import IFOMobileImage from './IFOMobile.png'

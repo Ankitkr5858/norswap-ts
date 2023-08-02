@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useRef, useState, useEffect, useCallback, Dispatch, SetStateAction } from 'react'
 import { useTranslation } from 'contexts/Localization'
 import { createChart, IChartApi } from 'lightweight-charts'

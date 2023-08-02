@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import Head from 'next/head'

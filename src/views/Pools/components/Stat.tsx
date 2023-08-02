@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Token } from '@danielvindax/norswap-sdk'
 import Balance from 'components/Balance'
 import { Flex, Skeleton, Text, TooltipText, useTooltip } from '@nswap/uikit'

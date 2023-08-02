@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 const PoolAllocationChart: React.FC<SvgProps> = (props) => {

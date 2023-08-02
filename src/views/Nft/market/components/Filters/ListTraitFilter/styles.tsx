@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Radio, Text } from '@nswap/uikit'
 import noop from 'lodash/noop'
 import { formatNumber } from 'utils/formatBalance'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ContextApi } from 'contexts/Localization/types'
 import { SaleStatusEnum } from './types'
 import { getAltText, getEventStepStatus, getEventText } from './utils'

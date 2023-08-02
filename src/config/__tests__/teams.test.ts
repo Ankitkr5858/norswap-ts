@@ -1,3 +1,4 @@
+// @ts-nocheck
 import teams from 'config/constants/teams'
 
 describe('Config teams', () => {

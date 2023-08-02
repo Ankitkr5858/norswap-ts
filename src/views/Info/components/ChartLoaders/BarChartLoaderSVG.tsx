@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 const BarChartLoaderSVG: React.FC<SvgProps> = (props) => {

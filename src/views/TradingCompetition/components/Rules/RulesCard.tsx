@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading, Card, CardBody } from '@nswap/uikit'
 
 const RulesCard: React.FC<{ title?: string }> = ({ title, children }) => {

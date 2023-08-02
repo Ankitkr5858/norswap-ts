@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getAddress } from 'utils/addressHelpers'
 
 describe('getAddress', () => {

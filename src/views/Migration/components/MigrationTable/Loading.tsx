@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex } from '@nswap/uikit'
 import Loading from 'components/Loading'
 

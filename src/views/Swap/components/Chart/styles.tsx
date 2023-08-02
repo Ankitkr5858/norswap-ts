@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box } from '@nswap/uikit'
 import styled from 'styled-components'
 

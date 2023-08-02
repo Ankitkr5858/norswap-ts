@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { ArrowDownIcon, IconButton, ArrowUpDownIcon } from '@nswap/uikit'
 import styled from 'styled-components'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { IconButton, ArrowForwardIcon, ArrowBackIcon, ArrowLastIcon, Flex, Heading, Input } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

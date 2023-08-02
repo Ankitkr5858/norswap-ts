@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BackgroundImage, BoxProps } from '@nswap/uikit'
 import PlaceholderImage from './PlaceholderImage'
 

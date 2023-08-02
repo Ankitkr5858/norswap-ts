@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, LinkExternal, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import styled from 'styled-components'

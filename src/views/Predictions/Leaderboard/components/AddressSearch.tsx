@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import { useModal } from '@nswap/uikit'
 import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'

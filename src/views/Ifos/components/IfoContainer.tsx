@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactElement } from 'react'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

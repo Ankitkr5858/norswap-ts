@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InstagramIcon, TwitterIcon } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 

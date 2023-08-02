@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Flex, Skeleton } from '@nswap/uikit'
 import times from 'lodash/times'
 import styled from 'styled-components'

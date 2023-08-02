@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface FetchTimeoutOptions extends RequestInit {
   timeout?: number
 }

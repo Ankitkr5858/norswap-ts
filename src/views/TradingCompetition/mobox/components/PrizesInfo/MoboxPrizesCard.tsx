@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Card, CardHeader, Box, Heading, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

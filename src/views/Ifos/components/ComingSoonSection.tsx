@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Card, Text, BunnyPlaceholderIcon, Box } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

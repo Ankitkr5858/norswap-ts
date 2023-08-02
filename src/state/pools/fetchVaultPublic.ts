@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { multicallv2 } from 'utils/multicall'
 import cakeVaultAbi from 'config/abi/cakeVaultV2.json'

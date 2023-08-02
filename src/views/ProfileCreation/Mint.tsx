@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { formatUnits } from '@ethersproject/units'
 import { Card, CardBody, Heading, Text } from '@nswap/uikit'

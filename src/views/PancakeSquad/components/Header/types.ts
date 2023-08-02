@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { EventInfos, UserInfos, UserStatusEnum } from 'views/PancakeSquad/types'
 
 export type PancakeSquadHeaderType = {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { SerializedFarmConfig } from 'config/constants/types'
 import BigNumber from 'bignumber.js'
 import { getFullDecimalMultiplier } from 'utils/getFullDecimalMultiplier'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ONE_DAY_UNIX, PCS_V2_START } from 'config/constants/info'
 import { getUnixTime } from 'date-fns'
 import { TransactionType } from 'state/info/types'

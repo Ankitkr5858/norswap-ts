@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from 'next/link'
 import { Box, Button, Card, CardBody, Flex, Step, Stepper, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

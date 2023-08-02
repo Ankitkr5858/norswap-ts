@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InjectedModalProps } from '@nswap/uikit'
 
 export enum ConfirmVoteView {

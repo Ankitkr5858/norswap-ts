@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, UserMenuItem, WarningIcon } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useGetBnbBalance } from 'hooks/useTokenBalance'

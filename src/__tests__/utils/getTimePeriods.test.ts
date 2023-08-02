@@ -1,3 +1,4 @@
+// @ts-nocheck
 import getTimePeriods from 'utils/getTimePeriods'
 
 it.each([

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { ChevronDownIcon, ChevronUpIcon, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

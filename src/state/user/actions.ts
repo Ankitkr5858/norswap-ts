@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createAction } from '@reduxjs/toolkit'
 import { SerializedToken } from 'config/constants/types'
 

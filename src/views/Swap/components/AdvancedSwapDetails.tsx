@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Trade, TradeType } from '@danielvindax/norswap-sdk'
 import { Text } from '@nswap/uikit'
 import { Field } from 'state/swap/actions'

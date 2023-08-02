@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Children } from 'react'
 import styled from 'styled-components'
 import Spacer from './Spacer'

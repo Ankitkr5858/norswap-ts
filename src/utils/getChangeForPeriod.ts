@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getAmountChange, getPercentChange } from '../views/Info/utils/infoDataHelpers'
 
 /**

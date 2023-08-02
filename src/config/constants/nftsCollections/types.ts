@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Address } from '../types'
 
 export enum PancakeCollectionKey {

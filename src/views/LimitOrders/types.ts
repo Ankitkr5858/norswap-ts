@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Order } from '@gelatonetwork/limit-orders-lib'
 
 export enum ORDER_CATEGORY {

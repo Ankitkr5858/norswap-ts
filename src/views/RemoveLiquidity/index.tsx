@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
 import { splitSignature } from '@ethersproject/bytes'

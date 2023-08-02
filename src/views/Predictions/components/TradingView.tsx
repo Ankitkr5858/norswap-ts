@@ -1,3 +1,4 @@
+// @ts-nocheck
 import TradingViewChart from 'components/TradingView'
 import { useConfig } from '../context/ConfigProvider'
 

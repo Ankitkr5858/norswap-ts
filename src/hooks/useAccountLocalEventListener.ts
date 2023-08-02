@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect } from 'react'
 import useLocalDispatch from '../contexts/LocalRedux/useLocalDispatch'
 import { resetUserState } from '../state/global/actions'

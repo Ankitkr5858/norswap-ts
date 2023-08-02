@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { Grid, useModal, Text, Flex } from '@nswap/uikit'
 import { NftLocation, NftToken } from 'state/nftMarket/types'

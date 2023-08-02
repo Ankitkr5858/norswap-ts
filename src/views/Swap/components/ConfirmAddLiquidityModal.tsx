@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useCallback } from 'react'
 import { Currency, CurrencyAmount, Fraction, Percent, Token, TokenAmount } from '@danielvindax/norswap-sdk'
 import { Flex, InjectedModalProps, Text } from '@nswap/uikit'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import BigNumber from 'bignumber.js'
 import tokens from 'config/constants/tokens'

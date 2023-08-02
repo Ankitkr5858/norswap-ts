@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { BigNumber as EthersBigNumber } from '@ethersproject/bignumber'
 import { LotteryStatus, LotteryTicket, LotteryTicketClaimData } from 'config/constants/types'

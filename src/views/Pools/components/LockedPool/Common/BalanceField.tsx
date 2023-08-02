@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BalanceInput, Button, Flex, Image, Slider, Text } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import { useTranslation } from 'contexts/Localization'

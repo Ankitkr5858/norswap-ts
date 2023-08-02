@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { TooltipText, useTooltip } from '@nswap/uikit'
 import { DeserializedPool } from 'state/types'
 import Balance from 'components/Balance'

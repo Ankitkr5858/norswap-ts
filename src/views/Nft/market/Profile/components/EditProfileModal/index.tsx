@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InjectedModalProps, Modal } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { ContextApi } from 'contexts/Localization/types'

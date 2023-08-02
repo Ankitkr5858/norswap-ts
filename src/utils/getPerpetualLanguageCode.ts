@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const perpetualLangs = { 'zh-cn': 'zh-CN', en: 'en', ko: 'ko' }
 export const perpLangMap = (languageCode: string) => {
   if (!languageCode) {

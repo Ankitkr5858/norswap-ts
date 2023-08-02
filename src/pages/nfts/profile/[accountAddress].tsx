@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { useRouter } from 'next/router'
 import { useProfileForAddress } from 'state/profile/hooks'

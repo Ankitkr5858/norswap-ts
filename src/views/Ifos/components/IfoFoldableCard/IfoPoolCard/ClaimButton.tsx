@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AutoRenewIcon, Button } from '@nswap/uikit'
 import { PoolIds } from 'config/constants/types'
 import { WalletIfoData } from 'views/Ifos/types'

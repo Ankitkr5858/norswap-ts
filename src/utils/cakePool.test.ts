@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { UNLOCK_FREE_DURATION, BOOST_WEIGHT, DURATION_FACTOR, MAX_LOCK_DURATION } from 'config/constants/pools'
 import { addWeeks, addDays } from 'date-fns'

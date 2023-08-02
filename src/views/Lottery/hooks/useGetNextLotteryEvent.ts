@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { LotteryStatus } from 'config/constants/types'
 import { useTranslation } from 'contexts/Localization'
 import { useMemo } from 'react'

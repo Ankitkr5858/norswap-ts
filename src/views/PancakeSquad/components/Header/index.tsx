@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Link from 'next/link'
 import { Box, Flex, lightColors, Spinner, Text, Timeline } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

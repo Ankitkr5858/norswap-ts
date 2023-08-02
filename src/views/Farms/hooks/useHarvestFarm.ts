@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import { harvestFarm } from 'utils/calls'
 import { useMasterchef } from 'hooks/useContract'

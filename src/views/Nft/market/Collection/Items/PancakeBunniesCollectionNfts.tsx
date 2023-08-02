@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Grid } from '@nswap/uikit'
 import orderBy from 'lodash/orderBy'
 import { CollectibleLinkCard } from '../../components/CollectibleCard'

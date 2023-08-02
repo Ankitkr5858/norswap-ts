@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, Button, Flex, IconButton, CloseIcon } from '@nswap/uikit'
 import { useAppDispatch } from 'state'

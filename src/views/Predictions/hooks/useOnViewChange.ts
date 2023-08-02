@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect } from 'react'
 import usePrevious from 'hooks/usePreviousValue'
 import useSwiper from './useSwiper'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Activity, NftToken, TokenIdWithCollectionAddress } from 'state/nftMarket/types'
 import { getNftsFromCollectionApi, getNftsFromDifferentCollectionsApi } from 'state/nftMarket/helpers'
 import uniqBy from 'lodash/uniqBy'

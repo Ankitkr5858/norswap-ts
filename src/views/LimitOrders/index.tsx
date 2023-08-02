@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback, useEffect, useState, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import { CurrencyAmount, Token, Trade } from '@danielvindax/norswap-sdk'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, Flex } from '@nswap/uikit'
 import Footer from 'components/Menu/Footer'

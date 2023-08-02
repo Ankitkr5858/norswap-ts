@@ -1,3 +1,4 @@
+// @ts-nocheck
 import LocalReduxProvider from 'contexts/LocalRedux/Provider'
 import makeStore from 'contexts/LocalRedux/makeStore'
 import reducers, { initialState } from 'state/predictions'

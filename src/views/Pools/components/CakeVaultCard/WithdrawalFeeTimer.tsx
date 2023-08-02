@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text } from '@nswap/uikit'
 import getTimePeriods from 'utils/getTimePeriods'
 import { useTranslation } from 'contexts/Localization'

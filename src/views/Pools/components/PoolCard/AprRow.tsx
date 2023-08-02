@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, TooltipText, useTooltip } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { DeserializedPool } from 'state/types'

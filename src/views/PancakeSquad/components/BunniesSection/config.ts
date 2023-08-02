@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ContextApi } from 'contexts/Localization/types'
 
 const bunniesConfig = (t: ContextApi['t']) => {

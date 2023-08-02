@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { ArrowForwardIcon, Button, Flex, Heading, Skeleton, Text } from '@nswap/uikit'

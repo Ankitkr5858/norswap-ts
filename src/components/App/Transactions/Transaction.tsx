@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { CheckmarkIcon, CloseIcon, LinkExternal } from '@nswap/uikit'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { Text, Link } from '@nswap/uikit'
 

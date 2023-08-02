@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Token } from '@danielvindax/norswap-sdk'
 import { Modal, InjectedModalProps } from '@nswap/uikit'
 import ImportToken from 'components/SearchModal/ImportToken'

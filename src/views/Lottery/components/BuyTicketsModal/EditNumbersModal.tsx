@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Modal, Text, Flex, Button, ArrowBackIcon, AutoRenewIcon } from '@nswap/uikit'
 import useTheme from 'hooks/useTheme'

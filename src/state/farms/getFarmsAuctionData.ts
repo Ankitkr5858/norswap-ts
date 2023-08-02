@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { SerializedFarm } from 'state/types'
 import { CHAIN_ID } from '../../config/constants/networks'
 

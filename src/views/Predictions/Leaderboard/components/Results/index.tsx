@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Button, Grid, Flex, AutoRenewIcon, useMatchBreakpointsContext } from '@nswap/uikit'
 import useLocalDispatch from 'contexts/LocalRedux/useLocalDispatch'
 import {

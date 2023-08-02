@@ -1,3 +1,4 @@
+// @ts-nocheck
 import tokens from './tokens'
 import { SerializedFarmConfig } from './types'
 

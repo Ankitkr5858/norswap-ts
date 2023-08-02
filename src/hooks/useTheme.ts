@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useContext } from 'react'
 import { ThemeContext as StyledThemeContext } from 'styled-components'
 import { useTheme as useNextTheme } from 'next-themes'

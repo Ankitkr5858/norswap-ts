@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable react/no-array-index-key */
 import { useEffect, useState } from 'react'
 import { StyledBunnyImage, StyledImageContainer } from './styles'

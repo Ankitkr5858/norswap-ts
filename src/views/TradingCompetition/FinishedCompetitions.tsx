@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { Flex } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

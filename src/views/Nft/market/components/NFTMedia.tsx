@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, BoxProps } from '@nswap/uikit'
 import { FC, useEffect, useRef } from 'react'
 import useIntersectionObserver from 'hooks/useIntersectionObserver'

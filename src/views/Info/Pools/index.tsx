@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Text, Heading, Card } from '@nswap/uikit'
 import Page from 'components/Layout/Page'

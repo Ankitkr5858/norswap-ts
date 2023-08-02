@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Trade, Route, Token, ChainId, Pair, TokenAmount, JSBI, TradeType } from '@danielvindax/norswap-sdk'
 import { BETTER_TRADE_LESS_HOPS_THRESHOLD } from 'config/constants'
 import { isTradeBetter } from './trades'

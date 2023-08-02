@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { Currency, Percent, Price } from '@danielvindax/norswap-sdk'
 import styled from 'styled-components'

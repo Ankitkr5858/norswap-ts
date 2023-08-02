@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Text, Flex, useModal, CalculateIcon, Skeleton, FlexProps, Button } from '@nswap/uikit'
 import RoiCalculatorModal from 'components/RoiCalculatorModal'

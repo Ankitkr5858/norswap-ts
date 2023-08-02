@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, ButtonProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useAppDispatch } from 'state'

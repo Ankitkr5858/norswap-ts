@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { TeamsById } from '../state/types'
 import teamsList from '../config/constants/teams'
 

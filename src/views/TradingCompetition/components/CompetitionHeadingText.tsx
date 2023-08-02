@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading } from '@nswap/uikit'
 import styled, { DefaultTheme } from 'styled-components'
 

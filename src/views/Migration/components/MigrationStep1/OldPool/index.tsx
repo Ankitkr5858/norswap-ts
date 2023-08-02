@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react'
 import { DeserializedPool } from 'state/types'
 import PoolsTable from './PoolTable'

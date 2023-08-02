@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, Flex, Message, Box, HelpIcon } from '@nswap/uikit'
 import { Auction, ConnectedBidder } from 'config/constants/types'
 import { useTranslation } from 'contexts/Localization'

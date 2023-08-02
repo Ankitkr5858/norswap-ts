@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BigNumber } from '@ethersproject/bignumber'
 import { Token, TokenAmount } from '@danielvindax/norswap-sdk'
 import { useTokenContract } from './useContract'

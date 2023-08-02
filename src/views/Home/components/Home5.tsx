@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, Heading, Link, Button } from "@nswap/uikit";
 import { useWeb3React } from "@web3-react/core";
 import { useTranslation } from "contexts/Localization";

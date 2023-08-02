@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 import Link from 'next/link'

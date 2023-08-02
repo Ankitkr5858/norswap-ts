@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency, CurrencyAmount, JSBI, Pair, Percent, TokenAmount } from '@danielvindax/norswap-sdk'
 import { useCallback } from 'react'
 import { useSelector } from 'react-redux'

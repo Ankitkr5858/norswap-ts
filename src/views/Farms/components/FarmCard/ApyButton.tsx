@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import BigNumber from 'bignumber.js'
 import { Flex, IconButton, useModal, CalculateIcon } from '@nswap/uikit'

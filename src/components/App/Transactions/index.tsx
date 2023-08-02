@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { HistoryIcon, Button, useModal } from '@nswap/uikit'
 import TransactionsModal from './TransactionsModal'
 

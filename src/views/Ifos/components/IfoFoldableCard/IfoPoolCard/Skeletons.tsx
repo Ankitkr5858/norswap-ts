@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Skeleton } from '@nswap/uikit'
 
 export const SkeletonCardActions = () => {

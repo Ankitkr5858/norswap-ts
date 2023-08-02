@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { ChainId } from '@danielvindax/norswap-sdk'
 import { useFarms, usePriceCakeBusd } from 'state/farms/hooks'

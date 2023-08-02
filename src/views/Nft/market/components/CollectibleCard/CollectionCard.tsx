@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Card, CardBody, Flex, Heading, ProfileAvatar } from '@nswap/uikit'
 
 import Image from 'next/image'

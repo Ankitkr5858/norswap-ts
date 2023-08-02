@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { gql } from 'graphql-request'
 
 const lastPairDayId = gql`

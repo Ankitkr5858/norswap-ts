@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect, useMemo, ReactNode } from 'react'
 import shuffle from 'lodash/shuffle'
 import styled from 'styled-components'

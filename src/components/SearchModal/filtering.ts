@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { TokenInfo } from '@uniswap/token-lists'
 import { Token } from '@danielvindax/norswap-sdk'

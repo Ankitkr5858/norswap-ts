@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useProfile } from 'state/profile/hooks'
 import { DeserializedPool } from 'state/types'
 

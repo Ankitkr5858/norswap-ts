@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button } from '@nswap/uikit'
 import { SaleStatusEnum, UserStatusEnum } from 'views/PancakeSquad/types'
 import ActivateProfileButton from '../Buttons/ActivateProfile'

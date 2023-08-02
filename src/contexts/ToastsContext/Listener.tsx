@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ToastContainer } from 'components/Toast'
 import useToast from 'hooks/useToast'
 

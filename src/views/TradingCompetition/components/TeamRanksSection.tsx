@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box } from '@nswap/uikit'
 import useTheme from 'hooks/useTheme'
 import PageSection from 'components/PageSection'

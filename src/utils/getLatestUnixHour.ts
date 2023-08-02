@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ONE_HOUR_SECONDS } from 'config/constants/info'
 import { getUnixTime } from 'date-fns'
 

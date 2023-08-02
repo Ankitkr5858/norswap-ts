@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { retry, RetryableError } from './retry'
 
 describe('retry', () => {

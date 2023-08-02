@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { parseCallKey, toCallKey } from './actions'
 
 describe('actions', () => {

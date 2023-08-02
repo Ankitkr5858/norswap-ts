@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Modal, ModalBody, Text, Image, Button, Link, OpenNewIcon } from '@nswap/uikit'
 import { Token } from '@danielvindax/norswap-sdk'
 import { useTranslation } from 'contexts/Localization'

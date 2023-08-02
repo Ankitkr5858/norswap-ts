@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import { BIG_ZERO } from 'utils/bigNumber'
 import getGasPrice from 'utils/getGasPrice'

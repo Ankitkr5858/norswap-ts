@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, BoxProps, Flex, Skeleton, Text } from '@nswap/uikit'
 

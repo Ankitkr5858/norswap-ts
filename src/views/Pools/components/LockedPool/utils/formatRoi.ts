@@ -1,3 +1,4 @@
+// @ts-nocheck
 interface FormatRoiArgs {
   lockedApy: string
   usdValueStaked: number

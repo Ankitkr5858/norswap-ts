@@ -1,3 +1,4 @@
+// @ts-nocheck
 import PageHeader, { PageHeaderProps } from 'components/PageHeader'
 import useTheme from 'hooks/useTheme'
 

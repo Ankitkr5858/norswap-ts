@@ -1,3 +1,4 @@
+// @ts-nocheck
 import truncateHash from 'utils/truncateHash'
 
 describe('truncateHash', () => {

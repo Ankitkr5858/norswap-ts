@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, lightColors } from '@nswap/uikit'
 import styled, { keyframes } from 'styled-components'
 

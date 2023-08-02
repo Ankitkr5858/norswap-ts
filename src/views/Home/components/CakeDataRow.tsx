@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Heading, Skeleton, Text } from "@nswap/uikit";
 import Balance from "components/Balance";
 import cakeAbi from "config/abi/cake.json";

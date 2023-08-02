@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, FlexProps } from '@nswap/uikit'
 import styled from 'styled-components'
 

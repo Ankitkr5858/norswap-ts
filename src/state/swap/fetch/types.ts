@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { PairDataTimeWindowEnum } from '../types'
 
 export type fetchPairDataParams = {

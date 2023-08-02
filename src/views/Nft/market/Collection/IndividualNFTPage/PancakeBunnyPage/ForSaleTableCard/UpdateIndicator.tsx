@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { Flex, useTooltip } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

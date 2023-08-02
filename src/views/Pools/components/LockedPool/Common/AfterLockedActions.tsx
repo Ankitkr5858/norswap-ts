@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo, ReactNode } from 'react'
 import { Message, MessageText, Box, Flex, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

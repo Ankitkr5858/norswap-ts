@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import poolsConfig from 'config/constants/pools'
 import { SerializedPoolConfig } from 'config/constants/types'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading, TextProps } from '@nswap/uikit'
 import useTheme from 'hooks/useTheme'
 

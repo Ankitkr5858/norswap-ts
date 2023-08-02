@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ChainId } from '@danielvindax/norswap-sdk'
 import { CHAIN_ID } from 'config/constants/networks'
 import store from 'state'

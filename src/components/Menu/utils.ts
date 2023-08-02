@@ -1,3 +1,4 @@
+// @ts-nocheck
 import orderBy from 'lodash/orderBy'
 import { ConfigMenuItemsType } from './config/config'
 

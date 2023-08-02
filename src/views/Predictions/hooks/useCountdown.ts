@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getNow } from 'utils/getNow'
 import { accurateTimer } from 'utils/accurateTimer'
 import { useCallback, useEffect, useState, useRef } from 'react'

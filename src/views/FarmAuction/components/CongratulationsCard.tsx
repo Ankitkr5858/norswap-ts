@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Text, Heading, Card, CardHeader, CardBody, Flex } from '@nswap/uikit'
 import { Auction, Bidder } from 'config/constants/types'

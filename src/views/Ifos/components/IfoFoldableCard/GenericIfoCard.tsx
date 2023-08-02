@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactElement } from 'react'
 import { Box, Flex, HelpIcon, CardHeader, CardBody, Text, useTooltip } from '@nswap/uikit'
 

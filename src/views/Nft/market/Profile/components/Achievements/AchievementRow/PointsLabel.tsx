@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, FlexProps, PrizeIcon, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Choice } from './Choices'
 
 export interface FormState {

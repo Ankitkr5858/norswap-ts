@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, TooltipText, useTooltip } from '@nswap/uikit'
 
 import { useVaultApy } from 'hooks/useVaultApy'

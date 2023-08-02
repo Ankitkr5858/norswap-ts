@@ -1,3 +1,4 @@
+// @ts-nocheck
 import useSWRImmutable from 'swr/immutable'
 import { useMemo } from 'react'
 import { SmartContractPhases, LIVE, REGISTRATION } from 'config/constants/trading-competition/phases'

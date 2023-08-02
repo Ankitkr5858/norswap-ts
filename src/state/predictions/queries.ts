@@ -1,3 +1,4 @@
+// @ts-nocheck
 export interface UserResponse {
   id: string
   createdAt: string

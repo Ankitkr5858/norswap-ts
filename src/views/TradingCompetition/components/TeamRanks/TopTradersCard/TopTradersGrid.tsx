@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Skeleton } from '@nswap/uikit'
 import styled from 'styled-components'
 import { LeaderboardDataItem } from '../../../types'

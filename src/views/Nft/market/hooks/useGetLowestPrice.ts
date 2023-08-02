@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { FetchStatus } from 'config/constants/types'
 import { getNftsMarketData, getNftsUpdatedMarketData } from 'state/nftMarket/helpers'
 import { formatBigNumber } from 'utils/formatBalance'

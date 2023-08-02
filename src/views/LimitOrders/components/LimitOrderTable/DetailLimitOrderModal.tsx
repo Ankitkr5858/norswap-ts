@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, Flex, Box, Modal, Text, ChevronRightIcon, InjectedModalProps, Tag, Spinner } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'

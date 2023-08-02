@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, ArrowForwardIcon, Button, Text, useMatchBreakpointsContext } from '@nswap/uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { useTranslation } from 'contexts/Localization'

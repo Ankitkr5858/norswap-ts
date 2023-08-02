@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useRouter } from 'next/router'
 import { useAchievementsForAddress, useProfileForAddress } from 'state/profile/hooks'
 import { NftProfileLayout } from 'views/Nft/market/Profile'

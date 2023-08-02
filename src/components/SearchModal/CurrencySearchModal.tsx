@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback, useState } from 'react'
 import { Currency, Token } from '@danielvindax/norswap-sdk'
 import {

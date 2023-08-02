@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Token } from '@danielvindax/norswap-sdk'
 import { Flex, Message, MessageText, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

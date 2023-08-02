@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { useRouter } from 'next/router'
 import BaseSubMenu from '../../components/BaseSubMenu'

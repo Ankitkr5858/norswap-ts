@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Flex, Skeleton, Text } from '@nswap/uikit'
 import styled from 'styled-components'

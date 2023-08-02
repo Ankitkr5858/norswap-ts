@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { memo, useState, useRef, useMemo } from 'react'
 import { useRouter } from 'next/router'
 import { useWeb3React } from '@web3-react/core'

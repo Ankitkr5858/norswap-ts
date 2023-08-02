@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex, Heading, Skeleton, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

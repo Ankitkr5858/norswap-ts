@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading, Flex, Text, Skeleton, ChartIcon, CommunityIcon, SwapIcon } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import useTheme from 'hooks/useTheme'

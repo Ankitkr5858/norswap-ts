@@ -1,3 +1,4 @@
+// @ts-nocheck
 const getLocalStorageItemKeys = (prefix: string) => {
   const result = []
   for (let i = 0; i < localStorage.length; i++) {

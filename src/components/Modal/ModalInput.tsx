@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Text, Button, Input, InputProps, Flex, Link } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

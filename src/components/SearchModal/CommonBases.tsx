@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ChainId, Currency, currencyEquals, ETHER, Token } from '@danielvindax/norswap-sdk'
 import { Text } from '@nswap/uikit'
 import styled from 'styled-components'

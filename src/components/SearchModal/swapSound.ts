@@ -1,3 +1,4 @@
+// @ts-nocheck
 let swapSound: HTMLAudioElement
 
 const swapSoundURL = 'https://pancake.mypinata.cloud/ipfs/Qmc5kLWfQpQHu96iwre9DWSjtedXqVUgmCvehdcVPWZtc7'

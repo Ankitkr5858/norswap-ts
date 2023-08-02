@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, AutoRenewIcon, Skeleton } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useERC20 } from 'hooks/useContract'

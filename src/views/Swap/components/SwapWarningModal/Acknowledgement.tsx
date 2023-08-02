@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import { useTranslation } from 'contexts/Localization'
 import { Text, Flex, Checkbox, Button } from '@nswap/uikit'

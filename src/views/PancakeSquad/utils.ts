@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { EventStatus } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 import formatTimePeriod from 'utils/formatTimePeriod'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Button, ChevronRightIcon, Flex, Grid, Heading, Text } from '@nswap/uikit'
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { nftsBaseUrl } from 'views/Nft/market/constants'

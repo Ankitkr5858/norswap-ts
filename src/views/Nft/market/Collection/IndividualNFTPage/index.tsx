@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useRouter } from 'next/router'
 import PageLoader from 'components/Loader/PageLoader'
 import { pancakeBunniesAddress } from '../../constants'

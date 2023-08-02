@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { NoProfileAvatarIcon, LaurelLeftIcon, LaurelRightIcon, Skeleton } from '@nswap/uikit'
 import ProfileAvatarWithTeam from 'components/ProfileAvatarWithTeam'

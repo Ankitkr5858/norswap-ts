@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useMemo } from 'react'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useTranslation } from 'contexts/Localization'

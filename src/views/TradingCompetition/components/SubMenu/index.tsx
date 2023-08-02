@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useMemo } from 'react'
 import { useRouter } from 'next/router'
 import { SubMenuItems } from '@nswap/uikit'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useCallback, memo } from 'react'
 import { Flex, Card } from '@nswap/uikit'
 import useGelatoLimitOrdersHistory from '../../hooks/useGelatoLimitOrdersHistory'

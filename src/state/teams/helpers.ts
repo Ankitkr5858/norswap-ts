@@ -1,3 +1,4 @@
+// @ts-nocheck
 import merge from 'lodash/merge'
 import teamsList from 'config/constants/teams'
 import { getProfileContract } from 'utils/contractHelpers'

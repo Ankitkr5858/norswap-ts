@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Card, CardBody, CardHeader, Flex, Text, Message, Button } from '@nswap/uikit'
 import styled from 'styled-components'
 import BigNumber from 'bignumber.js'

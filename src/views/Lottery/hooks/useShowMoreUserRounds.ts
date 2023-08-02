@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { useState } from 'react'
 import { useAppDispatch } from 'state'

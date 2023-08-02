@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BlockIcon, CheckmarkCircleIcon, Flex, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 

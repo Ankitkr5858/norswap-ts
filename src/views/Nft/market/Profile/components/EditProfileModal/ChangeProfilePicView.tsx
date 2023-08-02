@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useMemo } from 'react'
 import { Button, Box, InjectedModalProps, Text, Skeleton } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'

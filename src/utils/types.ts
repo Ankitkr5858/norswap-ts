@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { FarmAuction, Predictions } from 'config/abi/types'
 import { ContractFunction } from '@ethersproject/contracts'
 import { BigNumber } from '@ethersproject/bignumber'

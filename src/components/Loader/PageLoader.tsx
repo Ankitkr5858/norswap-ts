@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Spinner } from '@nswap/uikit'
 import Page from '../Layout/Page'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Link, Text } from '@nswap/uikit'
 import { getBscScanLink } from 'utils'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'

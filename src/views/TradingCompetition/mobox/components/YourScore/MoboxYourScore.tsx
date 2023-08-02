@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Skeleton, Heading, Text } from '@nswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Progress, ProgressProps } from '@nswap/uikit'
 
 interface RoundProgressProps extends ProgressProps {

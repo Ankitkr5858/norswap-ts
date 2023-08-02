@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, TokenPairImage as UITokenPairImage, useMatchBreakpointsContext } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import { TokenPairImage } from 'components/TokenImage'

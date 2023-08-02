@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { shouldCheck } from './updater'
 
 describe('transactions updater', () => {

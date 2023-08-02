@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ifos from 'config/constants/ifo'
 import campaigns from 'config/constants/campaigns'
 

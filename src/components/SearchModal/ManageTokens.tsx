@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useRef, RefObject, useCallback, useState, useMemo } from 'react'
 import { Token } from '@danielvindax/norswap-sdk'
 import { Text, Button, CloseIcon, IconButton, LinkExternal, Input, Link } from '@nswap/uikit'

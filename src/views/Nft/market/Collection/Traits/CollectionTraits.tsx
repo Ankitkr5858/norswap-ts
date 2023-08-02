@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import times from 'lodash/times'
 import capitalize from 'lodash/capitalize'

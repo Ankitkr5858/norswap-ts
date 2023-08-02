@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Heading, Button, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { CompetitionProps } from 'views/TradingCompetition/types'

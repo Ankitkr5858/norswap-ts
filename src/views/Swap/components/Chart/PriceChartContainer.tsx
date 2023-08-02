@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency } from '@danielvindax/norswap-sdk'
 import useTheme from 'hooks/useTheme'
 import { useCallback, useState } from 'react'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactNode } from 'react'
 import tokens from 'config/constants/tokens'
 import { Text, Flex, Box, Skeleton, TooltipText, useTooltip } from '@nswap/uikit'

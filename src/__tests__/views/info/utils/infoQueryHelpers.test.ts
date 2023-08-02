@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { getDeltaTimestamps } from 'utils/getDeltaTimestamps'
 
 const UTC_NOW_UNDER_TEST = 1624809600

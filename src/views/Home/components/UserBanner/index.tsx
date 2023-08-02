@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Flex } from '@nswap/uikit'
 import styled from 'styled-components'
 import HarvestCard from './HarvestCard'

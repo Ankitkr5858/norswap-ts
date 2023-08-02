@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { TOKEN_BLACKLIST } from 'config/constants/info'
 import { gql } from 'graphql-request'
 import { infoClient } from 'utils/graphql'

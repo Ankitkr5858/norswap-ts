@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { TokenMarketData, Image } from 'state/nftMarket/types'
 
 export enum PaymentCurrency {

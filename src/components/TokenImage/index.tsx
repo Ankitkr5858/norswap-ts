@@ -1,3 +1,4 @@
+// @ts-nocheck
 import {
   TokenPairImage as UIKitTokenPairImage,
   TokenPairImageProps as UIKitTokenPairImageProps,

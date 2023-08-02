@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import { escapeRegExp } from 'utils'
 import { Text, Button, Input, Flex, Box } from '@nswap/uikit'

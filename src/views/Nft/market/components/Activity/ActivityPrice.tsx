@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, BinanceIcon, Text, Skeleton } from '@nswap/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'
 

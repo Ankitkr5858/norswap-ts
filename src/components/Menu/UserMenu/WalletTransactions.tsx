@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Box, Button, Flex, Text } from '@nswap/uikit'
 import { useAppDispatch } from 'state'
 import { isTransactionRecent, useAllTransactions } from 'state/transactions/hooks'

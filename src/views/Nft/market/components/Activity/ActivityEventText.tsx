@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Text, TextProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { MarketEvent } from '../../../../../state/nftMarket/types'

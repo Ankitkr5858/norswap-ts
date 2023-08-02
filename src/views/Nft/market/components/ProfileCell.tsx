@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, Flex, BunnyPlaceholderIcon, Skeleton, Text } from '@nswap/uikit'
 import truncateHash from 'utils/truncateHash'

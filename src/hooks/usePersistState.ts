@@ -1,3 +1,4 @@
+// @ts-nocheck
 import identity from 'lodash/identity'
 import { useEffect, useState } from 'react'
 

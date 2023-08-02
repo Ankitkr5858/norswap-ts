@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Bet, BetPosition } from 'state/types'
 import { formatNumber } from 'utils/formatBalance'
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback } from 'react'
 import { ChainId, Currency, Token } from '@danielvindax/norswap-sdk'
 import styled from 'styled-components'

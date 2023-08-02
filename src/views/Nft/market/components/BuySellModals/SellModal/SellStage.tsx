@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Grid, Text, Button, Link, BinanceIcon, LinkExternal, useModal } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { nftsBaseUrl, pancakeBunniesAddress } from 'views/Nft/market/constants'

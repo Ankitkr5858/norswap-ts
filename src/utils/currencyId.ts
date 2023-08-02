@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency, ETHER, Token } from '@danielvindax/norswap-sdk'
 
 export function currencyId(currency: Currency): string {

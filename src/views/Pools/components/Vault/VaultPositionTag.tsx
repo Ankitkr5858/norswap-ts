@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Tag, TagProps, Text, SplitIcon, LockIcon, UnlockIcon, HotIcon, Box } from '@nswap/uikit'
 import { FlexGap, FlexGapProps } from 'components/Layout/Flex'
 import Trans from 'components/Trans'

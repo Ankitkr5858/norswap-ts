@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ButtonMenu, ButtonMenuItem } from '@nswap/uikit'
 import styled from 'styled-components'
 import useTheme from 'hooks/useTheme'

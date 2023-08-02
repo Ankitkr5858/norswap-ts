@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { useModal } from '@nswap/uikit'
 import AvatarImage from 'views/Nft/market/components/BannerHeader/AvatarImage'

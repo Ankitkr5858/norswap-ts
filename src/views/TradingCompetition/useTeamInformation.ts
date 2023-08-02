@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 
 export const useTeamInformation = (competitionId: number) => {

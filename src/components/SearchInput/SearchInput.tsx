@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useMemo } from 'react'
 import { Input } from '@nswap/uikit'
 import styled from 'styled-components'

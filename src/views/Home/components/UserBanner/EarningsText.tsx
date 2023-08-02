@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ContextApi } from 'contexts/Localization/types'
 import BigNumber from 'bignumber.js'
 

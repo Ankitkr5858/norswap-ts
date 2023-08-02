@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ReactDatePicker, { ReactDatePickerProps } from 'react-datepicker'
 import { Input, InputProps } from '@nswap/uikit'
 

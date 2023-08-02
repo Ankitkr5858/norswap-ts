@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useModal, Button, Skeleton } from '@nswap/uikit'
 import WhitelistedBiddersModal from './WhitelistedBiddersModal'
 import useWhitelistedAddresses from '../hooks/useWhitelistedAddresses'

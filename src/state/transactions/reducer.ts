@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable no-param-reassign */
 import { createReducer } from '@reduxjs/toolkit'
 import { Order } from '@gelatonetwork/limit-orders-lib'

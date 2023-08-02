@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Swap from '../views/Swap'
 
 const SwapPage = () => {

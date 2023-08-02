@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Price } from '@danielvindax/norswap-sdk'
 import { Flex, Text } from '@nswap/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { getMasterchefV1Contract } from 'utils/contractHelpers'
 

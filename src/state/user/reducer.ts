@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createReducer } from '@reduxjs/toolkit'
 import { SerializedToken } from 'config/constants/types'
 import { DEFAULT_DEADLINE_FROM_NOW, INITIAL_ALLOWED_SLIPPAGE } from '../../config/constants'

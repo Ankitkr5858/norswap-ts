@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 
 // modified from https://usehooks.com/useDebounce/

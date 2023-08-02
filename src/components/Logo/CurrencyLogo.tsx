@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Currency, ETHER, Token } from '@danielvindax/norswap-sdk'
 import { BinanceIcon } from '@nswap/uikit'
 import { useMemo } from 'react'

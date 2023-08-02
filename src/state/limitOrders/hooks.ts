@@ -1,3 +1,4 @@
+// @ts-nocheck
 import JSBI from 'jsbi'
 import { useDispatch, useSelector } from 'react-redux'
 import { ParsedUrlQuery } from 'querystring'

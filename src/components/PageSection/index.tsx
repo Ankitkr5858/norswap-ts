@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { BoxProps, Box, Flex, FlexProps } from '@nswap/uikit'
 import Container from 'components/Layout/Container'

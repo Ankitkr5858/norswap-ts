@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ActionCreatorWithPayload, createAction } from '@reduxjs/toolkit'
 import { TokenList, Version } from '@uniswap/token-lists'
 

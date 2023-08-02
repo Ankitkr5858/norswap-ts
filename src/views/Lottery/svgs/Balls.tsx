@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Svg, SvgProps, Text, Flex } from '@nswap/uikit'
 

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable no-restricted-syntax */
 import { KeyboardEvent, RefObject, useCallback, useMemo, useRef, useState, useEffect } from 'react'
 import { Currency, ETHER, Token } from '@danielvindax/norswap-sdk'

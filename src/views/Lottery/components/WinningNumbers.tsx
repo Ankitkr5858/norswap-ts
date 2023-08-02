@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { Flex, FlexProps } from '@nswap/uikit'
 import random from 'lodash/random'

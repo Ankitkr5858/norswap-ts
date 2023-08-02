@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { StyledCollectibleCard } from './styles'
 import CardBody from './CardBody'

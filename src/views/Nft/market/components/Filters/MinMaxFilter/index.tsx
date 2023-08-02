@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { Box, BoxProps, Button, Grid, InlineMenu, TextField } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

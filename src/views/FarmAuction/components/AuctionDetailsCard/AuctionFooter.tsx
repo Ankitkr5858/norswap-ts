@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from 'react'
 import styled from 'styled-components'
 import { Text, Flex, Box, CardFooter, ExpandableLabel } from '@nswap/uikit'

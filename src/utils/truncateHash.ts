@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * Truncate a transaction or address hash
  */

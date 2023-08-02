@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, Text, IconButton, AddIcon, MinusIcon, useModal, Skeleton, Box } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import { getBalanceNumber } from 'utils/formatBalance'

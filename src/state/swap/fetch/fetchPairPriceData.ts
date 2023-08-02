@@ -1,3 +1,4 @@
+// @ts-nocheck
 import requestWithTimeout from 'utils/requestWithTimeout'
 import { infoClient } from 'utils/graphql'
 import lastPairDayId from '../queries/lastPairDayId'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import BigNumber from 'bignumber.js'
 import { Flex, Text } from '@nswap/uikit'

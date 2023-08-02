@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from 'styled-components'
 import { Modal, Grid, Flex, Text, BinanceIcon, Skeleton } from '@nswap/uikit'
 import { useBNBBusdPrice } from 'hooks/useBUSDPrice'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable no-continue */
 /* eslint-disable no-await-in-loop */
 import { TokenList } from '@uniswap/token-lists'

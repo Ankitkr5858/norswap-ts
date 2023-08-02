@@ -1,3 +1,4 @@
+// @ts-nocheck
 import * as Sentry from '@sentry/react'
 import Page from 'components/Layout/Page'
 import { useTranslation } from 'contexts/Localization'

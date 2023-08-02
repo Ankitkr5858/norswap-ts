@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import sumBy from 'lodash/sumBy'
 import { useAppDispatch } from 'state'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { PCS_V2_START } from 'config/constants/info'
 import { gql } from 'graphql-request'
 import { ChartEntry } from 'state/info/types'

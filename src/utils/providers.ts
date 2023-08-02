@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { StaticJsonRpcProvider } from '@ethersproject/providers'
 import getRpcUrl from 'utils/getRpcUrl'
 

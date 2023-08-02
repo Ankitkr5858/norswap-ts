@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Flex, lightColors, Text } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 

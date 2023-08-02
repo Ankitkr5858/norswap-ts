@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useMemo, useState } from 'react'
 import styled from 'styled-components'
 import { Trade, TradeType } from '@danielvindax/norswap-sdk'

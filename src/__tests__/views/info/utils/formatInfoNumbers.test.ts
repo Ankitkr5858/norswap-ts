@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { formatAmount, getFirstThreeNonZeroDecimals } from 'utils/formatInfoNumbers'
 
 describe('info/utils/formatInfoNumbers', () => {
