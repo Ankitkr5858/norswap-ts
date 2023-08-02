@@ -26,11 +26,11 @@ const Home1 = () => {
         background="linear-gradient(0deg,rgba(0,0,0,.59) 0%,rgba(0,0,0,.59) 100%)"
       >
         <Flex alignItems="center" flexDirection="column" justifyContent="center">
-          <Heading scale="xl" color="#ffffff" mb="40px">
+          <Heading className="hero-title-one" scale="xl" color="#ffffff" mb="40px">
             {t('NORDEK Swap synergizes with MSMEs')}
           </Heading>
           <CryptoConvertor />
-          <Text color="#ffffff" fontSize="18px" mb="24px">
+          <Text className="hero-title-two" color="#ffffff" fontSize="18px" mb="24px">
             {t('The first Equity Crowdfunding platform built using NORDEK chain technology')}
           </Text>
           <Flex

@@ -54,13 +54,13 @@ padding: 4px 24px;
  
 
  @media screen and (max-width: 425px){
-  .hZBHoY {
+  #homepage-hero {
       margin-top: 0px !important;
   }
-  .ctDzMu{
-    font-size:20px;
+  .hero-title-one {
+    font-size: 17px;
   }
-  .hXnmMB{
+  .inputFieldWrapper{
     display: block;
   }
   .inputFieldWrapper #swap-currency-input, .inputFieldWrapper #swap-currency-output{
@@ -68,8 +68,9 @@ padding: 4px 24px;
     width: 100%;
     border-radius: 60px;
   }  
-  .fgsQwt{
-    left:40%;
+  
+  #homepage-home5{
+    margin-top: 0px !important;
   }
 
   video.video-tag {
