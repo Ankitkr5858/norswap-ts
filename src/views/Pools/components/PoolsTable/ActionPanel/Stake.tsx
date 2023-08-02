@@ -118,6 +118,7 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool }) => {
 
   const needsApproval = vaultKey ? !isVaultApproved : !allowance.gt(0) && !isBnbPool
 
+
   const [onPresentTokenRequired] = useModal(<NotEnoughTokensModal tokenSymbol={stakingToken.symbol} />)
 
   const [onPresentStake] = useModal(
@@ -225,8 +226,11 @@ const Staked: React.FunctionComponent<StackedActionProps> = ({ pool }) => {
     return (
       <ActionContainer>
         <ActionTitles>
-          <Text fontSize="12px" bold color="#000000" as="span" textTransform="uppercase">
+          <Text fontSize="12px" bold color="#009EE2" as="span" textTransform="uppercase">
             {t('Enable pool')}
+          </Text>
+          <Text color="#000000" bold fontSize="14px">
+            {t('In metamask select custom spending cap to "use default"')}
           </Text>
         </ActionTitles>
         <ActionContent>

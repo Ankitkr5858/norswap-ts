@@ -12,6 +12,7 @@ import useCatchTxError from 'hooks/useCatchTxError'
 import { ToastDescriptionWithTx } from 'components/Toast'
 import { useSWRContract, UseSWRContractKey } from 'hooks/useSWRContract'
 
+
 export const useApprovePool = (lpContract: Contract, sousId, earningTokenSymbol) => {
   const { toastSuccess } = useToast()
   const { fetchWithCatchTxError, loading: pendingTx } = useCatchTxError()
@@ -60,6 +61,7 @@ export const useVaultApprove = (setLastUpdated: () => void) => {
   const { signer: cakeContract } = useCake()
 
   const handleApprove = async () => {
+
     const receipt = await fetchWithCatchTxError(() => {
       return callWithGasPrice(cakeContract, 'approve', [vaultPoolContract.address, MaxUint256])
     })
@@ -86,15 +88,15 @@ export const useCheckVaultApprovalStatus = () => {
     () =>
       account
         ? {
-            contract: cakeContract,
-            methodName: 'allowance',
-            params: [account, vaultPoolContract.address],
-          }
+          contract: cakeContract,
+          methodName: 'allowance',
+          params: [account, vaultPoolContract.address],
+        }
         : null,
     [account, cakeContract, vaultPoolContract.address],
   )
 
   const { data, mutate } = useSWRContract(key)
 
-  return { isVaultApproved: data ? data.gt(0) : false, setLastUpdated: mutate }
+  return { isVaultApproved: !data ? parseInt(data?._hex) > 100000000000000000000000 : false, setLastUpdated: mutate }
 }

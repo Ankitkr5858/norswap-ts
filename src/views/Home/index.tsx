@@ -72,13 +72,9 @@ const Home: React.FC = () => {
   const { account } = useWeb3React()
   const HomeSectionContainerStyles = { margin: '0', width: '100%', maxWidth: '1200px' }
   const { t } = useTranslation()
-
-
   return (
     <>
       <PageMeta />
-
-
       <video src="https://dotted-ranger-363617.web.app/videos/slider_for_nordek.mp4" className='video-tag' width="100%" height="auto"
         autoPlay={true} loop={true} style={{ position: "absolute" }}></video>
 

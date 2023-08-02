@@ -34,7 +34,6 @@ const CardActions: React.FC<CardActionsProps> = ({ pool, stakedBalance }) => {
   const isLoading = !userData
 
   const { notMeetRequired, notMeetThreshold } = useProfileRequirement(profileRequirement)
-
   return (
     <Flex flexDirection="column">
       <Flex flexDirection="column">
