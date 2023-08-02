@@ -58,11 +58,15 @@ padding: 4px 24px;
       margin-top: 0px !important;
   }
   .hero-title-one {
-    font-size: 17px;
+    font-size: 17px !important;
+  }
+  .hero-title-two {
+    font-size: 17px !important;
   }
   .inputFieldWrapper{
-    display: block;
+    display: block !important;
   }
+
   .inputFieldWrapper #swap-currency-input, .inputFieldWrapper #swap-currency-output{
     
     width: 100%;
