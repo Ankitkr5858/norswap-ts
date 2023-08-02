@@ -99,5 +99,5 @@ export const useCheckVaultApprovalStatus = () => {
 
   const { data, mutate } = useSWRContract(key)
 
-  return { isVaultApproved: !data ? parseInt(data?._hex) > 100000000000000000000000 : false, setLastUpdated: mutate }
+  return { isVaultApproved: data ? parseInt(data?._hex) > 100000000000000000000000 : false, setLastUpdated: mutate }
 }
