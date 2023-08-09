@@ -112,7 +112,7 @@ const DropdownMenu: React.FC<DropdownMenuProps> = ({
                   {type === DropdownMenuItemType.INTERNAL_LINK && (
                     <DropdownMenuItem
                       $isActive={isActive}
-                      as={linkComponent}
+                      as={linkComponent as any}
                       href={href}
                       onClick={() => {
                         setIsOpen(false);

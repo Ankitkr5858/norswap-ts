@@ -49,3 +49,4 @@ debug.log*
 # log
 dex.log
 nohup.out
+.vercel

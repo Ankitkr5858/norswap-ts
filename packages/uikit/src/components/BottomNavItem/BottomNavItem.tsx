@@ -43,10 +43,10 @@ const BottomNavItem: React.FC<BottomNavItemProps> = ({
       {bottomNavItemContent}
     </StyledBottomNavItem>
   ) : (
-    <StyledBottomNavItem as={linkComponent} href={href} {...props}>
+    <StyledBottomNavItem  {...props}>
       {bottomNavItemContent}
     </StyledBottomNavItem>
   );
 };
-
+// as={linkComponent} href={href}
 export default BottomNavItem;

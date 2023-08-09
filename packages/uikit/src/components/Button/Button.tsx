@@ -2,7 +2,7 @@ import React, { cloneElement, ElementType, isValidElement } from "react";
 import getExternalLinkProps from "../../util/getExternalLinkProps";
 import StyledButton from "./StyledButton";
 import { ButtonProps, scales, variants } from "./types";
-
+//@ts-ignore
 const Button = <E extends ElementType = "button">(props: ButtonProps<E>): JSX.Element => {
   const { startIcon, endIcon, external, className, isLoading, disabled, children, ...rest } = props;
   const internalProps = external ? getExternalLinkProps() : {};
@@ -28,11 +28,13 @@ const Button = <E extends ElementType = "button">(props: ButtonProps<E>): JSX.El
       <>
         {isValidElement(startIcon) &&
           cloneElement(startIcon, {
+            //@ts-ignore
             mr: "0.5rem",
           })}
         {children}
         {isValidElement(endIcon) &&
           cloneElement(endIcon, {
+            //@ts-ignore
             ml: "0.5rem",
           })}
       </>

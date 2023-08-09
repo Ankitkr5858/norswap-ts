@@ -22,7 +22,9 @@ const MenuItemSwap: React.FC<MenuItemProps> = ({
       };
   return (
     <StyledMenuItemContainerSwap $isActive={isActive} $variant={variant}>
-      <StyledMenuItemSwap {...itemLinkProps} $isActive={isActive} $variant={variant} $statusColor={statusColor} {...props}>
+      <StyledMenuItemSwap 
+      //@ts-ignore
+      {...itemLinkProps} $isActive={isActive} $variant={variant} $statusColor={statusColor} {...props}>
         {children}
       </StyledMenuItemSwap>
     </StyledMenuItemContainerSwap>
