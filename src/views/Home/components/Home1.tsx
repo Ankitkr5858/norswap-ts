@@ -59,7 +59,7 @@ const Home1 = () => {
 };
 
 export function Stacking() {
-  const [stackingModal, setStackingModal] = useState("Rewards");
+  const [stackingModal, setStackingModal] = useState("");
 
   function showModal(param) {
     document.body.style.overflow = param ? "hidden" : "auto";
