@@ -9,6 +9,7 @@ import { React, useEffect, useRef, useState } from "react";
 import bunnyImage from "../../../../public/images/home/home-1.png";
 import CryptoConvertor from "./CryptoConvertor";
 import successIcon from "./../../../../public/images/successful.png";
+import ReactDOM from "react-dom";
 const Home1 = () => {
   const { t } = useTranslation();
   const { account } = useWeb3React();
@@ -60,11 +61,17 @@ const Home1 = () => {
 
 export function Stacking() {
   const [stackingModal, setStackingModal] = useState("");
-
+  const portalContainer = document.createElement("div");
+  portalContainer.className = "StackingModalPortal";
+  document.body.insertBefore(portalContainer, document.body.firstChild);
   function showModal(param) {
     document.body.style.overflow = param ? "hidden" : "auto";
     setStackingModal(param);
   }
+  const closeModal = () => {
+    document.body.style.overflow = "auto";
+    setStackingModal("");
+  };
 
   return (
     <>
@@ -73,20 +80,23 @@ export function Stacking() {
         <div onClick={() => showModal("History")}>History</div>
         <div onClick={() => showModal("Unstake")}>Unstake</div>
       </Flex>
-      {stackingModal && stackingModal !== "History" && <StackingModal />}
+      {stackingModal &&
+        stackingModal !== "History" &&
+        ReactDOM.createPortal(<StackingModal />, portalContainer)}
     </>
   );
 
   function StackingModal() {
     const [componentIndex, setComponentIndex] = useState(1);
+
     return (
-      <>
-        <div onClick={() => showModal("")} className="overlay"></div>
+      <div>
+        <div className="overlay" onClick={closeModal}></div>
         <div className="StackingModal">
           <div>
             <div className="modal_header">
               <span>{stackingModal === "Rewards" ? "Rewards" : "Unstake"}</span>
-              <span style={{ cursor: "pointer" }} onClick={() => showModal("")}>
+              <span style={{ cursor: "pointer" }} onClick={closeModal}>
                 X
               </span>
             </div>
@@ -298,7 +308,7 @@ export function Stacking() {
             </div>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }
