@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { fromUnixTime } from 'date-fns'
 import getLatestUnixHour from 'utils/getLatestUnixHour'
 

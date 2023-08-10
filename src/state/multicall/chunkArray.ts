@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 // chunks array into chunks of maximum size
 // evenly distributes items among the chunks
 export default function chunkArray<T>(items: T[], maxChunkSize: number): T[][] {

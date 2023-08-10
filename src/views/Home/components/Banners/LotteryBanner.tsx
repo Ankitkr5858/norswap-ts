@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ArrowForwardIcon, Button, Heading, Skeleton, Text, useMatchBreakpointsContext } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import { NextLinkFromReactRouter } from 'components/NextLink'

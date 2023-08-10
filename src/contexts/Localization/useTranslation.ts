@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useContext } from 'react'
 import { LanguageContext } from './Provider'
 

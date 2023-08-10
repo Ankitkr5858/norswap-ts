@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BigNumber as EthersBigNumber } from '@ethersproject/bignumber'
 import { LotteryStatus, LotteryTicket } from 'config/constants/types'
 import lotteryV2Abi from 'config/abi/lotteryV2.json'

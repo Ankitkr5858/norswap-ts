@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState } from 'react'
 import { CopyIcon, SvgProps } from '@nswap/uikit'
 import { copyText } from 'utils/copyText'

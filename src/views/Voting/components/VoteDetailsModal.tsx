@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState } from 'react'
 import { Box, Flex, InjectedModalProps, Modal, Button, Spinner } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

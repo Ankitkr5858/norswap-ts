@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Heading, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import ConnectWalletButton from 'components/ConnectWalletButton'

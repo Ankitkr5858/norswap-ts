@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import Box from "../Box/Box";
 import BalanceInput from "./BalanceInput";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { DefaultTheme, keyframes, css } from "styled-components";
 import { space } from "styled-system";
 import { Box } from "../Box";

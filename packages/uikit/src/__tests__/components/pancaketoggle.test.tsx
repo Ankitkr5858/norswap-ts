@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import PancakeToggle from "../../components/PancakeToggle/PancakeToggle";

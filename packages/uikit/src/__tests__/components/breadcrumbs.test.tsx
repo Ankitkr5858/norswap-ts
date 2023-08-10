@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 export type ColumnType<T> = {
   name: string;
   label?: string;

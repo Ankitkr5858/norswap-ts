@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { ContextData, TranslationKey } from 'contexts/Localization/types'
 

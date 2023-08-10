@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { FAST_INTERVAL, SLOW_INTERVAL } from 'config/constants'
 import { DependencyList, EffectCallback, useEffect } from 'react'
 import useSWR from 'swr'

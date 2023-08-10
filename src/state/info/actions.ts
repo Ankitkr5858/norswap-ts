@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { createAction } from '@reduxjs/toolkit'
 import { Transaction } from 'state/info/types'
 import { ProtocolData, TokenData, PoolData, ChartEntry, PriceChartEntry } from './types'

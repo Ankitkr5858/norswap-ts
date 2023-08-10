@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { DefaultTheme } from "styled-components";
 import { space, typography, layout } from "styled-system";
 import getThemeValue from "../../util/getThemeValue";

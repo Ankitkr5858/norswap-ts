@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 const GradientLogo: React.FC<SvgProps> = (props) => {

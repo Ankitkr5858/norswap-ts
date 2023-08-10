@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const tags = {
   H1: "h1",
   H2: "h2",

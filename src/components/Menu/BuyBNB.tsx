@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Button, CakePrice, Flex, Text } from '@nswap/uikit'
 import { CurrencyLogo } from 'components/Logo'
 

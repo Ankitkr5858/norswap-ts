@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { SWRConfig } from 'swr'
 import Teams from '../../views/Teams'

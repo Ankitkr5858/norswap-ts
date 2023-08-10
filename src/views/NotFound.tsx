@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Button, Heading, Text, LogoIcon } from '@nswap/uikit'
 import Page from 'components/Layout/Page'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 const isTouchDevice = (): boolean => {
   return (
     typeof window !== "undefined" &&

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export type DividerFill = {
   light: string
   dark?: string

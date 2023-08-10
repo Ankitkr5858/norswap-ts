@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { renderHook } from '@testing-library/react-hooks'
 import { mainnetTokens } from 'config/constants/tokens'
 import { createReduxWrapper } from 'testUtils'

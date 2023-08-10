@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export const HERO_TOP_BG = 'linear-gradient(139.73deg, #E6FDFF 0%, #F3EFFF 100%)'
 export const HERO_BOTTOM_BG = 'linear-gradient(180deg, #FFFFFF 22%, #D7CAEC 100%)'
 export const HERO_SVG_TOP =

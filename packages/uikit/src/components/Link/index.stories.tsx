@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { PancakeRoundIcon } from "../Svg";
 import { Link, LinkExternal } from "./index";

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import React from 'react'
 import { Text, Flex, Heading, useMatchBreakpointsContext } from '@nswap/uikit'
 import styled from 'styled-components'

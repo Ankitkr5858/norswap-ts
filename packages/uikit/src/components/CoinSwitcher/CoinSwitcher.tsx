@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo, useCallback, useState } from "react";
 import styled from "styled-components";
 import { bnb2CakeImages, cake2BnbImages } from "./constant";

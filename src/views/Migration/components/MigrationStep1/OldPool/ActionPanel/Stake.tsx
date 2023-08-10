@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import React from 'react'
 import { DeserializedPool } from 'state/types'
 import styled from 'styled-components'

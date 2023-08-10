@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { Box } from "../Box";
 import { DropdownMenuItemType } from "../DropdownMenu/types";

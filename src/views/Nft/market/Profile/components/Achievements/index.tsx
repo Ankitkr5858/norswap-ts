@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Card, CardBody, Heading, PrizeIcon } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import IconStatBox from 'views/Teams/components/IconStatBox'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'
 import fetchIfoPoolUser from 'views/Migration/hook/V1/Pool/fetchIfoPoolUser'

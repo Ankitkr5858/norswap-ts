@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import request, { gql } from 'graphql-request'
 

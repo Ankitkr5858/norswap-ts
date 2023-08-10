@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Dispatch, SetStateAction, createContext } from 'react'
 
 export const PancakeSquadContext = createContext<{

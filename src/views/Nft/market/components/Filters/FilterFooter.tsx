@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Grid, GridProps } from '@nswap/uikit'
 
 const FilterFooter: React.FC<GridProps> = ({ children, ...props }) => (

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Currency, CurrencyAmount, Fraction, Percent } from '@danielvindax/norswap-sdk'
 import { Button, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

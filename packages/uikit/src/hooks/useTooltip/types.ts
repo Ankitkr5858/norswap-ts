@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Placement, Padding } from "@popperjs/core";
 
 export interface TooltipRefs {

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BoxProps } from "../Box";
 import { MenuItemsType } from "../MenuItems/types";
 

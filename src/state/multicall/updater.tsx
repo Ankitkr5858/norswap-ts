@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Contract } from '@ethersproject/contracts'
 import { useEffect, useMemo, useRef } from 'react'
 import { useSelector } from 'react-redux'

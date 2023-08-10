@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import BnbConfigProvider from '../../views/Predictions/context/BnbConfigProvider'
 
 import PredictionsLeaderboard from '../../views/Predictions/Leaderboard'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { EN } from 'config/localization/languages'
 
 const publicUrl = process.env.PUBLIC_URL || ''

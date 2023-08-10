@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useMemo, useCallback, ReactElement, memo, useEffect } from 'react'
 import { Text, Flex, Box, Grid, ArrowBackIcon, ArrowForwardIcon } from '@nswap/uikit'
 import styled from 'styled-components'

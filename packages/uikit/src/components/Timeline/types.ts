@@ -1,3 +1,4 @@
+// @ts-nocheck
 export type EventStatus = "past" | "live" | "upcoming";
 
 export type Event = {

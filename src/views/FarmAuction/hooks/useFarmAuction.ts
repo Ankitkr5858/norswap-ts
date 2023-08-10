@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import useSWR from 'swr'
 import { useFarmAuctionContract } from 'hooks/useContract'
 import { AUCTION_BIDDERS_TO_FETCH } from 'config'

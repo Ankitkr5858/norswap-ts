@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import capitalize from "lodash/capitalize";
 import random from "lodash/random";

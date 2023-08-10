@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useCallback, memo } from 'react'
 import { FallingBunnies, FallingBunniesProps, useKonamiCheatCode } from '@nswap/uikit'
 

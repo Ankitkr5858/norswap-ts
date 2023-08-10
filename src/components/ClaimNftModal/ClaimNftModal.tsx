@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex, Text, Button, Modal, InjectedModalProps } from '@nswap/uikit'
 import confetti from 'canvas-confetti'
 import delay from 'lodash/delay'

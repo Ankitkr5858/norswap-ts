@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 interface Window {
   ethereum?: {
     isMetaMask?: true

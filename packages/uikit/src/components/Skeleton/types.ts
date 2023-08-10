@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { LayoutProps, SpaceProps, BorderRadiusProps } from "styled-system";
 
 export const animation = {

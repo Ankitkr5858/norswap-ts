@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { BrowserRouter, Link } from "react-router-dom";

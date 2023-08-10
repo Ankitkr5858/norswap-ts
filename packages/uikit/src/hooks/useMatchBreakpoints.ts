@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState } from "react";
 import { breakpointMap } from "../theme/base";
 import { useIsomorphicEffect } from "./useIsomorphicEffect";

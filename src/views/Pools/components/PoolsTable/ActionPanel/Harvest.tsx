@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Button, Text, useModal, Flex, Skeleton, Heading } from '@nswap/uikit'
 import BigNumber from 'bignumber.js'
 import { useWeb3React } from '@web3-react/core'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import isEqual from 'lodash/isEqual'
 import useSWR from 'swr'

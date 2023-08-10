@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Text, Heading, Card, CardHeader, CardBody } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { LandingBodyWrapper } from 'views/PancakeSquad/styles'

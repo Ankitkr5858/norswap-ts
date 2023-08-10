@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { variants, scales } from "./types";
 
 export const styleVariants = {

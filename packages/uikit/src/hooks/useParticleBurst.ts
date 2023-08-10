@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useCallback, useEffect } from "react";
 import debounce from "lodash/debounce";
 

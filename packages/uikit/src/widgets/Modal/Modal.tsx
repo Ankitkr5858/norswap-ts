@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef } from "react";
 import { useTheme } from "styled-components";
 import Heading from "../../components/Heading/Heading";

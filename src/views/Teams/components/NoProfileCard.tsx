@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Button, Card, CardBody, Flex, Heading, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Link from 'next/link'

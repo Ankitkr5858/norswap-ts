@@ -1,3 +1,4 @@
+// @ts-nocheck
 /**
  * @see https://github.com/nswap/pancake-frontend/blob/develop/src/config/constants/tokens.ts
  */

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { Button, Flex } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'

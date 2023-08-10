@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState, useRef } from 'react'
 import { NftToken, ApiResponseCollectionTokens } from 'state/nftMarket/types'
 import {

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Text, Heading, Card, CardHeader, CardBody, Flex, Link, Box } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

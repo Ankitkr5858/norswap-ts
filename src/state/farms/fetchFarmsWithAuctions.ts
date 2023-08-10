@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { FARM_AUCTION_HOSTING_IN_SECONDS } from 'config/constants'
 import farmAuctionAbi from 'config/abi/farmAuction.json'
 import { getFarmAuctionContract } from 'utils/contractHelpers'

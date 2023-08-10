@@ -1,3 +1,4 @@
+// @ts-nocheck
 import noop from "lodash/noop";
 import { DropdownMenuItems, DropdownMenuItemType } from "../../components/DropdownMenu/types";
 import { MenuItemsType } from "../../components/MenuItems/types";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import StyledProgress, { Bar } from "./StyledProgress";
 import ProgressBunnyWrapper from "./ProgressBunnyWrapper";

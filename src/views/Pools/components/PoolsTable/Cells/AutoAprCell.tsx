@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Skeleton, Text, Flex, Button, CalculateIcon, useModal, useMatchBreakpointsContext } from '@nswap/uikit'
 import styled from 'styled-components'
 import Balance from 'components/Balance'

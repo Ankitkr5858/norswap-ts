@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Progress } from '@nswap/uikit'
 import { differenceInSeconds } from 'date-fns'
 import { Auction, AuctionStatus } from 'config/constants/types'

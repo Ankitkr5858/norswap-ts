@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useRouter } from 'next/router'
 import Container from 'components/Layout/Container'
 import PancakeBunniesTraits from './PancakeBunniesTraits'

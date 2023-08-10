@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import SwiperCore, { Keyboard, Mousewheel, FreeMode } from 'swiper'

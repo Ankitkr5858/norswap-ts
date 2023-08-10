@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ReactNode } from 'react'
 import { Text, Heading, Card, CardHeader, CardBody, Box, BoxProps } from '@nswap/uikit'
 import FoldableText from './FoldableText'

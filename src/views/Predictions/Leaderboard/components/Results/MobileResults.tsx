@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box } from '@nswap/uikit'
 import { PredictionUser } from 'state/types'
 import MobileRow from './MobileRow'

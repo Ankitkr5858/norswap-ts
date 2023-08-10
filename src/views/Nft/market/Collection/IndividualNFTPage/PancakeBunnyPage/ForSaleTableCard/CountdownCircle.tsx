@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Spinner, Text } from '@nswap/uikit'
 
 import styled, { keyframes } from 'styled-components'

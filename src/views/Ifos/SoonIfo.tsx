@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import tokens from 'config/constants/tokens'
 import IfoContainer from './components/IfoContainer'
 import IfoSteps from './components/IfoSteps'

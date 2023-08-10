@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useContext } from 'react'
 import { useTranslation } from 'contexts/Localization'
 import { useWeb3React } from '@web3-react/core'

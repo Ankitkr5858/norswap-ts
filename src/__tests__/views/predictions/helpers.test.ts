@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BigNumber } from '@ethersproject/bignumber'
 import { formatRoundTime, padTime, formatBnbv2, formatUsdv2 } from 'views/Predictions/helpers'
 

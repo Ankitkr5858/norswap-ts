@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export const copyText = (text: string, cb?: () => void) => {
   if (navigator.clipboard && navigator.permissions) {
     navigator.clipboard.writeText(text).then(cb)

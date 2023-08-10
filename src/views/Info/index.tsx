@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { PoolUpdater, ProtocolUpdater, TokenUpdater } from 'state/info/updaters'
 import InfoNav from './components/InfoNav'
 

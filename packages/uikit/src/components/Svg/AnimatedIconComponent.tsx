@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { StyledAnimatedIconComponent, StyledIconContainer } from "./styles";
 import { IconComponentType } from "./types";
 

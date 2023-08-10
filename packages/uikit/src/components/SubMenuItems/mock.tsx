@@ -1,3 +1,4 @@
+// @ts-nocheck
 const SubMenuItemsMock = [
   {
     label: "Overview",

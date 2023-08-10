@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect } from 'react'
 import { useWeb3React } from '@web3-react/core'
 import Page from 'components/Layout/Page'

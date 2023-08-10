@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useRouter } from 'next/router'
 import PageLoader from '../../components/Loader/PageLoader'
 import Team from './Team'

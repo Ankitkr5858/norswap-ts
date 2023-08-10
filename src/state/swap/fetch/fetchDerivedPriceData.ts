@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import orderBy from 'lodash/orderBy'
 import { INFO_CLIENT } from 'config/constants/endpoints'
 import { ONE_DAY_UNIX, ONE_HOUR_SECONDS } from 'config/constants/info'

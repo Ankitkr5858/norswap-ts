@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import menuConfig from 'components/Menu/config/config'
 import { getActiveMenuItem, getActiveSubMenuItem } from 'components/Menu/utils'
 

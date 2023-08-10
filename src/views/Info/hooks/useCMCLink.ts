@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 
 // endpoint to check asset exists and get url to CMC page

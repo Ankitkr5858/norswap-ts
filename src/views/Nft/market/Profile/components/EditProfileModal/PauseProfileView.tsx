@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState } from 'react'
 import { AutoRenewIcon, Button, Checkbox, Flex, InjectedModalProps, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

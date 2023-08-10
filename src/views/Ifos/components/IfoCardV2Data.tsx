@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import useGetPublicIfoV2Data from 'views/Ifos/hooks/v2/useGetPublicIfoData'
 import useGetWalletIfoV2Data from 'views/Ifos/hooks/v2/useGetWalletIfoData'
 import { Ifo } from 'config/constants/types'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NftProfileLayout } from 'views/Nft/market/Profile'
 import ActivityHistory from 'views/Nft/market/Profile/components/ActivityHistory'
 import SubMenu from 'views/Nft/market/Profile/components/SubMenu'

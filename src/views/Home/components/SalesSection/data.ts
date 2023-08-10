@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { TranslateFunction } from 'contexts/Localization/types'
 import { SalesSectionProps } from '.'
 

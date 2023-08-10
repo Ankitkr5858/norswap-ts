@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { gql } from 'graphql-request'
 import { Block } from 'state/info/types'
 

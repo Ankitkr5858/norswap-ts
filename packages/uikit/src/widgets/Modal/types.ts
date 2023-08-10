@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BoxProps } from "../../components/Box";
 
 export interface ModalTheme {

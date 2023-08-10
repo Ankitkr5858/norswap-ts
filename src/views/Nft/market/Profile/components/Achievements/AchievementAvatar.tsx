@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ImgHTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { BunnyPlaceholderIcon } from '@nswap/uikit'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ArrowBackIcon, ArrowForwardIcon, BunnyCardsIcon, Flex, IconButton } from '@nswap/uikit'
 import styled from 'styled-components'
 import { useGetSortedRoundsCurrentEpoch } from 'state/predictions/hooks'

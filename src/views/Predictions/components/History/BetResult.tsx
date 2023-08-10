@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { Box, Flex, Heading, Text, PrizeIcon, BlockIcon, LinkExternal, useTooltip, InfoIcon } from '@nswap/uikit'
 import styled from 'styled-components'

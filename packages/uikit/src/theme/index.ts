@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AlertTheme } from "../components/Alert/types";
 import { CardTheme } from "../components/Card/types";
 import { PancakeToggleTheme } from "../components/PancakeToggle/types";

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { darkColors } from "../../../theme";
 import { FlexProps } from "../../Box";

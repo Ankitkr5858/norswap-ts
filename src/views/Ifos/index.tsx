@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { SubMenuItems } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { PageMeta } from 'components/Layout/Page'

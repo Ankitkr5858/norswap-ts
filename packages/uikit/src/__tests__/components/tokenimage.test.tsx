@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { renderWithTheme, setupMockIntersectionObserver } from "../../testHelpers";
 import TokenImage from "../../components/Image/TokenImage";

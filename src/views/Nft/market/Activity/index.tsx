@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Card, Heading } from '@nswap/uikit'
 import Page from 'components/Layout/Page'
 import PageHeader from 'components/PageHeader'

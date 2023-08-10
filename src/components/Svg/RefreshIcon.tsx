@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Svg } from '@nswap/uikit'
 
 // NOTE: Temporary save icon here. Will move to uikit when the feature is done

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import farms from 'config/constants/farms'
 import { SerializedFarm } from 'state/types'
 import { getLpContract } from 'utils/contractHelpers'

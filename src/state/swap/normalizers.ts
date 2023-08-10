@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { fromUnixTime } from 'date-fns'
 import { PairDayDatasResponse, PairHoursDatasResponse } from './fetch/types'
 import { DerivedPairDataNormalized, PairDataNormalized, PairDataTimeWindowEnum, PairPricesNormalized } from './types'

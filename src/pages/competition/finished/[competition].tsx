@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useMemo } from 'react'
 import { useRouter } from 'next/router'
 import SubMenu from '../../../views/TradingCompetition/components/SubMenu'

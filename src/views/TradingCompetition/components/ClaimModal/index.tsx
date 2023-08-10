@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { AutoRenewIcon, Button, Flex, Heading, Modal, Text } from '@nswap/uikit'
 import { ToastDescriptionWithTx } from 'components/Toast'
 import { useTranslation } from 'contexts/Localization'

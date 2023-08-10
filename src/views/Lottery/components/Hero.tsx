@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled, { keyframes } from 'styled-components'
 import { Box, Flex, Heading, Skeleton } from '@nswap/uikit'
 import { LotteryStatus } from 'config/constants/types'

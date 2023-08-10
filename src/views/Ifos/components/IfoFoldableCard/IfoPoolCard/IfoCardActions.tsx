@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { Button } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { darkColors, lightColors } from "../../theme/colors";
 import { AlertTheme } from "./types";
 

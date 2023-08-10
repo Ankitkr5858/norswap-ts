@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import { Box, Button, Flex, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

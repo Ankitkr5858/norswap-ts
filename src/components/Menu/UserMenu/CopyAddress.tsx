@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Flex, FlexProps } from '@nswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

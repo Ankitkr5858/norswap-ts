@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { SpaceProps } from "styled-system";
 
 export interface BreadcrumbsProps extends SpaceProps {

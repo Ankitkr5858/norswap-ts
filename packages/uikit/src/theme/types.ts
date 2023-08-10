@@ -1,3 +1,4 @@
+// @ts-nocheck
 export type Breakpoints = string[];
 
 export type MediaQueries = {

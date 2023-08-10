@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useLayoutEffect, useRef, useState } from 'react'
 
 const useIntersectionObserver = () => {

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { memo } from 'react'
 import { Text, Flex, TooltipText, useTooltip } from '@nswap/uikit'
 import { BalanceWithLoading } from 'components/Balance'

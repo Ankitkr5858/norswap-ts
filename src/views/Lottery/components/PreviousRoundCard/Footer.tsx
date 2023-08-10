@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { Flex, ExpandableLabel, CardFooter } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

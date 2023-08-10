@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { GraphQLClient } from 'graphql-request'
 
 const requestWithTimeout = <T>(

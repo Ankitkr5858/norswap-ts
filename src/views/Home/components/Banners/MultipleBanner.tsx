@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { appearAnimation, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { useLayoutEffect, useState } from 'react'

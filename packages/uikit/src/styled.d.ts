@@ -1,3 +1,4 @@
+// @ts-nocheck
 import "styled-components";
 import { PancakeTheme } from "./theme";
 

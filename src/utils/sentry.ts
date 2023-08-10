@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import * as Sentry from '@sentry/react'
 
 const assignError = (maybeError: any) => {

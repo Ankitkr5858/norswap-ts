@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import addresses from 'config/constants/contracts'
 
 import { GRAPH_API_PREDICTION } from 'config/constants/endpoints'

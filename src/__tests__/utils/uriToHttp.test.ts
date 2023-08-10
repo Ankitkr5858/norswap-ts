@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import uriToHttp from 'utils/uriToHttp'
 
 describe('uriToHttp', () => {

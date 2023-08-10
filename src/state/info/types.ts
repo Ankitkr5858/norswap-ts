@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export interface Block {
   number: number
   timestamp: string

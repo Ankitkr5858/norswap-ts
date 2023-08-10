@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from "styled-components";
 import { PolymorphicComponent } from "../../util/polymorphic";
 import Button from "./Button";

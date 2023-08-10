@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { createStore, Store } from 'redux'
 
 import { Field, typeInput } from './actions'

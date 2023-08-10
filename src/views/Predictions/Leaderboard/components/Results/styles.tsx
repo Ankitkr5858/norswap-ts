@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Token } from '@danielvindax/norswap-sdk'
 import { Flex, FlexProps, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { request, gql } from 'graphql-request'
 import { campaignMap } from 'config/constants/campaigns'
 import { GRAPH_API_PROFILE } from 'config/constants/endpoints'

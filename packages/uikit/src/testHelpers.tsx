@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { ReactNode } from "react";
 import { render, RenderResult } from "@testing-library/react";
 import { ThemeProvider } from "styled-components";

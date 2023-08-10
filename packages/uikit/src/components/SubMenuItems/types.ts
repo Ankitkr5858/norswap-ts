@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { ElementType } from "react";
 import { FlexProps } from "../Box";

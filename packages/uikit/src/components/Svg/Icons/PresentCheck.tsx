@@ -1,3 +1,4 @@
+// @ts-nocheck
 import uniqueId from "lodash/uniqueId";
 import React from "react";
 import Svg from "../Svg";

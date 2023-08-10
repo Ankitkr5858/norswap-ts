@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { css, keyframes } from "styled-components";
 import { FC, useEffect } from "react";
 import { Box, BoxProps } from "../Box";

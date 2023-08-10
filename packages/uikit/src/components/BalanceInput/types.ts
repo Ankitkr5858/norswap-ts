@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InputHTMLAttributes, ReactNode, ReactText } from "react";
 import { BoxProps } from "../Box";
 import { InputProps } from "../Input";

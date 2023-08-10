@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { TagProps } from '@nswap/uikit'
 import { ClosedTag, CommunityTag, CoreTag, SoonTag, VoteNowTag } from 'components/Tags'
 import { ProposalState } from 'state/types'

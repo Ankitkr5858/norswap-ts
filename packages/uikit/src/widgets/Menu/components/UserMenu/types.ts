@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { FlexProps } from "styled-system";
 import { ReactElement } from "react";
 

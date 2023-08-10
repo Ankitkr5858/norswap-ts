@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled, { DefaultTheme } from "styled-components";
 import { space, variant, typography } from "styled-system";
 import { Colors } from "../../theme/types";

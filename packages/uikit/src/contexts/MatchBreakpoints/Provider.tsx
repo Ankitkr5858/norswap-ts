@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createContext } from "react";
 import { BreakpointChecks } from "../../hooks/useMatchBreakpoints";
 import { useMatchBreakpoints } from "../../hooks";

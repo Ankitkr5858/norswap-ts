@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { Text, Flex, Skeleton, Image } from '@nswap/uikit'
 import { useFarmAuctionContract } from 'hooks/useContract'

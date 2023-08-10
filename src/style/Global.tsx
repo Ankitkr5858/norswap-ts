@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { createGlobalStyle } from "styled-components";
 import { PancakeTheme } from "@nswap/uikit";
 

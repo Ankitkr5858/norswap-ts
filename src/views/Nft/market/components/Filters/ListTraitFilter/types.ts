@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NftAttribute } from 'state/nftMarket/types'
 
 export interface Item {

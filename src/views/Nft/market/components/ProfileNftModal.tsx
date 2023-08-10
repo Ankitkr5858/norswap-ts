@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { InjectedModalProps, Modal, Flex, Text, Button, useModal, Link, Grid, LinkExternal } from '@nswap/uikit'
 import useTheme from 'hooks/useTheme'
 import styled from 'styled-components'

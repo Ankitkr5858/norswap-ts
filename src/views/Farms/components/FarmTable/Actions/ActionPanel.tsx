@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled, { keyframes, css } from 'styled-components'
 import { useTranslation } from 'contexts/Localization'
 import { LinkExternal, Text, useMatchBreakpointsContext } from '@nswap/uikit'

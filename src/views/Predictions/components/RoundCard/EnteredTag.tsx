@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BigNumber } from '@ethersproject/bignumber'
 import { CheckmarkCircleIcon, CheckmarkCircleFillIcon, Tag, useTooltip } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

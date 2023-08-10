@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useRef } from 'react'
 
 export default function useInterval(callback: () => void, delay: null | number, leading = true) {

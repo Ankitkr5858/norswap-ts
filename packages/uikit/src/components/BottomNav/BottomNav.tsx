@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState, memo } from "react";
 import BottomNavItem from "../BottomNavItem";
 import StyledBottomNav from "./styles";

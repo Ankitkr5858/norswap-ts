@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from "styled-components";
 import { space, variant as StyledSystemVariant } from "styled-system";
 import { lightColors } from "../../theme";

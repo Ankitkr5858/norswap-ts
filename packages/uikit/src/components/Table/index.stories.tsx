@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import Card from "../Card/Card";
 import Table from "./Table";

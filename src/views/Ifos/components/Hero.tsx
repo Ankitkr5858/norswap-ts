@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Box, Heading, Text, Button, Flex, useMatchBreakpointsContext } from '@nswap/uikit'
 import Container from 'components/Layout/Container'

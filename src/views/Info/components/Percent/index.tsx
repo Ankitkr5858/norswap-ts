@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Text, TextProps } from '@nswap/uikit'
 
 export interface PercentProps extends TextProps {

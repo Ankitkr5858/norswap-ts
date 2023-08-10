@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { GetStaticPaths, GetStaticProps } from 'next'
 import RemoveLiquidity from 'views/RemoveLiquidity'
 

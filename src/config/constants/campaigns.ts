@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Campaign } from './types'
 
 /**

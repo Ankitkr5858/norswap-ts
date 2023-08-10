@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Heading, Text } from '@nswap/uikit'
 import { useProfile } from 'state/profile/hooks'

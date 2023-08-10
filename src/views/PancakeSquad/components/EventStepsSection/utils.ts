@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { EventStatus, StepStatus } from '@nswap/uikit'
 import { SaleStatusEnum } from 'views/PancakeSquad/types'
 import { getEventStepStatus, getEventStepStatusType } from 'views/PancakeSquad/utils'
