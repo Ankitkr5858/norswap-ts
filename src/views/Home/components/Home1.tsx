@@ -86,7 +86,6 @@ export function Stacking() {
         <div onClick={() => showModal("Unstake")}>Unstake</div>
       </Flex>
       {stackingModal &&
-        stackingModal !== "History" &&
         ReactDOM.createPortal(
           <StackingModal
             closeModal={closeModal}
@@ -103,225 +102,229 @@ export function StackingModal({ closeModal, stackingModal }) {
   return (
     <>
       <div className="overlay" onClick={closeModal}></div>
-      <div className="StackingModal">
-        <div className="modal_header">
-          <span>{stackingModal === "Rewards" ? "Rewards" : "Unstake"}</span>
-          <span className="cross_icon" onClick={closeModal}>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="14"
-              height="14"
-              viewBox="0 0 14 14"
-              fill="none"
-            >
-              <path
-                d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
-                fill="white"
-              />
-            </svg>
-          </span>
-        </div>
-        <div className="modal_content">
-          {componentIndex === 1 && (
-            <div>
-              <Text
-                color="#949494"
-                fontSize="16px"
-                mb={stackingModal === "Rewards" ? '"5px"' : "8px"}
+      {(stackingModal === "Rewards" || stackingModal === "Unstake") && (
+        <div className="StackingModal">
+          <div className="modal_header">
+            <span>{stackingModal === "Rewards" ? "Rewards" : "Unstake"}</span>
+            <span className="cross_icon" onClick={closeModal}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
               >
-                {stackingModal === "Rewards"
-                  ? "Unclaimed reward"
-                  : "Staked Amount"}
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  justifyContent: "center",
-                }}
-                color="#ffffff"
-                fontSize="28px"
-                mb="24px"
-              >
-                0.264
-                <Text ml={10} color="#ffffff" fontSize="18px">
-                  NRK
+                <path
+                  d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+          </div>
+          <div className="modal_content">
+            {componentIndex === 1 && (
+              <div>
+                <Text
+                  color="#949494"
+                  fontSize="16px"
+                  mb={stackingModal === "Rewards" ? '"5px"' : "8px"}
+                >
+                  {stackingModal === "Rewards"
+                    ? "Unclaimed reward"
+                    : "Staked Amount"}
                 </Text>
-              </Text>
-              {stackingModal === "Rewards" && (
-                <div>
-                  <Text color="#949494" fontSize="16px" mb="5px">
-                    Amount Staked
+                <Text
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "center",
+                  }}
+                  color="#ffffff"
+                  fontSize="28px"
+                  mb="24px"
+                >
+                  0.264
+                  <Text ml={10} color="#ffffff" fontSize="18px">
+                    NRK
                   </Text>
-                  <Text
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      justifyContent: "center",
-                    }}
-                    color="#ffffff"
-                    fontSize="28px"
-                    mb="24px"
-                  >
-                    0.264
-                    <Text ml={10} color="#ffffff" fontSize="18px">
-                      NRK
+                </Text>
+                {stackingModal === "Rewards" && (
+                  <div>
+                    <Text color="#949494" fontSize="16px" mb="5px">
+                      Amount Staked
                     </Text>
-                  </Text>
-                  <Text color="#949494" fontSize="16px" mb="5px">
-                    Claimed reward
-                  </Text>
-                  <Text
-                    style={{
-                      display: "flex",
-                      alignItems: "baseline",
-                      justifyContent: "center",
-                    }}
-                    color="#ffffff"
-                    fontSize="28px"
-                    mb="24px"
-                  >
-                    0.00000264
-                    <Text ml={10} color="#ffffff" fontSize="18px">
-                      NRK
+                    <Text
+                      style={{
+                        display: "flex",
+                        alignItems: "baseline",
+                        justifyContent: "center",
+                      }}
+                      color="#ffffff"
+                      fontSize="28px"
+                      mb="24px"
+                    >
+                      0.264
+                      <Text ml={10} color="#ffffff" fontSize="18px">
+                        NRK
+                      </Text>
                     </Text>
-                  </Text>
-                </div>
-              )}
-            </div>
-          )}
-          {componentIndex === 2 && (
-            <div>
-              <Text color="#fff" fontSize="16px" mb={2}>
-                {stackingModal === "Rewards"
-                  ? "Add amount to claim"
-                  : "Add amount to unstake"}
-              </Text>
-              <div className="input_stake_amount">
-                <input placeholder="0.00" type="number" />
-                <span>Max</span>
+                    <Text color="#949494" fontSize="16px" mb="5px">
+                      Claimed reward
+                    </Text>
+                    <Text
+                      style={{
+                        display: "flex",
+                        alignItems: "baseline",
+                        justifyContent: "center",
+                      }}
+                      color="#ffffff"
+                      fontSize="28px"
+                      mb="24px"
+                    >
+                      0.00000264
+                      <Text ml={10} color="#ffffff" fontSize="18px">
+                        NRK
+                      </Text>
+                    </Text>
+                  </div>
+                )}
               </div>
-              {stackingModal === "Unstake" && (
-                <Text color="#949494" fontSize="12px" mt={"8px"} mb={"20px"}>
-                  Minimum staking amount : 100NRK
+            )}
+            {componentIndex === 2 && (
+              <div>
+                <Text color="#fff" fontSize="16px" mb={2}>
+                  {stackingModal === "Rewards"
+                    ? "Add amount to claim"
+                    : "Add amount to unstake"}
                 </Text>
-              )}
-              <Text
-                color="#949494"
-                fontSize="16px"
-                mt={stackingModal === "Rewards" ? "20px" : "8px"}
-              >
-                Amount unclaimed
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  justifyContent: "center",
-                }}
-                color="#ffffff"
-                fontSize="20px"
-                mb="27px"
-              >
-                0.00000264
-                <Text ml={10} color="#ffffff" fontSize="12px">
-                  NRK
+                <div className="input_stake_amount">
+                  <input placeholder="0.00" type="number" />
+                  <span>Max</span>
+                </div>
+                {stackingModal === "Unstake" && (
+                  <Text color="#949494" fontSize="12px" mt={"8px"} mb={"20px"}>
+                    Minimum staking amount : 100NRK
+                  </Text>
+                )}
+                <Text
+                  color="#949494"
+                  fontSize="16px"
+                  mt={stackingModal === "Rewards" ? "20px" : "8px"}
+                >
+                  Amount unclaimed
                 </Text>
-              </Text>
-            </div>
-          )}
-          {componentIndex === 3 && (
-            <div>
-              <Image
+                <Text
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "center",
+                  }}
+                  color="#ffffff"
+                  fontSize="20px"
+                  mb="27px"
+                >
+                  0.00000264
+                  <Text ml={10} color="#ffffff" fontSize="12px">
+                    NRK
+                  </Text>
+                </Text>
+              </div>
+            )}
+            {componentIndex === 3 && (
+              <div>
+                <Image
+                  style={{
+                    margin: "10px auto",
+                  }}
+                  src={successIcon}
+                />
+                <Text
+                  color="#fff"
+                  fontSize="24px"
+                  mt={stackingModal === "Rewards" ? "20px" : "8px"}
+                >
+                  {stackingModal === "Rewards"
+                    ? "Reward claimed"
+                    : "Unstaking Successful"}
+                </Text>
+                <Text
+                  color="#949494"
+                  fontSize="16px"
+                  mt={stackingModal === "Rewards" ? "20px" : "8px"}
+                >
+                  Amount unclaimed
+                </Text>
+
+                <Text
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "center",
+                  }}
+                  color="#ffffff"
+                  fontSize="20px"
+                  mb="12px"
+                >
+                  0.00000264
+                  <Text ml={10} color="#ffffff" fontSize="12px">
+                    NRK
+                  </Text>
+                </Text>
+                <Text
+                  color="#949494"
+                  fontSize="16px"
+                  mt={stackingModal === "Rewards" ? "20px" : "8px"}
+                >
+                  Remaining{" "}
+                  {stackingModal === "Rewards" ? "unclaimed" : "staked"}
+                </Text>
+                <Text
+                  style={{
+                    display: "flex",
+                    alignItems: "baseline",
+                    justifyContent: "center",
+                  }}
+                  color="#ffffff"
+                  fontSize="20px"
+                  mb="27px"
+                >
+                  0.00000264
+                  <Text ml={10} color="#ffffff" fontSize="12px">
+                    NRK
+                  </Text>
+                </Text>
+              </div>
+            )}
+
+            {(componentIndex === 1 || componentIndex === 2) && (
+              <button
                 style={{
-                  margin: "10px auto",
+                  width: componentIndex === 1 ? "100%" : "90%",
                 }}
-                src={successIcon}
-              />
-              <Text
-                color="#fff"
-                fontSize="24px"
-                mt={stackingModal === "Rewards" ? "20px" : "8px"}
+                onClick={() => setComponentIndex(componentIndex + 1)}
               >
                 {stackingModal === "Rewards"
-                  ? "Reward claimed"
-                  : "Unstaking Successful"}
-              </Text>
+                  ? componentIndex === 1
+                    ? "Claim"
+                    : "Confirm"
+                  : componentIndex === 1
+                  ? "Unstake"
+                  : "Confirm"}
+              </button>
+            )}
+            {(componentIndex === 1 || componentIndex === 3) && (
               <Text
-                color="#949494"
-                fontSize="16px"
-                mt={stackingModal === "Rewards" ? "20px" : "8px"}
+                style={{ textDecoration: "underline", cursor: "pointer" }}
+                mt={22}
+                color="#AF83FF"
               >
-                Amount unclaimed
+                {stackingModal === "Rewards" ? "Claim" : "Unstake"} history
               </Text>
-
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  justifyContent: "center",
-                }}
-                color="#ffffff"
-                fontSize="20px"
-                mb="12px"
-              >
-                0.00000264
-                <Text ml={10} color="#ffffff" fontSize="12px">
-                  NRK
-                </Text>
-              </Text>
-              <Text
-                color="#949494"
-                fontSize="16px"
-                mt={stackingModal === "Rewards" ? "20px" : "8px"}
-              >
-                Remaining {stackingModal === "Rewards" ? "unclaimed" : "staked"}
-              </Text>
-              <Text
-                style={{
-                  display: "flex",
-                  alignItems: "baseline",
-                  justifyContent: "center",
-                }}
-                color="#ffffff"
-                fontSize="20px"
-                mb="27px"
-              >
-                0.00000264
-                <Text ml={10} color="#ffffff" fontSize="12px">
-                  NRK
-                </Text>
-              </Text>
-            </div>
-          )}
-
-          {(componentIndex === 1 || componentIndex === 2) && (
-            <button
-              style={{
-                width: componentIndex === 1 ? "100%" : "90%",
-              }}
-              onClick={() => setComponentIndex(componentIndex + 1)}
-            >
-              {stackingModal === "Rewards"
-                ? componentIndex === 1
-                  ? "Claim"
-                  : "Confirm"
-                : componentIndex === 1
-                ? "Unstake"
-                : "Confirm"}
-            </button>
-          )}
-          {(componentIndex === 1 || componentIndex === 3) && (
-            <Text
-              style={{ textDecoration: "underline", cursor: "pointer" }}
-              mt={22}
-              color="#AF83FF"
-            >
-              {stackingModal === "Rewards" ? "Claim" : "Unstake"} history
-            </Text>
-          )}
+            )}
+          </div>
         </div>
-      </div>
+      )}
+      {stackingModal === "History" && <div className="History_Modal">history modal is here</div>}
     </>
   );
 }
