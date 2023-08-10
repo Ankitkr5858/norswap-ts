@@ -34,12 +34,12 @@ const Home1 = () => {
           justifyContent="center"
         >
           <Heading
-            className="hero-title-one"
-            scale="xl"
+            className="hero-title-one font-Notable"
+            scale="xxl"
             color="#ffffff"
             mb="40px"
           >
-            {t("NORDEK Swap synergizes with MSMEs")}
+            {t("Staking is live")}
           </Heading>
           <CryptoConvertor />
           <Stacking />
@@ -62,9 +62,13 @@ const Home1 = () => {
 
 export function Stacking() {
   const [stackingModal, setStackingModal] = useState("");
-  const portalContainer = document.createElement("div");
-  portalContainer.className = "StackingModalPortal";
-  document.body.insertBefore(portalContainer, document.body.firstChild);
+  let portalContainer = document.querySelector("#portal-container-div-modal");
+  if (!portalContainer) {
+    portalContainer = document.createElement("div");
+    portalContainer.className = "StackingModalPortal";
+    portalContainer.id = "portal-container-div-modal";
+    document.body.insertBefore(portalContainer, document.body.firstChild);
+  }
   function showModal(param) {
     document.body.style.overflow = param ? "hidden" : "auto";
     setStackingModal(param);
@@ -73,12 +77,7 @@ export function Stacking() {
     document.body.style.overflow = "auto";
     setStackingModal("");
   };
-  useEffect(() => {
-    const portalElement = portalContainer;
-    return () => {
-      document.body.removeChild(portalElement);
-    };
-  }, []);
+
   return (
     <>
       <Flex className="stacking">
@@ -99,6 +98,7 @@ export function Stacking() {
 }
 export function StackingModal({ closeModal, stackingModal }) {
   const [componentIndex, setComponentIndex] = useState(1);
+  const [activeTab, setActiveTab] = useState("Stake");
 
   return (
     <>
@@ -325,7 +325,137 @@ export function StackingModal({ closeModal, stackingModal }) {
           </div>
         </div>
       )}
-      {stackingModal === "History" && <div className="History_Modal">history modal is here</div>}
+      {stackingModal === "History" && (
+        <div className="History_Modal">
+          <div>
+            <div className="modal_header">
+              <div>
+                <Text color="#F4EEFF" fontSize="24px">
+                  Transaction history
+                </Text>
+                <div className="tabs_chip">
+                  {["Stake", "Unstake", "Claim"].map((i) => (
+                    <span
+                      key={i}
+                      className={`${activeTab === i && "active_tab"}`}
+                      onClick={() => setActiveTab(i)}
+                    >
+                      {i}
+                    </span>
+                  ))}
+                </div>
+              </div>
+              <svg
+                className="cross_icon"
+                onClick={closeModal}
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+              >
+                <path
+                  d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                  fill="white"
+                />
+              </svg>
+            </div>
+            <div
+              className={`modal_content ${
+                (activeTab === "Unstake" || activeTab === "Claim") &&
+                "grid_modal_changed"
+              }`}
+            >
+              <div className="section_content">
+                <span>ID</span>
+                <ul>
+                  <li>23678</li>
+                  <li>23678</li>
+                </ul>
+              </div>
+
+              <div className="section_content">
+                <span>User Address</span>
+                <ul>
+                  <li>23678</li>
+                  <li>23678</li>
+                </ul>
+              </div>
+              <div className="section_content">
+                <span>Txn Hash</span>
+                <ul>
+                  <li>23678</li>
+                  <li>23678</li>
+                </ul>
+              </div>
+              <div className="section_content">
+                <span>Amount</span>
+                <ul>
+                  <li>23678</li>
+                  <li>23678</li>
+                </ul>
+              </div>
+              <div className="section_content">
+                <span>{activeTab === "Stake" ? "Start" : activeTab} Time</span>
+                <ul>
+                  <li>23678</li>
+                  <li>23678</li>
+                </ul>
+              </div>
+              {activeTab === "Stake" && (
+                <div className="section_content">
+                  <span>End Time</span>
+                  <ul>
+                    <li>23678</li>
+                    <li>23678</li>
+                  </ul>
+                </div>
+              )}
+              <div className="section_content">
+                <span>TXN receipt</span>
+                <ul>
+                  <li className="arrow_icon">
+                    Nordek Scan
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M10 5H8.2C7.08 5 6.52 5 6.092 5.218C5.71565 5.40969 5.40969 5.71565 5.218 6.092C5 6.52 5 7.08 5 8.2V15.8C5 16.92 5 17.48 5.218 17.908C5.40974 18.2843 5.71569 18.5903 6.092 18.782C6.519 19 7.079 19 8.197 19H15.803C16.921 19 17.48 19 17.907 18.782C18.284 18.59 18.59 18.284 18.782 17.908C19 17.48 19 16.921 19 15.803V14M20 9V4M20 4H15M20 4L13 11"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </li>
+                  <li className="arrow_icon">
+                    Nordek Scan
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M10 5H8.2C7.08 5 6.52 5 6.092 5.218C5.71565 5.40969 5.40969 5.71565 5.218 6.092C5 6.52 5 7.08 5 8.2V15.8C5 16.92 5 17.48 5.218 17.908C5.40974 18.2843 5.71569 18.5903 6.092 18.782C6.519 19 7.079 19 8.197 19H15.803C16.921 19 17.48 19 17.907 18.782C18.284 18.59 18.59 18.284 18.782 17.908C19 17.48 19 16.921 19 15.803V14M20 9V4M20 4H15M20 4L13 11"
+                        stroke="white"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }
