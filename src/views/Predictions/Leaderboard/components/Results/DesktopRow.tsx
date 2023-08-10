@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Td, Text } from '@nswap/uikit'
 import { PredictionUser } from 'state/types'
 import ResultAvatar from './ResultAvatar'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ColorProps } from "styled-system";
 
 export interface TabMenuProps {

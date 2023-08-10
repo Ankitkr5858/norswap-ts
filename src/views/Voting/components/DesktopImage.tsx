@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Image } from '@nswap/uikit'
 import styled from 'styled-components'
 

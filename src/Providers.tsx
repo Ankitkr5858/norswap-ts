@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ModalProvider, light, dark, MatchBreakpointsProvider } from '@nswap/uikit'
 import { Web3ReactProvider } from '@web3-react/core'
 import { Provider } from 'react-redux'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NextLinkFromReactRouter } from 'components/NextLink'
 import ToggleView from 'components/ToggleView/ToggleView'
 import { ViewMode } from 'state/user/actions'

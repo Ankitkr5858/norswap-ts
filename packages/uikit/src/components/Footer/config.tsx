@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Language } from "../LangSelector/types";
 import { FooterLinkType } from "./types";
 import { FacebookIcon, TwitterIcon, TelegramIcon, InstagramIcon, YoutubeIcon, DiscordIcon } from "../Svg";

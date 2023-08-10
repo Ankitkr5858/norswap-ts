@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { IconButton, Text, Skeleton, Button, AutoRenewIcon, ChevronRightIcon, Message } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { formatNumber } from 'utils/formatBalance'

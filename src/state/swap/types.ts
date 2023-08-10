@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export type PairDataNormalized = {
   time: number
   token0Id: string

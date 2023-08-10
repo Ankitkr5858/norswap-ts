@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { getCollectionDistributionApi, getNftsFromCollectionApi } from 'state/nftMarket/helpers'
 import { ApiCollectionDistribution, ApiResponseCollectionTokens, ApiSingleTokenData } from 'state/nftMarket/types'

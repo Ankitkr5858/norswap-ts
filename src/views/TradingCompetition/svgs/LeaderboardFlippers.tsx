@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Svg, SvgProps } from '@nswap/uikit'
 
 const RibbonDownMid: React.FC<SvgProps> = (props) => {

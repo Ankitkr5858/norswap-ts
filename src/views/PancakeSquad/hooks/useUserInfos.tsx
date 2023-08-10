@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect } from 'react'
 import { getNftSaleAddress } from 'utils/addressHelpers'
 import { getPancakeSquadContract } from 'utils/contractHelpers'

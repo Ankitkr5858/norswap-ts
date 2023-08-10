@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BunnyPlaceholderIcon, Flex, Heading } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 

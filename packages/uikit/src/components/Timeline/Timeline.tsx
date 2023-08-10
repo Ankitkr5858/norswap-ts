@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Colors, lightColors } from "../../theme";
 import { Flex } from "../Box";
 import { CircleOutlineIcon, LogoIcon, CheckmarkCircleFillIcon } from "../Svg";

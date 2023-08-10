@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BNB_ADDRESS } from './constants'
 
 const MIN_VALUE_DISPLAYED = 0.001

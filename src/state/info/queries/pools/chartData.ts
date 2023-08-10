@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { gql } from 'graphql-request'
 import { infoClient } from 'utils/graphql'
 import { ChartEntry } from 'state/info/types'

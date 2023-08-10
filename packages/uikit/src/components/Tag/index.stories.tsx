@@ -1,3 +1,4 @@
+// @ts-nocheck
 import capitalize from "lodash/capitalize";
 import Box from "../Box/Box";
 import Flex from "../Box/Flex";

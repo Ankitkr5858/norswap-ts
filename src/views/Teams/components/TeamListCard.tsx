@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled, { DefaultTheme } from 'styled-components'
 import Link from 'next/link'
 import { Button, Card, CommunityIcon, Flex, Heading, PrizeIcon, Text } from '@nswap/uikit'

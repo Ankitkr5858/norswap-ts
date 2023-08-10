@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, CardBody, Flex, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { useBNBBusdPrice } from 'hooks/useBUSDPrice'

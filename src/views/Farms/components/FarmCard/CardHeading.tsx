@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Tag, Flex, Heading, Skeleton } from '@nswap/uikit'
 import { Token } from '@danielvindax/norswap-sdk'

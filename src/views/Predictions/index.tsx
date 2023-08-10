@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useModal, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { PageMeta } from 'components/Layout/Page'

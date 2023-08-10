@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useWeb3React } from '@web3-react/core'
 import { useEffect, useState } from 'react'
 import { useErc721CollectionContract } from 'hooks/useContract'

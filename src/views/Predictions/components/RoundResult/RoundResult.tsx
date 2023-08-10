@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BoxProps, Text } from '@nswap/uikit'
 import { NodeRound } from 'state/types'
 import { useTranslation } from 'contexts/Localization'

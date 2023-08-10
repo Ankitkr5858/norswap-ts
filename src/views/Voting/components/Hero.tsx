@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Button, Flex, Heading, ProposalIcon } from '@nswap/uikit'
 import styled from 'styled-components'
 import { useTranslation } from 'contexts/Localization'

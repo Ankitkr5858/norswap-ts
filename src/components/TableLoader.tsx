@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex, Skeleton, Td, useMatchBreakpointsContext } from '@nswap/uikit'
 

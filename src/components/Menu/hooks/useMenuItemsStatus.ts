@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useMemo } from 'react'
 import { useActiveIfoWithBlocks } from 'hooks/useActiveIfoWithBlocks'
 import { useCurrentBlock } from 'state/block/hooks'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { AddIcon, Button, IconButton, MinusIcon, Skeleton, Text, useModal } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'
 import ConnectWalletButton from 'components/ConnectWalletButton'

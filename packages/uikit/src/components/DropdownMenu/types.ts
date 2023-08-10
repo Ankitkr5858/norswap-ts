@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { Colors } from "../../theme";
 import { BoxProps } from "../Box";

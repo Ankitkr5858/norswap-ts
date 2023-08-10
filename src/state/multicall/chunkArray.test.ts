@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import chunkArray from './chunkArray'
 
 describe('#chunkArray', () => {

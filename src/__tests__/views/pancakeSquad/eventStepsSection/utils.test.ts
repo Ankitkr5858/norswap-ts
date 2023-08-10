@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { getStepperStatus } from 'views/PancakeSquad/components/EventStepsSection/utils'
 import { SaleStatusEnum } from 'views/PancakeSquad/types'
 

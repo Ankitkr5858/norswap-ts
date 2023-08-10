@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ReactNode } from 'react'
 import styled from 'styled-components'
 import { StaticImageData } from 'next/dist/client/image'

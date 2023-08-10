@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { TabMenu as UIKitTabMenu, Tab, Flex, VerifiedIcon, CommunityIcon } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

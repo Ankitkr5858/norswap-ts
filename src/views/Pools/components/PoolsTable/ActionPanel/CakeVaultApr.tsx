@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Button, Flex, Skeleton, Text, CalculateIcon, useModal } from '@nswap/uikit'
 import Balance from 'components/Balance'
 import { useTranslation } from 'contexts/Localization'

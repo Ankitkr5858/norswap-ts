@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { FooterLinkType } from '@nswap/uikit'
 import { ContextApi } from 'contexts/Localization/types'
 

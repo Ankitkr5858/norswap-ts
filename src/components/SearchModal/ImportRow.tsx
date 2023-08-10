@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { CSSProperties } from 'react'
 import { Token } from '@danielvindax/norswap-sdk'
 import { Button, Text, CheckmarkCircleIcon, useMatchBreakpointsContext } from '@nswap/uikit'

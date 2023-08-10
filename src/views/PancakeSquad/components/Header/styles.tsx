@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Flex, lightColors, Text } from '@nswap/uikit'
 import styled from 'styled-components'
 

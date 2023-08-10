@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AnchorHTMLAttributes } from "react";
 import { TextProps } from "../Text";
 

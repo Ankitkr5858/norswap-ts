@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { Flex, TrophyGoldIcon } from '@nswap/uikit'
 import { useGetIsClaimable } from 'state/predictions/hooks'

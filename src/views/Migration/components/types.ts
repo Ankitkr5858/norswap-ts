@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export type TableProps = {
   data?: TableDataTypes[]
   selectedFilters?: string

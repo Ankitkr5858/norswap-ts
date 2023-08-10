@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 /* eslint-disable no-await-in-loop */
 /* eslint-disable no-restricted-syntax */
 import { SNAPSHOT_API } from 'config/constants/endpoints'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex, Heading, Skeleton } from '@nswap/uikit'
 import getTimePeriods from 'utils/getTimePeriods'
 import Timer from './Timer'

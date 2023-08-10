@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useCallback, useState, useMemo, useEffect, Fragment } from 'react'
 import styled from 'styled-components'
 import { NextLinkFromReactRouter } from 'components/NextLink'

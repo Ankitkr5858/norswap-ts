@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useContext } from 'react'
 import { FarmsPageLayout, FarmsContext } from 'views/Farms'
 import FarmCard from 'views/Farms/components/FarmCard/FarmCard'

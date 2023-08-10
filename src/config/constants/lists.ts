@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 const PANCAKE_EXTENDED = 'https://tokens.ciaxi.com/nswap-extended.json'
 const PANCAKE_TOP100 = 'https://tokens.ciaxi.com/nswap-top-100.json'
 const COINGECKO = 'https://tokens.ciaxi.com/coingecko.json'

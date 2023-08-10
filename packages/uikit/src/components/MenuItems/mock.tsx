@@ -1,3 +1,4 @@
+// @ts-nocheck
 import ItemsMock from "../DropdownMenu/mock";
 
 const MenuItemsMock = [

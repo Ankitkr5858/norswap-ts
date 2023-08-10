@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState } from 'react'
 import { request, gql } from 'graphql-request'
 import { simpleRpcProvider } from 'utils/providers'

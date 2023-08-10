@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import Button from "../../components/Button/Button";

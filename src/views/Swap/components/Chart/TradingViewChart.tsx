@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, BunnyPlaceholderIcon, Flex, Text } from '@nswap/uikit'
 import TradingView, { useTradingViewEvent } from 'components/TradingView'
 import { useTranslation } from 'contexts/Localization'

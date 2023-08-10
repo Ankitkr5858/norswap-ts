@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { AutoRenewIcon, Box, Button, Flex, InjectedModalProps, Modal, Text, TwitterIcon } from '@nswap/uikit'
 import styled from 'styled-components'

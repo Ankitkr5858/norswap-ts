@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Card, Table, Th } from '@nswap/uikit'
 import { PredictionUser } from 'state/types'
 import Container from 'components/Layout/Container'

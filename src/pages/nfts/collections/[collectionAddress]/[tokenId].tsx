@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import IndividualNFT from 'views/Nft/market/Collection/IndividualNFTPage'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { getCollection, getNftApi } from 'state/nftMarket/helpers'

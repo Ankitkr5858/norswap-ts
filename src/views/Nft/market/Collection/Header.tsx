@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useRouter } from 'next/router'
 import { Text } from '@nswap/uikit'
 import { Collection } from 'state/nftMarket/types'

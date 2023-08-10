@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import Path from 'path'
 import fs from 'fs'
 import translations from 'config/localization/translations.json'

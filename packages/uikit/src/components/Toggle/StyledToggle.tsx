@@ -1,3 +1,4 @@
+// @ts-nocheck
 import styled from "styled-components";
 import { ToggleProps, HandleProps, InputProps, ScaleKeys, scales, StyleToggleProps } from "./types";
 

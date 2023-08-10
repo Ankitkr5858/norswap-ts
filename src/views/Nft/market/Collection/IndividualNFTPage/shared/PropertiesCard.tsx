@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Flex, Text, NftIcon } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { NftAttribute } from 'state/nftMarket/types'

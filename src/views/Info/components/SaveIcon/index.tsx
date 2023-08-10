@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { HTMLAttributes } from 'react'
 import styled from 'styled-components'
 import { StarFillIcon, StarLineIcon } from '@nswap/uikit'

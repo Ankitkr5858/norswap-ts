@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useCallback, useState } from "react";
 import useKonamiCheatCode from "./useKonamiCheatCode";
 

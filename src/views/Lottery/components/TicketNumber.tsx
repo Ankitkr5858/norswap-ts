@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { LotteryTicket } from 'config/constants/types'
 import { Flex, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

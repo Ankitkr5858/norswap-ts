@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 /* eslint-disable no-param-reassign */
 import { FetchStatus } from 'config/constants/types'
 import { useCallback, useEffect, useMemo, useRef } from 'react'

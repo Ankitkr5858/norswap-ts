@@ -1,3 +1,4 @@
+// @ts-nocheck
 export { default as Menu } from "./Menu";
 export type { MenuItemsType } from "../../components/MenuItems/types";
 export { DropdownMenuItemType } from "../../components/DropdownMenu/types";

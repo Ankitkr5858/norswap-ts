@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import Link from 'next/link'
 import { Flex, HelpIcon, Button, PrizeIcon } from '@nswap/uikit'

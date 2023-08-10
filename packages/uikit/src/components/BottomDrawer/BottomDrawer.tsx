@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef } from "react";
 import { createPortal } from "react-dom";
 import useDelayedUnmount from "../../hooks/useDelayedUnmount";

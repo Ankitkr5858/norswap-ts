@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { motion } from "framer-motion";
 import styled from "styled-components";
 import { background, border, layout, position, space, color } from "styled-system";

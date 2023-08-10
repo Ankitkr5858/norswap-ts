@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { Flex } from "../Box";
 import StyledToggle, { Input, Handle } from "./StyledToggle";

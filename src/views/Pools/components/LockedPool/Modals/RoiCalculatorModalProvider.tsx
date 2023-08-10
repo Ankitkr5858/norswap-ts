@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import React, { useState, createContext } from 'react'
 import { useTranslation } from 'contexts/Localization'
 import { usePool } from 'state/pools/hooks'

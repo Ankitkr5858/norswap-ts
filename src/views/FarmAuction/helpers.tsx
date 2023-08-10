@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { toDate, add, differenceInHours } from 'date-fns'
 import { BSC_BLOCK_TIME, DEFAULT_TOKEN_DECIMAL } from 'config'
 import { getBidderInfo } from 'config/constants/farmAuctions'

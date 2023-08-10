@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BetPosition } from 'state/types'
 import { formatBnb, formatUsd, getMultiplier, getPayout } from 'views/Predictions/components/History/helpers'
 

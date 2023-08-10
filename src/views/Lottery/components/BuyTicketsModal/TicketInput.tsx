@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useRef } from 'react'
 import styled from 'styled-components'
 import { Flex, Text } from '@nswap/uikit'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useRef, useState, useEffect } from 'react'
 import { Modal, Flex, Button, Text, Skeleton, Box } from '@nswap/uikit'
 import { StaticImageData } from 'next/dist/client/image'

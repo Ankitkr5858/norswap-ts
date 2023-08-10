@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex, Skeleton, Text } from '@nswap/uikit'
 import { FC } from 'react'
 import styled from 'styled-components'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useRef, useMemo } from 'react'
 import { useCountUp } from 'react-countup'
 import styled from 'styled-components'

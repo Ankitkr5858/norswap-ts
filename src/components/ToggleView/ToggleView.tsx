@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import { ListViewIcon, CardViewIcon, IconButton } from '@nswap/uikit'
 import { ViewMode } from 'state/user/actions'

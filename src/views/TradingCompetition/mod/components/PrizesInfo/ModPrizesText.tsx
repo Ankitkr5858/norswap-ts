@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex, Heading, Text } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Image from 'next/image'

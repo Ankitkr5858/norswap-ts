@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import React from 'react'
 import styled, { keyframes, css } from 'styled-components'
 import { DeserializedPool, VaultKey } from 'state/types'

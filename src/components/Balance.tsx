@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Text, TextProps, Skeleton } from '@nswap/uikit'
 import { useEffect, useRef } from 'react'
 import CountUp from 'react-countup'

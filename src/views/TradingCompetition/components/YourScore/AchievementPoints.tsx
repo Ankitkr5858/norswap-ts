@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Text, Flex, Image } from '@nswap/uikit'
 import { useTranslation } from '../../../../contexts/Localization'
 

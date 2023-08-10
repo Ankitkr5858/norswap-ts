@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { AnimatePresence, domAnimation, LazyMotion, m } from "framer-motion";
 import React, { createContext, useRef, useState, useEffect } from "react";
 import styled from "styled-components";

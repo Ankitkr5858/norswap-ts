@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Text } from '@nswap/uikit'
 import { Auction, AuctionStatus } from 'config/constants/types'
 import { useTranslation } from 'contexts/Localization'

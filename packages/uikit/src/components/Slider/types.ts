@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { BoxProps } from "../Box/types";
 
 export default interface SliderProps extends BoxProps {

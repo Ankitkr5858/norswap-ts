@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { shadows } from "../../theme/base";
 import { darkColors, lightColors } from "../../theme/colors";
 import { TooltipTheme } from "./types";

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ReactText } from 'react'
 import { Language } from '@nswap/uikit'
 

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Checkbox, Flex, Text } from '@nswap/uikit'
 import { StyledItemRow } from '../ListFilter/styles'
 

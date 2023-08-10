@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Button, Flex, Text } from '@nswap/uikit'
 import ConnectWalletButton from 'components/ConnectWalletButton'
 import { ToastDescriptionWithTx } from 'components/Toast'

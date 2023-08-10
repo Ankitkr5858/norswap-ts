@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import React from 'react'
 import { Flex, Link, Text, TimerIcon } from '@nswap/uikit'
 import { getBscScanLink } from 'utils'

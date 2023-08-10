@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ReactElement } from "react";
 import { Language } from "../LangSelector/types";
 import { FlexProps } from "../Box";

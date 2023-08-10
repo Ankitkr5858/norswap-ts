@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { memo } from 'react'
 import { Skeleton, Table, Td } from '@nswap/uikit'
 

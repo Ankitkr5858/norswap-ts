@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { useWeb3React } from '@web3-react/core'

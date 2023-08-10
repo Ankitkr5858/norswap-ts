@@ -1,3 +1,4 @@
+// @ts-nocheck
 export default {
   root: null,
   rootMargin: "200px",

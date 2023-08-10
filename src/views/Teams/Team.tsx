@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ChevronLeftIcon, Flex, Text } from '@nswap/uikit'
 import Page from 'components/Layout/Page'
 import { useTranslation } from 'contexts/Localization'

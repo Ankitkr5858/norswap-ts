@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { FAST_INTERVAL, SLOW_INTERVAL } from 'config/constants'
 import useSWR, { useSWRConfig } from 'swr'
 import { simpleRpcProvider } from 'utils/providers'

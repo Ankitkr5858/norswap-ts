@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useCurrentBlock } from 'state/block/hooks'
 import { useActiveIfoWithBlocks } from 'hooks/useActiveIfoWithBlocks'
 

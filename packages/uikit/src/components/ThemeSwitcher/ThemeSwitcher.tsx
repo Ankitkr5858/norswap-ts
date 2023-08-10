@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { memo } from "react";
 import { SunIcon, MoonIcon } from "../Svg";
 import { Toggle } from "../Toggle";

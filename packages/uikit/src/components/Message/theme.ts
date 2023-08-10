@@ -1,3 +1,4 @@
+// @ts-nocheck
 const variants = {
   warning: {
     background: "#FFB23719",

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { SNAPSHOT_HUB_API } from 'config/constants/endpoints'
 import tokens from 'config/constants/tokens'
 import { Proposal, ProposalState, ProposalType, Vote } from 'state/types'

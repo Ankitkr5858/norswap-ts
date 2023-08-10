@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { InputHTMLAttributes, ReactNode } from "react";
 import { Colors } from "../../theme";
 

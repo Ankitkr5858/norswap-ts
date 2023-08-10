@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { activeListeningKeys, outdatedListeningKeys } from './updater'
 
 describe('multicall updater', () => {

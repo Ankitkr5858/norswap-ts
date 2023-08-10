@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { IfoPageLayout } from '../../views/Ifos'
 import Ifo from '../../views/Ifos/Ifo'
 

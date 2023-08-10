@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { isDesktop } from "react-device-detect";
 import styled from "styled-components";

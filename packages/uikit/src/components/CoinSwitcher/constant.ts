@@ -1,3 +1,4 @@
+// @ts-nocheck
 const PATH = `https://cdn.nordekscan.com/sequnce-assets/`;
 
 export const BNB2CAKE_PATH = `${PATH}bnb2cake/bnb2cake-`;

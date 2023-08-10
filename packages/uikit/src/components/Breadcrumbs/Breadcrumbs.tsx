@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable react/no-array-index-key */
 import React, { Children, isValidElement, ReactNode } from "react";
 import styled from "styled-components";

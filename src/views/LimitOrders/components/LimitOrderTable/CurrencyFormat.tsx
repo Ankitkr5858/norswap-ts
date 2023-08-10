@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Currency } from '@danielvindax/norswap-sdk'
 import CurrencyLogo from 'components/Logo/CurrencyLogo'
 import TextIcon from './TextIcon'

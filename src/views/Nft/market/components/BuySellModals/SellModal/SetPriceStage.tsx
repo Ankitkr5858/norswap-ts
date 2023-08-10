@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useRef } from 'react'
 import { Flex, Grid, Box, Text, Button, BinanceIcon, ErrorIcon, useTooltip, Skeleton } from '@nswap/uikit'
 import { multiplyPriceByAmount } from 'utils/prices'

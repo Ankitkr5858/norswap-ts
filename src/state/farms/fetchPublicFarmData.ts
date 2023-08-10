@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import erc20 from 'config/abi/erc20.json'
 import chunk from 'lodash/chunk'
 import { getAddress, getMasterChefAddress } from 'utils/addressHelpers'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex, LinkExternal, Text, Tag, CheckmarkCircleIcon } from '@nswap/uikit'
 import truncateHash from 'utils/truncateHash'
 import { getBscScanLink } from 'utils'

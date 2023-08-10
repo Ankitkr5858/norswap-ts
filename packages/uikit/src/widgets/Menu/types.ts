@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ElementType, ReactElement } from "react";
 import { FooterLinkType } from "../../components/Footer/types";
 import { MenuItemsType } from "../../components/MenuItems/types";

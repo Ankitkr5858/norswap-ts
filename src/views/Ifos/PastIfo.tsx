@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ifosConfig } from 'config/constants'
 import Container from 'components/Layout/Container'
 import { Ifo } from 'config/constants/types'

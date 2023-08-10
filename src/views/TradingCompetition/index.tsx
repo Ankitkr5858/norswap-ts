@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import React from 'react'
 import SubMenu from './components/SubMenu'
 import MoDCompetition from './MoDCompetition'

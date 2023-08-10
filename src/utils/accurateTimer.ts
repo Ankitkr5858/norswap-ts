@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 export const accurateTimer = (callback, time = 1000) => {
   let nextAt
   let timeout

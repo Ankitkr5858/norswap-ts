@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Grid, Text, Flex } from '@nswap/uikit'
 import { NftToken } from 'state/nftMarket/types'
 import { useTranslation } from 'contexts/Localization'

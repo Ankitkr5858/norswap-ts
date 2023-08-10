@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { SaleStatusEnum } from 'views/PancakeSquad/types'
 import { getAltText, getEventStepStatus, getEventText } from 'views/PancakeSquad/utils'
 

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Text, Flex, AccountIcon, TeamBattleIcon, Box, useTooltip, LinkExternal } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'

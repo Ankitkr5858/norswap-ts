@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { GraphQLClient } from 'graphql-request'
 import { getGQLHeaders } from 'utils/graphql'
 import requestWithTimeout from 'utils/requestWithTimeout'

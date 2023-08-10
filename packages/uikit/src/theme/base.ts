@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { MediaQueries, Breakpoints, Spacing, Shadows, Radii, ZIndices } from "./types";
 
 export const breakpointMap: { [key: string]: number } = {

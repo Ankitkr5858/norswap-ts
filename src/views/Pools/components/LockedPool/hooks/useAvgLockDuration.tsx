@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useMemo } from 'react'
 import { BOOST_WEIGHT, DURATION_FACTOR } from 'config/constants/pools'
 import BigNumber from 'bignumber.js'

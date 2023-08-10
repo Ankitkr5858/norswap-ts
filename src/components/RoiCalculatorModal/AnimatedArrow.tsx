@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { Flex, ArrowDownIcon, ArrowUpIcon } from '@nswap/uikit'
 import styled, { keyframes } from 'styled-components'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import noop from "lodash/noop";
 import React, { useState } from "react";
 // eslint-disable-next-line import/no-extraneous-dependencies

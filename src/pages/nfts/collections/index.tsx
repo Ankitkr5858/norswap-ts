@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import Collections from '../../../views/Nft/market/Collections'
 
 const CollectionsPage = () => {

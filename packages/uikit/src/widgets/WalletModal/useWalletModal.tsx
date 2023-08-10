@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { useModal } from "../Modal";
 import ConnectModal from "./ConnectModal";

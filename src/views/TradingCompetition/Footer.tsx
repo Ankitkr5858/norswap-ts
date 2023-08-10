@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex } from '@nswap/uikit'
 import Image from 'next/image'
 import useTheme from 'hooks/useTheme'

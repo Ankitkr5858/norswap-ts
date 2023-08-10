@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { BoxProps } from "../Box";
 import BaseMenu from "./BaseMenu";

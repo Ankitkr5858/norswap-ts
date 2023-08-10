@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useAppDispatch } from 'state'
 import farmsConfig from 'config/constants/farms'
 import { useSlowRefreshEffect } from 'hooks/useRefreshEffect'

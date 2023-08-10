@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Breadcrumbs, Card, Flex, Heading, Text } from '@nswap/uikit'
 import Link from 'next/link'
 import { useTranslation } from 'contexts/Localization'

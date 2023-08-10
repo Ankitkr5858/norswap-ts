@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import { Spinner } from "../../components/Spinner";

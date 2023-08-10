@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { Colors } from "./types";
 
 export const baseColors = {

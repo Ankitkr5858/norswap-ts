@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ArrowForwardIcon, Button, Text, Link, useMatchBreakpointsContext } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import Image from 'next/image'

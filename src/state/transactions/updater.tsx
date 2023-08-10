@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useMemo } from 'react'
 import { useSelector } from 'react-redux'
 import { useTranslation } from 'contexts/Localization'

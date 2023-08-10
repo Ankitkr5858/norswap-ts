@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ReactText, ReactNode } from 'react'
 import {
   Text,

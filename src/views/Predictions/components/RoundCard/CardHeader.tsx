@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ReactElement } from 'react'
 import { Flex, Text } from '@nswap/uikit'
 import styled, { DefaultTheme } from 'styled-components'

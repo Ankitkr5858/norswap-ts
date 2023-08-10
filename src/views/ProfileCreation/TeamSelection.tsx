@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useMemo } from 'react'
 import { Card, CardBody, CommunityIcon, Flex, Heading, Text } from '@nswap/uikit'
 import useSWR from 'swr'

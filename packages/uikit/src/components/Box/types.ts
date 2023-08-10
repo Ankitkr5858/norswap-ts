@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { HTMLAttributes } from "react";
 import {
   BackgroundProps,

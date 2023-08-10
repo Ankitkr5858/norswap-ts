@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Flex, FlexProps, Link, ProfileAvatar, SubMenu, SubMenuItem, useModal, Text } from '@nswap/uikit'
 import styled from 'styled-components'
 import { getBscScanLink } from 'utils'

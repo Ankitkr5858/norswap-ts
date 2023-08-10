@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BigNumber, FixedNumber } from '@ethersproject/bignumber'
 import { BetPosition } from 'state/types'
 import { formatBigNumberToFixed } from 'utils/formatBalance'

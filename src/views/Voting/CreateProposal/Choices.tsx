@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Button, Card, CardBody, CardHeader, Heading } from '@nswap/uikit'
 import uniqueId from 'lodash/uniqueId'
 import { useTranslation } from 'contexts/Localization'

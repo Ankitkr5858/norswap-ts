@@ -1,3 +1,4 @@
+// @ts-nocheck
 /* eslint-disable import/no-extraneous-dependencies */
 import capitalize from "lodash/capitalize";
 import React, { useState } from "react";

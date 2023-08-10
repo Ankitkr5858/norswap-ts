@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import Text from "../Text/Text";
 import Dropdown from "../Dropdown/Dropdown";

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useCallback, useEffect, useMemo } from 'react'
 import { ResponsiveContainer, XAxis, YAxis, Tooltip, AreaChart, Area, Dot } from 'recharts'
 import useTheme from 'hooks/useTheme'

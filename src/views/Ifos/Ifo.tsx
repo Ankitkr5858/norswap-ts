@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ifosConfig } from 'config/constants'
 import CurrentIfo from './CurrentIfo'
 import SoonIfo from './SoonIfo'

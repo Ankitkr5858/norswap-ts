@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Box, Flex, Heading, Progress, ProgressBar } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import styled from 'styled-components'

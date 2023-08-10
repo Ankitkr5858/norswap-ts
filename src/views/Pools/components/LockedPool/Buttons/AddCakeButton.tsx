@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useCallback, memo } from 'react'
 import { Button, useModal, Skeleton } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

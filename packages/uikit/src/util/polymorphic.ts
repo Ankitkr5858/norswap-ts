@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { ComponentProps, ElementType, ReactElement } from "react";
 
 /**

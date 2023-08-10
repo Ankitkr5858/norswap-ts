@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NftLocation } from 'state/nftMarket/types'
 import { Text, Flex, WalletFilledIcon, CameraIcon, SellIcon } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'

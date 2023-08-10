@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { NextRequest, NextResponse } from 'next/server'
 
 // Sanctioned Countries: Belarus, Cuba, Democratic Republic of Congo, Iran, Iraq, North Korea, Sudan, Syria, Zimbabwe.

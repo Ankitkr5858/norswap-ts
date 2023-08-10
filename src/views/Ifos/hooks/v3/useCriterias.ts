@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useMemo } from 'react'
 
 const mapCriteriasToQualifications = {

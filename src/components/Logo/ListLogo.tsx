@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import useHttpLocations from '../../hooks/useHttpLocations'
 import Logo from './Logo'

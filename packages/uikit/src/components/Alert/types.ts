@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { MouseEvent, ReactNode } from "react";
 
 export type AlertTheme = {

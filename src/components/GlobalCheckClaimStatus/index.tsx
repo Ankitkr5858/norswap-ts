@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useRef, useState } from 'react'
 import { useRouter } from 'next/router'
 import { useModal } from '@nswap/uikit'

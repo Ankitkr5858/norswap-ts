@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useCallback } from 'react'
 import { BunnyPlaceholderIcon, AutoRenewIcon, Button, Flex, Grid, Text } from '@nswap/uikit'
 import { Collection } from 'state/nftMarket/types'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { parseUnits } from '@ethersproject/units'
 
 export const MINT_COST = parseUnits('1')

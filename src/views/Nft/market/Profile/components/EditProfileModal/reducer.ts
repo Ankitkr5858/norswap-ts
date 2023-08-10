@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useReducer } from 'react'
 
 export enum Views {

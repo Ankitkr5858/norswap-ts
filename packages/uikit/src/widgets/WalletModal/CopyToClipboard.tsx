@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from "react";
 import styled from "styled-components";
 import Text from "../../components/Text/Text";

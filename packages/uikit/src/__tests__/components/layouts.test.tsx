@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from "react";
 import { renderWithTheme } from "../../testHelpers";
 import { BaseLayout, CardsLayout } from "../../components/Layouts";

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { memo, createContext, Dispatch, useState } from 'react'
 import SwiperCore from 'swiper'
 

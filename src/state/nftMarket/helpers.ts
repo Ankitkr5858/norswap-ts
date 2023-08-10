@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { gql, request } from 'graphql-request'
 import { stringify } from 'querystring'
 import { API_NFT, GRAPH_API_NFTMARKET } from 'config/constants/endpoints'

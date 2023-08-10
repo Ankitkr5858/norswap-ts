@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ArrowBackIcon, Box, Button, Flex, Heading } from '@nswap/uikit'
 import { PageMeta } from 'components/Layout/Page'
 import { getAllVotes, getProposal } from 'state/voting/helpers'

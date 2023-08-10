@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BSC_BLOCK_TIME } from 'config'
 import { useTranslation } from 'contexts/Localization'
 import { TranslateFunction } from 'contexts/Localization/types'

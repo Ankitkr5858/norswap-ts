@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Tag, Text, TagVariant } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import React from 'react'

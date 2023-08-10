@@ -1,5 +1,6 @@
 // @ts-nocheck
 // @ts-nocheck
+// @ts-nocheck
 /**
  * There is ts-nocheck at the top of this file for the following reasons:
  * 1. You can't ignore block in TS at the moment https://stackoverflow.com/questions/51145180/how-to-use-ts-ignore-for-a-block

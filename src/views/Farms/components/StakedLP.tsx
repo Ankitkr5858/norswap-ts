@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Flex, Heading } from '@nswap/uikit'
 import { BigNumber } from 'bignumber.js'
 import Balance from 'components/Balance'

@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Text, TextProps } from '@nswap/uikit'
 import { useTranslation } from 'contexts/Localization'
 import { TranslatableText as AchievementDescriptionType } from 'config/constants/types'

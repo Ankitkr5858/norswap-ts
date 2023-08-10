@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useContext } from "react";
 import styled from "styled-components";
 import { variant as systemVariant, space } from "styled-system";

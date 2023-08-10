@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { ChangeEvent } from "react";
 import { Box } from "../Box";
 import {

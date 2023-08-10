@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { gql } from 'graphql-request'
 import { useEffect, useState } from 'react'
 import { ProtocolData } from 'state/info/types'

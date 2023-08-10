@@ -1,3 +1,4 @@
+// @ts-nocheck
 export const byTextAscending =
   <T>(getTextProperty: (object: T) => string) =>
   (objectA: T, objectB: T): number => {

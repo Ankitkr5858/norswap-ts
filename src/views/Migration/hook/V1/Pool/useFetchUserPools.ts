@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useCallback, useState } from 'react'
 import BigNumber from 'bignumber.js'
 import { useFastRefreshEffect } from 'hooks/useRefreshEffect'

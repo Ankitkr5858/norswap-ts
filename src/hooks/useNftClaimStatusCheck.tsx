@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState } from 'react'
 import { useModal } from '@nswap/uikit'
 import { useWeb3React } from '@web3-react/core'

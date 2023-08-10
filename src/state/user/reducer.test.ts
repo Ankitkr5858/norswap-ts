@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { createStore, Store } from 'redux'
 import { DEFAULT_DEADLINE_FROM_NOW, INITIAL_ALLOWED_SLIPPAGE } from 'config/constants'
 import { updateVersion } from '../global/actions'

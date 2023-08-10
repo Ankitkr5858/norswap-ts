@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import NextErrorComponent from 'next/error'
 import * as Sentry from '@sentry/nextjs'
 import NotFound from '../views/NotFound'

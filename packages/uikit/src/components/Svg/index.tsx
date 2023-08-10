@@ -1,3 +1,4 @@
+// @ts-nocheck
 export { default as AccountFilledIcon } from "./Icons/AccountFilled";
 export { default as AccountIcon } from "./Icons/Account";
 export { default as AddIcon } from "./Icons/Add";

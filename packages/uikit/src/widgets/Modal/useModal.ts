@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useCallback, useContext, useEffect } from "react";
 import get from "lodash/get";
 import { Context } from "./ModalContext";

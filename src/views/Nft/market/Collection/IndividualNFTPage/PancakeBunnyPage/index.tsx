@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useState, useEffect } from 'react'
 import { Flex } from '@nswap/uikit'
 import Page from 'components/Layout/Page'

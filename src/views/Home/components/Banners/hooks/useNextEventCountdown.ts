@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useEffect, useState, useRef } from 'react'
 
 const useNextEventCountdown = (nextEventTime: number): number => {

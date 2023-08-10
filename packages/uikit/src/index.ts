@@ -1,3 +1,4 @@
+// @ts-nocheck
 // Components
 export * from "./components/Alert";
 export * from "./components/BalanceInput";

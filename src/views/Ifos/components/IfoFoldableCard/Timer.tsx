@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import styled from 'styled-components'
 import { Flex, Heading, PocketWatchIcon, Text, Skeleton } from '@nswap/uikit'

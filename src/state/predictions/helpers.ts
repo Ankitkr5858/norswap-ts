@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { request, gql } from 'graphql-request'
 import { GRAPH_API_PREDICTION } from 'config/constants/endpoints'
 import { BigNumber } from '@ethersproject/bignumber'

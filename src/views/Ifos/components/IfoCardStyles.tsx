@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { Card, Link } from '@nswap/uikit'
 import styled from 'styled-components'
 

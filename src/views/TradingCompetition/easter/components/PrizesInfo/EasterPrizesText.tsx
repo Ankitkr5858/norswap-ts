@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import styled from 'styled-components'
 import Image from 'next/image'
 import { Flex, Text, Heading } from '@nswap/uikit'

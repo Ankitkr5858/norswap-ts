@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { ButtonsEnum } from 'views/PancakeSquad/components/Header/types'
 import { getCurrentButton } from 'views/PancakeSquad/components/Header/utils'
 import { SaleStatusEnum, UserStatusEnum } from 'views/PancakeSquad/types'

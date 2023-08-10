@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { BoxProps, Flex, Text } from '@nswap/uikit'
 import { BetPosition, Round } from 'state/types'
 import { useTranslation } from 'contexts/Localization'

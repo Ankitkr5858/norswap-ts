@@ -1,4 +1,5 @@
 // @ts-nocheck
+// @ts-nocheck
 import { useTranslation } from 'contexts/Localization'
 import { Text, Flex, TooltipText, useTooltip } from '@nswap/uikit'
 import { format } from 'date-fns'
