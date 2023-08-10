@@ -44,12 +44,12 @@
     animation: animation-overlay 350ms ease forwards;
 }
 
-.StackingModal>div {
+.StackingModal {
     z-index: 999;
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50% , -50%);
+    transform: translate(-50%, -50%);
     width: 100%;
     min-width: 336px;
     max-width: 336px;
@@ -61,14 +61,14 @@
 }
 
 @media (max-width:576px) {
-    .StackingModal>div {
+    .StackingModal {
         top: 50%;
         width: fit-content;
         min-width: calc(100% - 30px);
     }
 }
 
-.StackingModal>div .modal_header {
+.StackingModal .modal_header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,14 +81,22 @@
     background: linear-gradient(171deg, #44BBC7 0%, #6C11DB 100%);
 }
 
-.StackingModal>div .modal_content {
+.StackingModal .modal_header .cross_icon {
+    cursor: pointer;
+}
+.StackingModal .modal_header .cross_icon:hover {
+    opacity: .7;
+    transition: all .3s;
+}
+
+.StackingModal .modal_content {
     width: 100%;
     height: calc(100% - 73px);
     padding: 40px 32px;
     text-align: center;
 }
 
-.StackingModal>div .modal_content button {
+.StackingModal .modal_content button {
     cursor: pointer;
     width: 100%;
     min-height: 48px;
@@ -98,7 +106,7 @@
     box-shadow: -4px 4px 0px 0px #FFF;
 }
 
-.StackingModal>div .modal_content button:hover {
+.StackingModal .modal_content button:hover {
     transition: all .3s;
     box-shadow: 0px 0px 0px 0px #FFF;
 }
