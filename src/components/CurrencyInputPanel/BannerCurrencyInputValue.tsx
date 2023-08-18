@@ -55,6 +55,9 @@ const InputPanel = styled.div`
   border-radius: 20px;
   z-index: 1;
   min-width: 28%;
+  @media(min-width:768px){
+    min-width: 74%;
+  }
 `;
 const Container = styled.div`
   border-radius: 16px;
@@ -123,7 +126,7 @@ export default function BannerCurrencyInputPanel({
         alignItems="center"
         className="selectorWrapper"
         justifyContent="space-between"
-        mt="30px"
+        // mt="30px"
       >
         <Flex>
           <CurrencySelectButton
@@ -184,10 +187,10 @@ export default function BannerCurrencyInputPanel({
           </Text>
         )}
       </Flex>
-      <Flex width="40%" flexDirection="column">
+      {/* <Flex width="40%" flexDirection="column">
         <Text ml="auto" mb="6px" color="#858585">
           to
-        </Text>
+        </Text> */}
         <InputPanel>
           <LabelRow>
             <NumericalInput
@@ -199,7 +202,7 @@ export default function BannerCurrencyInputPanel({
             />
           </LabelRow>
         </InputPanel>
-      </Flex>
+      {/* </Flex> */}
     </Flex>
   );
 }
