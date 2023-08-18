@@ -82,6 +82,8 @@ import ImportTokenWarningModal from "components/ImportTokenWarningModal";
 import useWrapCallback, { WrapType } from "hooks/useWrapCallback";
 import AdvancedSwapDetailsDropdown from "views/Swap/components/AdvancedSwapDetailsDropdown";
 import BannerCurrencyInputPanel from "components/CurrencyInputPanel/BannerCurrencyInputValue";
+import { Stacking } from "./Home1";
+
 
 const Label = styled(Text)`
   font-size: 12px;
@@ -461,28 +463,66 @@ const CryptoConvertor = () => {
       <Flex width="100%" flexDirection="column">
         <Wrapper width="100%" id="swap-page" style={{ padding: "0" }}>
           <AutoColumn gap="sm">
+            {/* <BannerCurrencyInputPanel
+                value={formattedAmounts[Field.OUTPUT]}
+                onUserInput={handleTypeOutput}
+                label={
+                  independentField === Field.INPUT && !showWrap && trade
+                    ? t("To (estimated)")
+                    : t("To")
+                }
+                showMaxButton={false}
+                currency={currencies[Field.OUTPUT]}
+                onCurrencySelect={handleOutputSelect}
+                otherCurrency={currencies[Field.INPUT]}
+                id="swap-currency-output"
+              /> */}
+
             <Flex
               width="100%"
               className="inputFieldWrapper"
-              flexDirection="row"
+              flexDirection="column"
             >
-              <BannerInputPanel
-                label={
-                  independentField === Field.OUTPUT && !showWrap && trade
-                    ? t("From (estimated)")
-                    : t("From")
-                }
-                value={formattedAmounts[Field.INPUT]}
-                showMaxButton={!atMaxAmountInput}
-                currency={currencies[Field.INPUT]}
-                onUserInput={handleTypeInput}
-                onMax={handleMaxInput}
-                onCurrencySelect={handleInputSelect}
-                otherCurrency={currencies[Field.OUTPUT]}
-                id="swap-currency-input"
-              />
+              <Flex
+                id="swap-currency-output-with-logo"
+                alignItems="center"
+                justifyContent="flex-start"
+                flexDirection={["column", null , "row"]}
+              >
+                <Flex
+                  className="flexAuto"
+                  mt="-70px"
+                >
+                <img src="/images/NordekCoin.png" />
+                </Flex>
+                <Flex
+                  className="gap-2"
+                  width="100%"
+                  justifyContent="space-between"
+                  flexDirection={["column" , null , "row"]}
+                >
+                  <Box width={["100%", null, "60%"]}>
+                    <div className="nrkConverted" fontSize="24px">
+                      2368566.0458 NRK
+                    </div>
+                    <Text className="" color="#858585" fontSize="16px">
+                      {t("TOTAL NRK STAKED")}
+                    </Text>
+                  </Box>
+                  <Box width={["100%", null, "40%"]}>
+                    <div className="nrkConverted" fontSize="24px">
+                      20%
+                    </div>
+                    <Text className="" color="#858585" fontSize="16px">
+                      {t("APY Percentage")}
+                    </Text>
+                  </Box>
+                </Flex>
+              </Flex>
 
-              <AutoColumn justify="space-between">
+              <Stacking />
+
+              {/* <AutoColumn justify="space-between">
                 <AutoRow
                   width="100%"
                   justify={isExpertMode ? "space-between" : "center"}
@@ -523,20 +563,22 @@ const CryptoConvertor = () => {
                     </Button>
                   ) : null}
                 </AutoRow>
-              </AutoColumn>
-              <BannerCurrencyInputPanel
-                value={formattedAmounts[Field.OUTPUT]}
-                onUserInput={handleTypeOutput}
+              </AutoColumn> */}
+
+              <BannerInputPanel
                 label={
-                  independentField === Field.INPUT && !showWrap && trade
-                    ? t("To (estimated)")
-                    : t("To")
+                  independentField === Field.OUTPUT && !showWrap && trade
+                    ? t("From (estimated)")
+                    : t("From")
                 }
-                showMaxButton={false}
-                currency={currencies[Field.OUTPUT]}
-                onCurrencySelect={handleOutputSelect}
-                otherCurrency={currencies[Field.INPUT]}
-                id="swap-currency-output"
+                value={formattedAmounts[Field.INPUT]}
+                showMaxButton={!atMaxAmountInput}
+                currency={currencies[Field.INPUT]}
+                onUserInput={handleTypeInput}
+                onMax={handleMaxInput}
+                onCurrencySelect={handleInputSelect}
+                otherCurrency={currencies[Field.OUTPUT]}
+                id="swap-currency-input"
               />
             </Flex>
           </AutoColumn>
@@ -685,14 +727,14 @@ const CryptoConvertor = () => {
                 </Box> */}
         </Wrapper>
 
-        <Flex justifyContent="center" mt="15px">
+        {/* <Flex justifyContent="center" mt="15px">
           <Text ml="15px" mb="6px" color="#858585">
             Slippage Tolerance
           </Text>
           <Text ml="15px" color="#949494">
             {allowedSlippage / 100}%
           </Text>
-        </Flex>
+        </Flex> */}
       </Flex>
     </Flex>
   );

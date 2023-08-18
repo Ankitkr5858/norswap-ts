@@ -133,6 +133,25 @@
     box-shadow: 0px 0px 0px 0px #FFF;
 }
 
+
+ .buttonCustom {
+    cursor: pointer;
+    width: 100%;
+    min-height: 48px;
+    border: 2px solid #FFF;
+    background: #4200CD;
+    box-shadow: -4px 4px 0px 0px #FFF;
+    min-width: 140Px;
+    min-height: 60px;
+    transition: all .3s;
+   font-size: 18px;
+}
+
+ .buttonCustom:hover {
+    transition: all .3s;
+    box-shadow: 0px 0px 0px 0px #FFF;
+}
+
 .input_stake_amount {
     position: relative;
 }
@@ -159,12 +178,14 @@
     border: none;
     background: #121212;
 }
-
+ 
 
 .History_Modal {
     padding: 30px 45px;
     width: calc(100% - 30px);
-    max-width: 1200px;
+    /* max-width: 1200px; */
+    max-width: 900px;
+
     overflow-x: auto;
 }
 
@@ -173,8 +194,10 @@
 }
 
 .History_Modal>div {
-    min-width: 1100px;
-    max-width: 1100px;
+    min-width: 800px;
+    max-width: 800px;
+    /* min-width: 1100px;
+    max-width: 1100px; */
 }
 
 .History_Modal .modal_header {
@@ -221,12 +244,14 @@
     position: relative;
     margin-top: 2.5rem;
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(7, 1fr); */
     font-family: 'Nunito';
 }
 
 .History_Modal .grid_modal_changed {
-    grid-template-columns: repeat(6, 1fr) !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    /* grid-template-columns: repeat(6, 1fr) !important; */
 }
 
 .History_Modal .modal_content::after {
