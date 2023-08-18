@@ -17,6 +17,8 @@ import LangSelector from "../../components/LangSelector/LangSelector";
 import { MenuContext } from "./context";
 import LinearGradientLogo from "../../components/Svg/Icons/LinearGradientLogo";
 
+
+
 const Wrapper = styled.div`
   position: relative;
   width: 100%;
@@ -144,14 +146,14 @@ const Menu: React.FC<NavProps> = ({
             <StyleContainerNav>
               <Flex>
                 <Logo isDark={isDark} href={homeLink?.href ?? "/"} />
-                {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />}
+                {/* {!isMobile && <MenuItems items={links} activeItem={activeItem} activeSubItem={activeSubItem} ml="24px" />} */}
               </Flex>
               <Flex alignItems="center" height="100%">
-                {!isMobile && !isMd && (
+                {/* {!isMobile && !isMd && (
                   <Box mr="12px">
                     <CakePrice showSkeleton={false} cakePriceUsd={cakePriceUsd} />
                   </Box>
-                )}
+                )} */}
                 {/* <Box mt="4px">
                   <LangSelector
                     currentLang={currentLang}

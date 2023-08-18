@@ -4,18 +4,437 @@ import { Flex, Heading, Overlay, Text } from "@nswap/uikit";
 import { useWeb3React } from "@web3-react/core";
 import ConnectWalletButton from "components/ConnectWalletButton";
 import { useTranslation } from "contexts/Localization";
-import { divide } from "lodash";
 import Image from "next/image";
 import { React, useEffect, useRef, useState } from "react";
 import bunnyImage from "../../../../public/images/home/home-1.png";
 import CryptoConvertor from "./CryptoConvertor";
 import successIcon from "./../../../../public/images/successful.png";
 import ReactDOM from "react-dom";
+import Web3 from "web3";
+
+const ABI = [
+  {
+    inputs: [
+      {
+        internalType: "uint16",
+        name: "_apy",
+        type: "uint16",
+      },
+    ],
+    stateMutability: "nonpayable",
+    type: "constructor",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: false,
+        internalType: "uint8",
+        name: "version",
+        type: "uint8",
+      },
+    ],
+    name: "Initialized",
+    type: "event",
+  },
+  {
+    inputs: [
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+      {
+        internalType: "address",
+        name: "newAddress",
+        type: "address",
+      },
+    ],
+    name: "migration",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "previousOwner",
+        type: "address",
+      },
+      {
+        indexed: true,
+        internalType: "address",
+        name: "newOwner",
+        type: "address",
+      },
+    ],
+    name: "OwnershipTransferred",
+    type: "event",
+  },
+  {
+    inputs: [],
+    name: "renounceOwnership",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "user",
+        type: "address",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "totalReward",
+        type: "uint256",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "timeOfClaim",
+        type: "uint256",
+      },
+    ],
+    name: "RewardClaimed",
+    type: "event",
+  },
+  {
+    inputs: [
+      {
+        internalType: "uint16",
+        name: "_apy",
+        type: "uint16",
+      },
+    ],
+    name: "setUserAnnualPercentageYield",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "stake",
+    outputs: [],
+    stateMutability: "payable",
+    type: "function",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "user",
+        type: "address",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "startTime",
+        type: "uint256",
+      },
+    ],
+    name: "Staked",
+    type: "event",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "newOwner",
+        type: "address",
+      },
+    ],
+    name: "transferOwnership",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "uint256",
+        name: "_index",
+        type: "uint256",
+      },
+    ],
+    name: "unstake",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "unstakeAll",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    anonymous: false,
+    inputs: [
+      {
+        indexed: true,
+        internalType: "address",
+        name: "user",
+        type: "address",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "index",
+        type: "uint256",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "reward",
+        type: "uint256",
+      },
+      {
+        indexed: false,
+        internalType: "uint256",
+        name: "unstakeTime",
+        type: "uint256",
+      },
+    ],
+    name: "Unstaked",
+    type: "event",
+  },
+  {
+    inputs: [
+      {
+        internalType: "bool",
+        name: "_pause",
+        type: "bool",
+      },
+    ],
+    name: "updateStakingPause",
+    outputs: [],
+    stateMutability: "nonpayable",
+    type: "function",
+  },
+  {
+    stateMutability: "payable",
+    type: "receive",
+  },
+  {
+    inputs: [],
+    name: "annualPercentageYield",
+    outputs: [
+      {
+        internalType: "uint16",
+        name: "",
+        type: "uint16",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "_user",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "_index",
+        type: "uint256",
+      },
+    ],
+    name: "calculateReward",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "_user",
+        type: "address",
+      },
+    ],
+    name: "calculateTotalReward",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "_user",
+        type: "address",
+      },
+    ],
+    name: "getUserStakeCount",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "_user",
+        type: "address",
+      },
+    ],
+    name: "getUserStakeList",
+    outputs: [
+      {
+        components: [
+          {
+            internalType: "uint256",
+            name: "amount",
+            type: "uint256",
+          },
+          {
+            internalType: "uint256",
+            name: "startTime",
+            type: "uint256",
+          },
+          {
+            internalType: "bool",
+            name: "stakingComplete",
+            type: "bool",
+          },
+        ],
+        internalType: "struct FlexibleStaking.Stake[]",
+        name: "",
+        type: "tuple[]",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "_user",
+        type: "address",
+      },
+    ],
+    name: "getUserTotalStakedAmount",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "owner",
+    outputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [],
+    name: "pause",
+    outputs: [
+      {
+        internalType: "bool",
+        name: "",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+  {
+    inputs: [
+      {
+        internalType: "address",
+        name: "",
+        type: "address",
+      },
+      {
+        internalType: "uint256",
+        name: "",
+        type: "uint256",
+      },
+    ],
+    name: "userStakes",
+    outputs: [
+      {
+        internalType: "uint256",
+        name: "amount",
+        type: "uint256",
+      },
+      {
+        internalType: "uint256",
+        name: "startTime",
+        type: "uint256",
+      },
+      {
+        internalType: "bool",
+        name: "stakingComplete",
+        type: "bool",
+      },
+    ],
+    stateMutability: "view",
+    type: "function",
+  },
+];
+
 const Home1 = () => {
   const { t } = useTranslation();
   const { account } = useWeb3React();
   // const [stackingModal, setStackingModal] = useState(true);
-
+  // const web3 = new Web3(window.ethereum);
   return (
     <>
       <Flex
@@ -25,7 +444,7 @@ const Home1 = () => {
         justifyContent="center"
         mt={[account ? "280px" : "50px", null, 0]}
         id="homepage-hero"
-        padding={["10%", "14%"]}
+        padding={["10%", [account ? "5%" : "10%"]]}
         background="linear-gradient(0deg,rgba(0,0,0,.59) 0%,rgba(0,0,0,.59) 100%)"
       >
         <Flex
@@ -42,8 +461,8 @@ const Home1 = () => {
             {t("Staking is live")}
           </Heading>
           <CryptoConvertor />
-          <Stacking />
-          <Text
+          {/* <Stacking /> */}
+          {/* <Text
             className="hero-title-two"
             color="#ffffff"
             fontSize="18px"
@@ -52,16 +471,121 @@ const Home1 = () => {
             {t(
               "The first Equity Crowdfunding platform built using NORDEK chain technology"
             )}
-          </Text>
-          <Flex>{!account && <ConnectWalletButton mr="8px" />}</Flex>
+          </Text> */}
+          {
+            /* <Flex>{!account && <ConnectWalletButton mr="8px" />}</Flex> */
+            <Flex mt="20px">
+              <StakeButton />
+            </Flex>
+          }
         </Flex>
       </Flex>
     </>
   );
 };
 
+async function checkEtherBalance(address) {
+  try {
+    const web3 = new Web3(window.ethereum);
+    const balanceWei = await web3.eth.getBalance(address);
+    const balanceEth = Web3.utils.fromWei(balanceWei, "ether");
+    return balanceEth;
+  } catch (error) {
+    console.error("Error checking Ether balance:", error);
+  }
+}
+
 export function Stacking() {
+  const { account } = useWeb3React();
   const [stackingModal, setStackingModal] = useState("");
+  const [stakingAPY, setStakingAPY] = useState(0);
+  const [totalStakeAmount, setTotalStakeAmount] = useState(0);
+  const [totalStakedRewards, setTotalStakedRewards] = useState(0);
+  const handleWriteToContract = async () => {
+    if (typeof window.ethereum !== "undefined") {
+      const web3 = new Web3(window.ethereum);
+      try {
+        await window.ethereum.enable();
+        const contractAbi = ABI;
+        const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
+        const contract = new web3.eth.Contract(contractAbi, contractAddress);
+        const accounts = await web3.eth.getAccounts();
+        const account = accounts[0];
+        const balance = await checkEtherBalance(account);
+
+        // Pass stake amount here
+        const passStakeAmount = "1";
+        if (parseInt(balance) > parseInt(passStakeAmount)) {
+          const amountToStake = web3.utils.toWei(passStakeAmount, "ether");
+
+          const pauseStatus = await contract.methods.pause().call();
+          if (pauseStatus) {
+            console.error("Staking is paused");
+            return;
+          }
+
+          const tx = await contract.methods.stake().send({
+            from: account,
+            value: amountToStake,
+          });
+        }
+
+        console.log("Transaction hash:", tx.transactionHash);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      console.error("MetaMask is not installed");
+    }
+  };
+
+  useEffect(() => {
+    const asyncCallWeb3 = async () => {
+      const web3 = new Web3(window.ethereum);
+
+      if (typeof window.ethereum !== "undefined") {
+        await window.ethereum.enable();
+        const contractAbi = ABI;
+        const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
+        const contract = new web3.eth.Contract(contractAbi, contractAddress);
+        const accounts = await web3.eth.getAccounts();
+        const account = accounts[0];
+        const balance = await checkEtherBalance(account);
+        console.log("balance", balance);
+        if (account) {
+          const totalStaked = await contract.methods
+            .getUserTotalStakedAmount(account)
+            .call();
+          const totalRewards = await contract.methods
+            .calculateTotalReward(account)
+            .call();
+          const convertedTotalStaked = Web3.utils.fromWei(totalStaked, "ether");
+          const convertedTotalRewards = Web3.utils.fromWei(
+            totalRewards,
+            "ether"
+          );
+          const apy = await contract.methods.annualPercentageYield().call();
+          const stakedHistory = await contract.methods
+            .getUserStakeList(account)
+            .call();
+
+          const formattedStakedHistory = stakedHistory.map((item) => ({
+            amount: Web3.utils.fromWei(item[0], "ether"),
+            timestamp: new Date(parseInt(item[1]) * 1000).toLocaleString(),
+            isCompleted: item[2],
+          }));
+          console.log("totalStaked", convertedTotalStaked);
+          console.log("totalRewards", convertedTotalRewards);
+          console.log("stakedHistory", formattedStakedHistory);
+          setTotalStakeAmount(convertedTotalStaked);
+          setTotalStakedRewards(convertedTotalRewards);
+          setStakingAPY(apy);
+        }
+      }
+    };
+    asyncCallWeb3();
+  }, [Web3, window]);
+
   let portalContainer = document.querySelector("#portal-container-div-modal");
   if (!portalContainer) {
     portalContainer = document.createElement("div");
@@ -69,7 +593,7 @@ export function Stacking() {
     portalContainer.id = "portal-container-div-modal";
     document.body.insertBefore(portalContainer, document.body.firstChild);
   }
-  function showModal(param) {
+  async function showModal(param) {
     document.body.style.overflow = param ? "hidden" : "auto";
     setStackingModal(param);
   }
@@ -80,11 +604,15 @@ export function Stacking() {
 
   return (
     <>
-      <Flex className="stacking">
-        <div onClick={() => showModal("Rewards")}>Rewards</div>
-        <div onClick={() => showModal("History")}>History</div>
-        <div onClick={() => showModal("Unstake")}>Unstake</div>
-      </Flex>
+      {!account && (
+        <Flex className="stacking">
+          <div onClick={() => showModal("Rewards")}>Rewards</div>
+          <div onClick={() => showModal("History")}>History</div>
+          <div onClick={() => showModal("Unstake")}>Unstake</div>
+          {/* <div onClick={() => handleWriteToContract()}>Stake</div> */}
+        </Flex>
+      )}
+
       {stackingModal &&
         ReactDOM.createPortal(
           <StackingModal
@@ -99,6 +627,40 @@ export function Stacking() {
 export function StackingModal({ closeModal, stackingModal }) {
   const [componentIndex, setComponentIndex] = useState(1);
   const [activeTab, setActiveTab] = useState("Stake");
+
+  const closeModalv2 = async () => {
+    if (stackingModal == "Unstake") {
+      if (typeof window.ethereum !== "undefined") {
+        const web3 = new Web3(window.ethereum);
+        try {
+          await window.ethereum.enable();
+          const contractAbi = ABI;
+          const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
+          const contract = new web3.eth.Contract(contractAbi, contractAddress);
+          const accounts = await web3.eth.getAccounts();
+          const account = accounts[0];
+          const totalStaked = await contract.methods
+            .getUserTotalStakedAmount(account)
+            .call();
+          if (totalStaked > 0) {
+            const tx = await contract.methods.unstakeAll().send({
+              from: account,
+            });
+            console.log("Transaction hash:", tx.transactionHash);
+            if (tx.transactionHash) {
+              closeModal;
+            }
+          }
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      } else {
+        console.error("MetaMask is not installed");
+      }
+    } else {
+      closeModal;
+    }
+  };
 
   return (
     <>
@@ -302,18 +864,20 @@ export function StackingModal({ closeModal, stackingModal }) {
                 style={{
                   width: componentIndex === 1 ? "100%" : "90%",
                 }}
-                onClick={() => setComponentIndex(componentIndex + 1)}
+                onClick={() => setComponentIndex(1)}
+                // (componentIndex + 1)
               >
-                {stackingModal === "Rewards"
+                {/* {stackingModal === "Rewards"
                   ? componentIndex === 1
                     ? "Claim"
                     : "Confirm"
                   : componentIndex === 1
                   ? "Unstake"
-                  : "Confirm"}
+                  : "Confirm"} */}
+                {stackingModal === "Rewards" ? "UnStake" : "Confirm"}
               </button>
             )}
-            {(componentIndex === 1 || componentIndex === 3) && (
+            {/* {(componentIndex === 1 || componentIndex === 3) && (
               <Text
                 style={{ textDecoration: "underline", cursor: "pointer" }}
                 mt={22}
@@ -321,7 +885,7 @@ export function StackingModal({ closeModal, stackingModal }) {
               >
                 {stackingModal === "Rewards" ? "Claim" : "Unstake"} history
               </Text>
-            )}
+            )} */}
           </div>
         </div>
       )}
@@ -334,7 +898,8 @@ export function StackingModal({ closeModal, stackingModal }) {
                   Transaction history
                 </Text>
                 <div className="tabs_chip">
-                  {["Stake", "Unstake", "Claim"].map((i) => (
+                  {/* ["Stake", "Unstake", "Claim"] */}
+                  {["Stake", "Unstake"].map((i) => (
                     <span
                       key={i}
                       className={`${activeTab === i && "active_tab"}`}
@@ -381,13 +946,13 @@ export function StackingModal({ closeModal, stackingModal }) {
                   <li>23678</li>
                 </ul>
               </div>
-              <div className="section_content">
+              {/* <div className="section_content">
                 <span>Txn Hash</span>
                 <ul>
                   <li>23678</li>
                   <li>23678</li>
                 </ul>
-              </div>
+              </div> */}
               <div className="section_content">
                 <span>Amount</span>
                 <ul>
@@ -402,7 +967,7 @@ export function StackingModal({ closeModal, stackingModal }) {
                   <li>23678</li>
                 </ul>
               </div>
-              {activeTab === "Stake" && (
+              {/* {activeTab === "Stake" && (
                 <div className="section_content">
                   <span>End Time</span>
                   <ul>
@@ -410,8 +975,8 @@ export function StackingModal({ closeModal, stackingModal }) {
                     <li>23678</li>
                   </ul>
                 </div>
-              )}
-              <div className="section_content">
+              )} */}
+              {/* <div className="section_content">
                 <span>TXN receipt</span>
                 <ul>
                   <li className="arrow_icon">
@@ -451,10 +1016,65 @@ export function StackingModal({ closeModal, stackingModal }) {
                     </svg>
                   </li>
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
+      )}
+    </>
+  );
+}
+export function StakeButton() {
+  const { account } = useWeb3React();
+  const handleWriteToContract = async () => {
+    if (typeof window.ethereum !== "undefined") {
+      const web3 = new Web3(window.ethereum);
+      try {
+        await window.ethereum.enable();
+        const contractAbi = ABI;
+        const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
+        const contract = new web3.eth.Contract(contractAbi, contractAddress);
+        const accounts = await web3.eth.getAccounts();
+        const account = accounts[0];
+        const balance = await checkEtherBalance(account);
+
+        // Pass stake amount here
+        const passStakeAmount = "1";
+        if (parseInt(balance) > parseInt(passStakeAmount)) {
+          const amountToStake = web3.utils.toWei(passStakeAmount, "ether");
+
+          const pauseStatus = await contract.methods.pause().call();
+          if (pauseStatus) {
+            console.error("Staking is paused");
+            return;
+          }
+
+          const tx = await contract.methods.stake().send({
+            from: account,
+            value: amountToStake,
+          });
+        }
+
+        console.log("Transaction hash:", tx.transactionHash);
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      console.error("MetaMask is not installed");
+    }
+  };
+  return (
+    <>
+      {!account && (
+        <Flex className="stacking">
+          {/* <div onClick={() => handleWriteToContract()}>Stake</div> */}
+          <button
+            className="buttonCustom"
+            onClick={() => handleWriteToContract()}
+          >
+            Stake
+          </button>
+        </Flex>
       )}
     </>
   );

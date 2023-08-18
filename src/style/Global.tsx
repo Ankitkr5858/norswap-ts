@@ -22,17 +22,23 @@ const GlobalStyle = createGlobalStyle`
   }
   .inputFieldWrapper #swap-currency-input , .inputFieldWrapper #swap-currency-output{
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    width: 48.50%;
+    width: 100%;
     gap: 20px;
-    padding: 15px 0;
-    border-radius: 64px 6px 6px 64px;
+    padding: 18px 30px 15px 30px;
+    margin-top: 24px;
+    /* border-radius: 64px 64px 64px 64px; */
+    border-radius: 24px;
 background: linear-gradient(180deg, #2F2F2F 0%, #191919 100%);
 box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px 0px rgba(7, 7, 7, 0.56), 1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232 inset, -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px #151515 inset;
   }
+ 
   .inputFieldWrapper #swap-currency-output{
-    border-radius: 6px 64px 64px 6px;
-    padding: 15px 20px;
+    /* border-radius: 64px 64px 64px 64px; */
+    margin-top: 0;
+    border-radius: 24px;
+    padding: 18px 30px 15px 30px;
   }
  
   .inputFieldWrapper #swap-currency-input button{
@@ -40,6 +46,27 @@ box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px 0px 
   }
   .inputFieldWrapper #swap-currency-input button svg{
    flex: 0 0 auto;
+  }
+
+   #swap-currency-output-with-logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 18px 30px 15px 30px;
+    margin-top: 24px;
+    /* border-radius: 64px 64px 64px 64px; */
+    border-radius: 24px;
+background: linear-gradient(180deg, #2F2F2F 0%, #191919 100%);
+box-shadow: 2.163542587612006e-15px 35.33333206176758px 70.66666412353516px 0px rgba(7, 7, 7, 0.56), 1.1058107241237905e-15px 18.05925941467285px 18.05925941467285px 0px #323232 inset, -1.1058107241237905e-15px -18.05925941467285px 18.05925941467285px 0px #151515 inset;
+  }
+  .nrkConverted{
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+  .flexAuto{
+    flex: 0 0 auto;
   }
 
  .selectorWrapper{

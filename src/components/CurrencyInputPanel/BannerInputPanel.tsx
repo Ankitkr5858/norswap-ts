@@ -56,7 +56,10 @@ const InputPanel = styled.div`
   border-radius: 20px;
   z-index: 1;
   min-width: 28%;
-  margin-top: 24px;
+  /* margin-top: 24px; */
+  @media(min-width:768px){
+  min-width: 78%;
+  }
 `;
 const Container = styled.div`
   border-radius: 16px;
@@ -121,9 +124,9 @@ export default function BannerInputPanel({
   return (
     <Flex justifyContent="center" position="relative" id={id}>
       <Flex flexDirection="column">
-        <Text ml="15px" mb="6px" color="#858585">
+        {/* <Text ml="15px" mb="6px" color="#858585">
           From
-        </Text>
+        </Text> */}
         <Flex
           className="selectorWrapper"
           mb="6px"
