@@ -11,6 +11,7 @@ import CryptoConvertor from "./CryptoConvertor";
 import successIcon from "./../../../../public/images/successful.png";
 import ReactDOM from "react-dom";
 import Web3 from "web3";
+import { access } from "fs";
 
 const ABI = [
   {
@@ -433,8 +434,44 @@ const ABI = [
 const Home1 = () => {
   const { t } = useTranslation();
   const { account } = useWeb3React();
+  const [stakeInputData, setStakeInputData] = useState(0)
+  const [totalStake,setTotalStake] = useState(0)
   // const [stackingModal, setStackingModal] = useState(true);
   // const web3 = new Web3(window.ethereum);
+
+  const stakeInput = (input)=> {
+    console.log("stakeInputstakeInputstakeInput",input)
+    setStakeInputData(parseInt(input))
+  }
+
+  useEffect(()=>{
+
+    const asyncFunc = async()=>{
+    const web3 = new Web3(window.ethereum);
+
+    if (typeof window.ethereum !== "undefined" && account) {
+      await window.ethereum.enable();
+      const contractAbi = ABI;
+      const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
+      const contract = new web3.eth.Contract(contractAbi, contractAddress);
+      const accounts = await web3.eth.getAccounts();
+      const account = accounts[0];
+      const balance = await checkEtherBalance(account);
+      console.log("balance", balance);
+      if (account) {
+        const totalStaked = await contract.methods
+          .getUserTotalStakedAmount(account)
+          .call();
+        const convertedTotalStaked = Web3.utils.fromWei(totalStaked, "ether");
+        setTotalStake(convertedTotalStaked)
+      }
+    }
+  }
+
+  asyncFunc()
+  },[account,window])
+
+  
   return (
     <>
       <Flex
@@ -460,7 +497,7 @@ const Home1 = () => {
           >
             {t("Staking is live")}
           </Heading>
-          <CryptoConvertor />
+          <CryptoConvertor callbackInput={(input)=>stakeInput(input)} stakedAmount={totalStake} />
           {/* <Stacking /> */}
           {/* <Text
             className="hero-title-two"
@@ -475,7 +512,7 @@ const Home1 = () => {
           {
             /* <Flex>{!account && <ConnectWalletButton mr="8px" />}</Flex> */
             <Flex mt="20px">
-              <StakeButton />
+              <StakeButton stakeInputData={stakeInputData} />
             </Flex>
           }
         </Flex>
@@ -501,49 +538,13 @@ export function Stacking() {
   const [stakingAPY, setStakingAPY] = useState(0);
   const [totalStakeAmount, setTotalStakeAmount] = useState(0);
   const [totalStakedRewards, setTotalStakedRewards] = useState(0);
-  const handleWriteToContract = async () => {
-    if (typeof window.ethereum !== "undefined") {
-      const web3 = new Web3(window.ethereum);
-      try {
-        await window.ethereum.enable();
-        const contractAbi = ABI;
-        const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
-        const contract = new web3.eth.Contract(contractAbi, contractAddress);
-        const accounts = await web3.eth.getAccounts();
-        const account = accounts[0];
-        const balance = await checkEtherBalance(account);
-
-        // Pass stake amount here
-        const passStakeAmount = "1";
-        if (parseInt(balance) > parseInt(passStakeAmount)) {
-          const amountToStake = web3.utils.toWei(passStakeAmount, "ether");
-
-          const pauseStatus = await contract.methods.pause().call();
-          if (pauseStatus) {
-            console.error("Staking is paused");
-            return;
-          }
-
-          const tx = await contract.methods.stake().send({
-            from: account,
-            value: amountToStake,
-          });
-        }
-
-        console.log("Transaction hash:", tx.transactionHash);
-      } catch (error) {
-        console.error("Error:", error);
-      }
-    } else {
-      console.error("MetaMask is not installed");
-    }
-  };
+  const [stakedHistory, setStakedHistory] = useState([])
 
   useEffect(() => {
     const asyncCallWeb3 = async () => {
       const web3 = new Web3(window.ethereum);
 
-      if (typeof window.ethereum !== "undefined") {
+      if (typeof window.ethereum !== "undefined" && account) {
         await window.ethereum.enable();
         const contractAbi = ABI;
         const contractAddress = "0x2fE3a13D59a63F787897972f598348a1E666610A";
@@ -577,6 +578,7 @@ export function Stacking() {
           console.log("totalStaked", convertedTotalStaked);
           console.log("totalRewards", convertedTotalRewards);
           console.log("stakedHistory", formattedStakedHistory);
+          setStakedHistory(formattedStakedHistory)
           setTotalStakeAmount(convertedTotalStaked);
           setTotalStakedRewards(convertedTotalRewards);
           setStakingAPY(apy);
@@ -584,7 +586,7 @@ export function Stacking() {
       }
     };
     asyncCallWeb3();
-  }, [Web3, window]);
+  }, [Web3, window,account]);
 
   let portalContainer = document.querySelector("#portal-container-div-modal");
   if (!portalContainer) {
@@ -604,7 +606,7 @@ export function Stacking() {
 
   return (
     <>
-      {!account && (
+      {account && (
         <Flex className="stacking">
           <div onClick={() => showModal("Rewards")}>Rewards</div>
           <div onClick={() => showModal("History")}>History</div>
@@ -618,18 +620,22 @@ export function Stacking() {
           <StackingModal
             closeModal={closeModal}
             stackingModal={stackingModal}
+            totalStakeAmount={totalStakeAmount}
+            totalRewardAmount={totalStakedRewards}
+            stakedHistory={stakedHistory || []}
           />,
           portalContainer
         )}
     </>
   );
 }
-export function StackingModal({ closeModal, stackingModal }) {
+export function StackingModal({ closeModal, stackingModal, totalStakeAmount, totalRewardAmount,stakedHistory }) {
   const [componentIndex, setComponentIndex] = useState(1);
   const [activeTab, setActiveTab] = useState("Stake");
-
+  const { account } = useWeb3React();
   const closeModalv2 = async () => {
-    if (stackingModal == "Unstake") {
+    console.log("close modelv2")
+    if (stackingModal == "Unstake" || "Rewards") {
       if (typeof window.ethereum !== "undefined") {
         const web3 = new Web3(window.ethereum);
         try {
@@ -650,6 +656,7 @@ export function StackingModal({ closeModal, stackingModal }) {
             if (tx.transactionHash) {
               closeModal;
             }
+            closeModal;
           }
         } catch (error) {
           console.error("Error:", error);
@@ -661,6 +668,8 @@ export function StackingModal({ closeModal, stackingModal }) {
       closeModal;
     }
   };
+
+  console.log("stakedHistory",stakedHistory)
 
   return (
     <>
@@ -706,7 +715,7 @@ export function StackingModal({ closeModal, stackingModal }) {
                   fontSize="28px"
                   mb="24px"
                 >
-                  0.264
+                  {stackingModal == "Rewards" ? `${parseFloat(totalRewardAmount)}` : `${parseFloat(totalStakeAmount)+parseFloat(totalRewardAmount)}`}
                   <Text ml={10} color="#ffffff" fontSize="18px">
                     NRK
                   </Text>
@@ -726,13 +735,14 @@ export function StackingModal({ closeModal, stackingModal }) {
                       fontSize="28px"
                       mb="24px"
                     >
-                      0.264
+                      {`${parseFloat(totalStakeAmount)}`}
+
                       <Text ml={10} color="#ffffff" fontSize="18px">
                         NRK
                       </Text>
                     </Text>
                     <Text color="#949494" fontSize="16px" mb="5px">
-                      Claimed reward
+                      Claim reward
                     </Text>
                     <Text
                       style={{
@@ -744,7 +754,8 @@ export function StackingModal({ closeModal, stackingModal }) {
                       fontSize="28px"
                       mb="24px"
                     >
-                      0.00000264
+                      {`${parseFloat(totalRewardAmount)}`}
+
                       <Text ml={10} color="#ffffff" fontSize="18px">
                         NRK
                       </Text>
@@ -864,7 +875,10 @@ export function StackingModal({ closeModal, stackingModal }) {
                 style={{
                   width: componentIndex === 1 ? "100%" : "90%",
                 }}
-                onClick={() => setComponentIndex(1)}
+                onClick={async() =>{
+                  await closeModalv2();
+                  setComponentIndex(1)
+                }}
                 // (componentIndex + 1)
               >
                 {/* {stackingModal === "Rewards"
@@ -897,8 +911,7 @@ export function StackingModal({ closeModal, stackingModal }) {
                 <Text color="#F4EEFF" fontSize="24px">
                   Transaction history
                 </Text>
-                <div className="tabs_chip">
-                  {/* ["Stake", "Unstake", "Claim"] */}
+                {/* <div className="tabs_chip">
                   {["Stake", "Unstake"].map((i) => (
                     <span
                       key={i}
@@ -908,7 +921,7 @@ export function StackingModal({ closeModal, stackingModal }) {
                       {i}
                     </span>
                   ))}
-                </div>
+                </div> */}
               </div>
               <svg
                 className="cross_icon"
@@ -930,43 +943,63 @@ export function StackingModal({ closeModal, stackingModal }) {
                 (activeTab === "Unstake" || activeTab === "Claim") &&
                 "grid_modal_changed"
               }`}
+              style={{display:"flex",flex:1,flexDirection:"column"}}
             >
-              <div className="section_content">
-                <span>ID</span>
-                <ul>
-                  <li>23678</li>
-                  <li>23678</li>
-                </ul>
-              </div>
+                                  <div style={{display:"flex",flex:1,flexDirection:"row",justifyContent:"space-between", width:"50vw"}}>
+                      <div className="section_content">
+                        <span>ID</span>
+                      </div>
 
-              <div className="section_content">
-                <span>User Address</span>
-                <ul>
-                  <li>23678</li>
-                  <li>23678</li>
-                </ul>
-              </div>
-              {/* <div className="section_content">
-                <span>Txn Hash</span>
-                <ul>
-                  <li>23678</li>
-                  <li>23678</li>
-                </ul>
-              </div> */}
-              <div className="section_content">
-                <span>Amount</span>
-                <ul>
-                  <li>23678</li>
-                  <li>23678</li>
-                </ul>
-              </div>
-              <div className="section_content">
-                <span>{activeTab === "Stake" ? "Start" : activeTab} Time</span>
-                <ul>
-                  <li>23678</li>
-                  <li>23678</li>
-                </ul>
-              </div>
+                      <div className="section_content">
+                        <span>User Address</span>
+                      </div>
+
+                      <div className="section_content">
+                        <span>Amount</span>
+                      </div>
+
+                      <div className="section_content">
+                        <span>Time</span>
+                      </div>
+                      
+                      <div className="section_content">
+                        <span>Status</span>
+                      </div>
+                    </div>
+              {stakedHistory.length ?
+              stakedHistory.map((res,key)=>{
+                console.log("res",res)
+                return(
+
+                    <div style={{display:"flex",flex:1,flexDirection:"row",justifyContent:"space-between", width:"50vw"}}>
+                    <div className="section_content">
+                    <ul>
+                    <li>{key+1}</li>
+                    </ul>
+                    </div>
+                    <div className="section_content">
+                    <ul>
+                    <li>{`${account.substr(0,4)}...${account.substr(account.length-4,account.length)}`}</li>
+                    </ul>
+                    </div>
+                    <div className="section_content">
+                    <ul>
+                    <li>{`${res.amount} NRK`}</li>
+                    </ul>
+                    </div>
+                    <div className="section_content">
+                    <ul>
+                    <li>{res.timestamp}</li>
+                    </ul>
+                    </div>
+                    <div className="section_content">
+                    <ul>
+                    <li>{res.isCompleted ? "UnStaked": "Staked"}</li>
+                    </ul>
+                    </div>
+                    </div>
+                    )})
+              :<div></div>}
               {/* {activeTab === "Stake" && (
                 <div className="section_content">
                   <span>End Time</span>
@@ -1024,10 +1057,11 @@ export function StackingModal({ closeModal, stackingModal }) {
     </>
   );
 }
-export function StakeButton() {
+export function StakeButton({stakeInputData}) {
   const { account } = useWeb3React();
+  const [tokenBalance, setTokenBalance] = useState(0)
   const handleWriteToContract = async () => {
-    if (typeof window.ethereum !== "undefined") {
+    if (typeof window.ethereum !== "undefined" && account) {
       const web3 = new Web3(window.ethereum);
       try {
         await window.ethereum.enable();
@@ -1039,7 +1073,7 @@ export function StakeButton() {
         const balance = await checkEtherBalance(account);
 
         // Pass stake amount here
-        const passStakeAmount = "1";
+        const passStakeAmount = stakeInputData.toString();
         if (parseInt(balance) > parseInt(passStakeAmount)) {
           const amountToStake = web3.utils.toWei(passStakeAmount, "ether");
 
@@ -1063,19 +1097,67 @@ export function StakeButton() {
       console.error("MetaMask is not installed");
     }
   };
+
+  const connectWallet = async () => {
+    if (typeof window.ethereum !== "undefined") {
+      const web3 = new Web3(window.ethereum);
+      try {
+        await window.ethereum.enable();
+      } catch (error) {
+        console.error("Error:", error);
+      }
+    } else {
+      console.error("MetaMask is not installed");
+    }
+  }
+
+  useEffect(()=>{
+
+    const callAsync = async()=> {
+      if (typeof window.ethereum !== "undefined"  && account) {
+        const web3 = new Web3(window.ethereum);
+        try {
+          await window.ethereum.enable();
+          const accounts = await web3.eth.getAccounts();
+          const account = accounts[0];
+          const balance = await checkEtherBalance(account);
+          setTokenBalance(balance);
+          } catch (error) {
+            console.error("Error:", error);
+          }
+        } else {
+          console.error("MetaMask is not installed");
+        }
+    }
+
+    callAsync();
+
+  },[window,account])
+
+  console.log("requess",tokenBalance,stakeInputData)
+
   return (
     <>
-      {!account && (
+      {account ? (
         <Flex className="stacking">
           {/* <div onClick={() => handleWriteToContract()}>Stake</div> */}
           <button
             className="buttonCustom"
-            onClick={() => handleWriteToContract()}
+            onClick={() => {parseInt(tokenBalance) > parseInt(stakeInputData) ? handleWriteToContract(): ""}}
           >
-            Stake
+            {parseInt(tokenBalance) < parseInt(stakeInputData) ? "Not Enough Balance" : "Stake" }
           </button>
         </Flex>
-      )}
+      ):
+      <Flex className="stacking">
+      {/* <div onClick={() => handleWriteToContract()}>Stake</div> */}
+      <button
+        className="buttonCustom"
+        onClick={() => connectWallet()}
+      >
+        Connect Wallet
+      </button>
+    </Flex>}
     </>
   );
 }

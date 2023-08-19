@@ -109,7 +109,7 @@ const SwitchIconButton = styled(IconButton)`
   }
 `;
 
-const CryptoConvertor = () => {
+const CryptoConvertor = ({callbackInput,stakedAmount}) => {
   const router = useRouter();
   const loadedUrlParams = useDefaultsFromURLSearch();
   const { t } = useTranslation();
@@ -222,7 +222,12 @@ const CryptoConvertor = () => {
 
   const handleTypeInput = useCallback(
     (value: string) => {
-      onUserInput(Field.INPUT, value);
+
+      if(!isNaN(value)){
+        onUserInput(Field.INPUT, value);
+        callbackInput(value)
+      }
+
     },
     [onUserInput]
   );
@@ -483,7 +488,7 @@ const CryptoConvertor = () => {
               className="inputFieldWrapper"
               flexDirection="column"
             >
-              <Flex
+              {account && <Flex
                 id="swap-currency-output-with-logo"
                 alignItems="center"
                 justifyContent="flex-start"
@@ -503,7 +508,7 @@ const CryptoConvertor = () => {
                 >
                   <Box width={["100%", null, "60%"]}>
                     <div className="nrkConverted" fontSize="24px">
-                      2368566.0458 NRK
+                      {`${stakedAmount || 0} NRK`}
                     </div>
                     <Text className="" color="#858585" fontSize="16px">
                       {t("TOTAL NRK STAKED")}
@@ -511,14 +516,14 @@ const CryptoConvertor = () => {
                   </Box>
                   <Box width={["100%", null, "40%"]}>
                     <div className="nrkConverted" fontSize="24px">
-                      20%
+                      10%
                     </div>
                     <Text className="" color="#858585" fontSize="16px">
                       {t("APY Percentage")}
                     </Text>
                   </Box>
                 </Flex>
-              </Flex>
+              </Flex>}
 
               <Stacking />
 
