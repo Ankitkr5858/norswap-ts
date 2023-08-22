@@ -589,7 +589,6 @@ export function Stacking() {
     };
     asyncCallWeb3();
   }, [Web3, window, account]);
-
   let portalContainer = document.querySelector("#portal-container-div-modal");
   if (!portalContainer) {
     portalContainer = document.createElement("div");
@@ -598,14 +597,14 @@ export function Stacking() {
     document.body.insertBefore(portalContainer, document.body.firstChild);
   }
   async function showModal(param) {
-    setIsLoading(true);
+    setIsLoading(true)
     document.body.style.overflow = param ? "hidden" : "auto";
     setStackingModal(param);
-    setIsLoading(false);
   }
   const closeModal = () => {
     document.body.style.overflow = "auto";
     setStackingModal("");
+    setIsLoading(false)
   };
   return (
     <>
@@ -613,15 +612,9 @@ export function Stacking() {
         <Flex className="stacking">
           <div onClick={() => showModal("Rewards")}>Rewards</div>
           <div onClick={() => showModal("History")}>History</div>
-          <div onClick={() => showModal("Unstake")} className="">
-            {isLoading ? (
-              <div>
-                <CircleLoader size="2rem" />
-              </div>
-            ) : (
+            <div onClick={() => showModal("Unstake")}>
               <>Unstake</>
-            )}
-          </div>
+            </div>
           {/* <div onClick={() => handleWriteToContract()}>Stake</div> */}
         </Flex>
       )}
@@ -649,11 +642,13 @@ export function StackingModal({
 }) {
   const [componentIndex, setComponentIndex] = useState(1);
   const [activeTab, setActiveTab] = useState("Stake");
+  const [unstaking, setUnstaking] = useState(false);
   const { account } = useWeb3React();
   const closeModalv2 = async () => {
-    console.log("close modelv2");
-    if (stackingModal == "Unstake" || "Rewards") {
-      if (typeof window.ethereum !== "undefined") {
+    if(unstaking) return;
+    setUnstaking(true);
+    try{if (stackingModal == "Unstake" || stackingModal == "Rewards") {
+      if (typeof window.ethereum != "undefined") {
         const web3 = new Web3(window.ethereum);
         try {
           await window.ethereum.enable();
@@ -683,7 +678,11 @@ export function StackingModal({
       }
     } else {
       closeModal;
+    }}
+    catch(e) {
+      console.error(e);
     }
+    setUnstaking(false);
   };
 
   console.log("stakedHistory", stakedHistory);
@@ -777,7 +776,6 @@ export function StackingModal({
                       mb="24px"
                     >
                       {`${parseFloat(totalRewardAmount)}`}
-
                       <Text ml={10} color="#ffffff" fontSize="18px">
                         NRK
                       </Text>
@@ -900,6 +898,7 @@ export function StackingModal({
                 onClick={async () => {
                   await closeModalv2();
                   setComponentIndex(1);
+                  closeModal()
                 }}
                 // (componentIndex + 1)
               >
@@ -910,7 +909,8 @@ export function StackingModal({
                   : componentIndex === 1
                   ? "Unstake"
                   : "Confirm"} */}
-                {stackingModal === "Rewards" ? "UnStake" : "Confirm"}
+                {unstaking ? <div><CircleLoader size="2rem" /></div> : stackingModal === "Rewards" ? "UnStake" : "Confirm"}
+
               </button>
             )}
             {/* {(componentIndex === 1 || componentIndex === 3) && (
@@ -1142,6 +1142,7 @@ export function StakeButton({ stakeInputData }) {
       console.error("MetaMask is not installed");
     }
     setIsLoading(false);
+    location.reload()
   };
 
   const connectWallet = async () => {
